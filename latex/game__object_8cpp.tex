@@ -1,0 +1,51 @@
+\hypertarget{game__object_8cpp}{}\section{engine/src/game\+\_\+object.cpp File Reference}
+\label{game__object_8cpp}\index{engine/src/game\+\_\+object.\+cpp@{engine/src/game\+\_\+object.\+cpp}}
+
+
+Contains methods to game\+\_\+object class\textquotesingle{} management. This methods can control the entire game object, setting the components, free them, loading and playing audio, animations, components, setting and displaying hitboxes, detecting and notifing collission with other game objects.  
+
+
+{\ttfamily \#include \char`\"{}game\+\_\+object.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}game.\+hpp\char`\"{}}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+Include dependency graph for game\+\_\+object.\+cpp\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{game__object_8cpp_a2586813198f2e19ff49a80feea811ba7}{compare} (\hyperlink{classengine_1_1_component}{Component} $\ast$a, \hyperlink{classengine_1_1_component}{Component} $\ast$b)
+\begin{DoxyCompactList}\small\item\em This Routine compare 2 Components of one \hyperlink{class_game}{Game} Object and verify with one has more priority in order to apply game effects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains methods to game\+\_\+object class\textquotesingle{} management. This methods can control the entire game object, setting the components, free them, loading and playing audio, animations, components, setting and displaying hitboxes, detecting and notifing collission with other game objects. 
+
+M\+IT License Copyright (c) 2017 Mind\+Scape
+
+\href{https://github.com/TecProg2017-2/mindscape/blob/master/LICENSE.md}{\tt https\+://github.\+com/\+Tec\+Prog2017-\/2/mindscape/blob/master/\+L\+I\+C\+E\+N\+S\+E.\+md} 
+
+\subsection{Function Documentation}
+\index{game\+\_\+object.\+cpp@{game\+\_\+object.\+cpp}!compare@{compare}}
+\index{compare@{compare}!game\+\_\+object.\+cpp@{game\+\_\+object.\+cpp}}
+\subsubsection[{\texorpdfstring{compare(\+Component $\ast$a, Component $\ast$b)}{compare(Component *a, Component *b)}}]{\setlength{\rightskip}{0pt plus 5cm}bool compare (
+\begin{DoxyParamCaption}
+\item[{{\bf Component} $\ast$}]{a, }
+\item[{{\bf Component} $\ast$}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{game__object_8cpp_a2586813198f2e19ff49a80feea811ba7}{}\label{game__object_8cpp_a2586813198f2e19ff49a80feea811ba7}
+
+
+This Routine compare 2 Components of one \hyperlink{class_game}{Game} Object and verify with one has more priority in order to apply game effects. 
+
+Because the game have no ideia with game object is more important its important this routine to know this.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Component} & a, pointer to a component declared in a \hyperlink{class_game}{Game} Object. \\
+\hline
+{\em Component} & b, pointer to a component declared in a \hyperlink{class_game}{Game} Object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The component who have higher priority. 
+\end{DoxyReturn}

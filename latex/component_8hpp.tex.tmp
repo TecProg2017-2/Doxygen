@@ -1,0 +1,24 @@
+\hypertarget{component_8hpp}{}\section{engine/include/component.hpp File Reference}
+\label{component_8hpp}\index{engine/include/component.\+hpp@{engine/include/component.\+hpp}}
+
+
+Contains methods to component class\textquotesingle{} management. This methods can control the entire component object, naming the component, setting the priority, verifing activation and displacing. M\+IT License Copyright (c) 2017 Mind\+Scape.  
+
+
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+Include dependency graph for component.\+hpp\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classengine_1_1_component}{engine\+::\+Component}
+\begin{DoxyCompactList}\small\item\em A \hyperlink{classengine_1_1_component}{Component} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains methods to component class\textquotesingle{} management. This methods can control the entire component object, naming the component, setting the priority, verifing activation and displacing. M\+IT License Copyright (c) 2017 Mind\+Scape. 
+
+\href{https://github.com/TecProg2017-2/mindscape/blob/master/LICENSE.md}{\tt https\+://github.\+com/\+Tec\+Prog2017-\/2/mindscape/blob/master/\+L\+I\+C\+E\+N\+S\+E.\+md} 

@@ -1,0 +1,224 @@
+\hypertarget{classengine_1_1_component}{}\section{engine\+:\+:Component Class Reference}
+\label{classengine_1_1_component}\index{engine\+::\+Component@{engine\+::\+Component}}
+
+
+A \hyperlink{classengine_1_1_component}{Component} class.  
+
+
+
+
+{\ttfamily \#include $<$component.\+hpp$>$}
+
+
+
+Inheritance diagram for engine\+:\+:Component\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Component} (std\+::string p\+\_\+name, std\+::pair$<$ int, int $>$ p\+\_\+displacement, bool p\+\_\+active, int p\+\_\+priority)\hypertarget{classengine_1_1_component_a98a00f27d6a6179fcc9120586a3c785d}{}\label{classengine_1_1_component_a98a00f27d6a6179fcc9120586a3c785d}
+
+\item 
+virtual bool {\bfseries load} ()\hypertarget{classengine_1_1_component_a2c5fda0dee980614a92bbccad2834772}{}\label{classengine_1_1_component_a2c5fda0dee980614a92bbccad2834772}
+
+\item 
+virtual void {\bfseries free} ()\hypertarget{classengine_1_1_component_a932eb4b0cf9d99903e3e6d2508e8fd92}{}\label{classengine_1_1_component_a932eb4b0cf9d99903e3e6d2508e8fd92}
+
+\item 
+virtual void {\bfseries draw} (int, int)\hypertarget{classengine_1_1_component_a00aaccbcf3ba091638c1af7e59f32bec}{}\label{classengine_1_1_component_a00aaccbcf3ba091638c1af7e59f32bec}
+
+\item 
+bool \hyperlink{classengine_1_1_component_ae1a97027b9862ee3e41e6566501d765e}{is\+\_\+active} ()
+\begin{DoxyCompactList}\small\item\em This Routine verifys if the component is active or deactive. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_component_aaab29ea159109b4d0f63e9c519be6139}{activate} ()
+\begin{DoxyCompactList}\small\item\em This Routine activate the current component. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_component_aa4d1e5e0656ed03f7ff469db25f65053}{deactivate} ()
+\begin{DoxyCompactList}\small\item\em This Routine deactivate the current component. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \hyperlink{classengine_1_1_component_a3a79b22c29f442c6f4b6fb648e97dc47}{get\+\_\+displacement} ()
+\begin{DoxyCompactList}\small\item\em This Routine get the current component displacement. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_component_a9b8b506c27cd4fe0080deaf9ffe2b9be}{set\+\_\+displacement} (std\+::pair$<$ int, int $>$)
+\begin{DoxyCompactList}\small\item\em This Routine set the current component displacement. \end{DoxyCompactList}\item 
+int \hyperlink{classengine_1_1_component_a9b786021a986a812d841983e36bea127}{get\+\_\+priority} ()
+\begin{DoxyCompactList}\small\item\em This Routine get the current component priority. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_component_aa746b97a8ad828e50a957d89afcb68b6}{set\+\_\+priority} (int)
+\begin{DoxyCompactList}\small\item\em This Routine set the current component priority. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classengine_1_1_component_abf17998eda9a0e631c6f8adfff9ccd0a}{get\+\_\+name} ()
+\begin{DoxyCompactList}\small\item\em This Routine get the current component name. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_component_abfd84eba8f33f57affa5d46ac074a63d}{set\+\_\+name} (std\+::string)
+\begin{DoxyCompactList}\small\item\em This Routine set the current component name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classengine_1_1_component}{Component} class. 
+
+This class is a model that contains all the specification of components that can be added to game objects. \begin{DoxyWarning}{Warning}
+Limitations\+: All components after being used needs to be free. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+Component@{engine\+::\+Component}!activate@{activate}}
+\index{activate@{activate}!engine\+::\+Component@{engine\+::\+Component}}
+\subsubsection[{\texorpdfstring{activate()}{activate()}}]{\setlength{\rightskip}{0pt plus 5cm}void Component\+::activate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_component_aaab29ea159109b4d0f63e9c519be6139}{}\label{classengine_1_1_component_aaab29ea159109b4d0f63e9c519be6139}
+
+
+This Routine activate the current component. 
+
+Is important to manage components activating them or deactivating to get a better game performace.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Component@{engine\+::\+Component}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!engine\+::\+Component@{engine\+::\+Component}}
+\subsubsection[{\texorpdfstring{deactivate()}{deactivate()}}]{\setlength{\rightskip}{0pt plus 5cm}void Component\+::deactivate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_component_aa4d1e5e0656ed03f7ff469db25f65053}{}\label{classengine_1_1_component_aa4d1e5e0656ed03f7ff469db25f65053}
+
+
+This Routine deactivate the current component. 
+
+Is important to manage components activating them or deactivating to get a better game performace.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Component@{engine\+::\+Component}!get\+\_\+displacement@{get\+\_\+displacement}}
+\index{get\+\_\+displacement@{get\+\_\+displacement}!engine\+::\+Component@{engine\+::\+Component}}
+\subsubsection[{\texorpdfstring{get\+\_\+displacement()}{get_displacement()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$ int, int $>$ Component\+::get\+\_\+displacement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_component_a3a79b22c29f442c6f4b6fb648e97dc47}{}\label{classengine_1_1_component_a3a79b22c29f442c6f4b6fb648e97dc47}
+
+
+This Routine get the current component displacement. 
+
+This will show were the component is on screen.
+
+\begin{DoxyReturn}{Returns}
+pair of integer containig the X and Y of screen where the component is. 
+\end{DoxyReturn}
+\index{engine\+::\+Component@{engine\+::\+Component}!get\+\_\+name@{get\+\_\+name}}
+\index{get\+\_\+name@{get\+\_\+name}!engine\+::\+Component@{engine\+::\+Component}}
+\subsubsection[{\texorpdfstring{get\+\_\+name()}{get_name()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Component\+::get\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_component_abf17998eda9a0e631c6f8adfff9ccd0a}{}\label{classengine_1_1_component_abf17998eda9a0e631c6f8adfff9ccd0a}
+
+
+This Routine get the current component name. 
+
+Is important to identify component by name, because one game object can have mode than one component and his name is the ID.
+
+\begin{DoxyReturn}{Returns}
+string with the component name. 
+\end{DoxyReturn}
+\index{engine\+::\+Component@{engine\+::\+Component}!get\+\_\+priority@{get\+\_\+priority}}
+\index{get\+\_\+priority@{get\+\_\+priority}!engine\+::\+Component@{engine\+::\+Component}}
+\subsubsection[{\texorpdfstring{get\+\_\+priority()}{get_priority()}}]{\setlength{\rightskip}{0pt plus 5cm}int Component\+::get\+\_\+priority (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_component_a9b786021a986a812d841983e36bea127}{}\label{classengine_1_1_component_a9b786021a986a812d841983e36bea127}
+
+
+This Routine get the current component priority. 
+
+Is important to know the priority in order to run physics and render this component.
+
+\begin{DoxyReturn}{Returns}
+integer with the layer of priority of that component. 
+\end{DoxyReturn}
+\index{engine\+::\+Component@{engine\+::\+Component}!is\+\_\+active@{is\+\_\+active}}
+\index{is\+\_\+active@{is\+\_\+active}!engine\+::\+Component@{engine\+::\+Component}}
+\subsubsection[{\texorpdfstring{is\+\_\+active()}{is_active()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Component\+::is\+\_\+active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_component_ae1a97027b9862ee3e41e6566501d765e}{}\label{classengine_1_1_component_ae1a97027b9862ee3e41e6566501d765e}
+
+
+This Routine verifys if the component is active or deactive. 
+
+In order to know what to render and to minimize the use of memory is necessary to identify if the component is active or deactive.
+
+\begin{DoxyReturn}{Returns}
+The active state of that component, can be true meaning that the component is active or false meaning that the component is false. 
+\end{DoxyReturn}
+\index{engine\+::\+Component@{engine\+::\+Component}!set\+\_\+displacement@{set\+\_\+displacement}}
+\index{set\+\_\+displacement@{set\+\_\+displacement}!engine\+::\+Component@{engine\+::\+Component}}
+\subsubsection[{\texorpdfstring{set\+\_\+displacement(std\+::pair$<$ int, int $>$)}{set_displacement(std::pair< int, int >)}}]{\setlength{\rightskip}{0pt plus 5cm}void Component\+::set\+\_\+displacement (
+\begin{DoxyParamCaption}
+\item[{std\+::pair$<$ int, int $>$}]{p\+\_\+displacement}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_component_a9b8b506c27cd4fe0080deaf9ffe2b9be}{}\label{classengine_1_1_component_a9b8b506c27cd4fe0080deaf9ffe2b9be}
+
+
+This Routine set the current component displacement. 
+
+This will place the component on screen in a X and Y coordenate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pair} & of integers containing the postion to displace the component. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Component@{engine\+::\+Component}!set\+\_\+name@{set\+\_\+name}}
+\index{set\+\_\+name@{set\+\_\+name}!engine\+::\+Component@{engine\+::\+Component}}
+\subsubsection[{\texorpdfstring{set\+\_\+name(std\+::string)}{set_name(std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}void Component\+::set\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{p\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_component_abfd84eba8f33f57affa5d46ac074a63d}{}\label{classengine_1_1_component_abfd84eba8f33f57affa5d46ac074a63d}
+
+
+This Routine set the current component name. 
+
+Is important to identify component by name, because one game object can have mode than one component and his name is the ID.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & containing the component name to be set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Component@{engine\+::\+Component}!set\+\_\+priority@{set\+\_\+priority}}
+\index{set\+\_\+priority@{set\+\_\+priority}!engine\+::\+Component@{engine\+::\+Component}}
+\subsubsection[{\texorpdfstring{set\+\_\+priority(int)}{set_priority(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Component\+::set\+\_\+priority (
+\begin{DoxyParamCaption}
+\item[{int}]{p\+\_\+priority}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_component_aa746b97a8ad828e50a957d89afcb68b6}{}\label{classengine_1_1_component_aa746b97a8ad828e50a957d89afcb68b6}
+
+
+This Routine set the current component priority. 
+
+Is important to set the priority in order to run physics and render this component. If is necessary to render one image in front of one animation this can be use to layer them.
+
+
+\begin{DoxyParams}{Parameters}
+{\em integer} & containing the priority to be set to the component. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+engine/include/\hyperlink{component_8hpp}{component.\+hpp}\item 
+engine/src/\hyperlink{component_8cpp}{component.\+cpp}\end{DoxyCompactItemize}
