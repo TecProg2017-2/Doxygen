@@ -2,6 +2,15 @@
 \label{classmindscape_1_1_hud_fox}\index{mindscape\+::\+Hud\+Fox@{mindscape\+::\+Hud\+Fox}}
 
 
+A Hud \hyperlink{classmindscape_1_1_fox}{Fox} class.  
+
+
+
+
+{\ttfamily \#include $<$hud\+\_\+fox.\+hpp$>$}
+
+
+
 Inheritance diagram for mindscape\+:\+:Hud\+Fox\+:
 % FIG 0
 
@@ -11,16 +20,77 @@ Collaboration diagram for mindscape\+:\+:Hud\+Fox\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Hud\+Fox} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)\hypertarget{classmindscape_1_1_hud_fox_affa10d22e2ffd68fb505630ff7f0bd5f}{}\label{classmindscape_1_1_hud_fox_affa10d22e2ffd68fb505630ff7f0bd5f}
-
-\item 
-void {\bfseries notify} (\hyperlink{classengine_1_1_observable}{engine\+::\+Observable} $\ast$)\hypertarget{classmindscape_1_1_hud_fox_af2076f6d6287cbab6305f09432512e93}{}\label{classmindscape_1_1_hud_fox_af2076f6d6287cbab6305f09432512e93}
-
-\end{DoxyCompactItemize}
+\hyperlink{classmindscape_1_1_hud_fox_affa10d22e2ffd68fb505630ff7f0bd5f}{Hud\+Fox} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)
+\begin{DoxyCompactList}\small\item\em Class Contructor. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_hud_fox_af2076f6d6287cbab6305f09432512e93}{notify} (\hyperlink{classengine_1_1_observable}{engine\+::\+Observable} $\ast$)
+\begin{DoxyCompactList}\small\item\em Notifies Hud \hyperlink{classmindscape_1_1_fox}{Fox} of \hyperlink{classmindscape_1_1_fox}{Fox}\textquotesingle{}s state. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A Hud \hyperlink{classmindscape_1_1_fox}{Fox} class. 
+
+The class Hud \hyperlink{classmindscape_1_1_fox}{Fox} has attributes and methods for the \hyperlink{classmindscape_1_1_fox}{Fox}\textquotesingle{}s health bar (stars bar). 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{mindscape\+::\+Hud\+Fox@{mindscape\+::\+Hud\+Fox}!Hud\+Fox@{Hud\+Fox}}
+\index{Hud\+Fox@{Hud\+Fox}!mindscape\+::\+Hud\+Fox@{mindscape\+::\+Hud\+Fox}}
+\subsubsection[{\texorpdfstring{Hud\+Fox(std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)}{HudFox(std::string name, std::pair< int, int > position, int priority)}}]{\setlength{\rightskip}{0pt plus 5cm}Hud\+Fox\+::\+Hud\+Fox (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{std\+::pair$<$ int, int $>$}]{position, }
+\item[{int}]{priority}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_hud_fox_affa10d22e2ffd68fb505630ff7f0bd5f}{}\label{classmindscape_1_1_hud_fox_affa10d22e2ffd68fb505630ff7f0bd5f}
+
+
+Class Contructor. 
+
+Sets Hud \hyperlink{classmindscape_1_1_fox}{Fox}\textquotesingle{}s firsts informations (attributes\textquotesingle{} values). (Hud \hyperlink{classmindscape_1_1_fox}{Fox}\+: \hyperlink{classmindscape_1_1_fox}{Fox}\textquotesingle{}s health bar).
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Hud \hyperlink{classmindscape_1_1_fox}{Fox}\textquotesingle{}s name(name of the object). \\
+\hline
+{\em position} & Hud \hyperlink{classmindscape_1_1_fox}{Fox}\textquotesingle{}s coordinates in the game\textquotesingle{}s map. \\
+\hline
+{\em priority} & Hud \hyperlink{classmindscape_1_1_fox}{Fox}\textquotesingle{}s priority in game\textquotesingle{}s execution. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{mindscape\+::\+Hud\+Fox@{mindscape\+::\+Hud\+Fox}!notify@{notify}}
+\index{notify@{notify}!mindscape\+::\+Hud\+Fox@{mindscape\+::\+Hud\+Fox}}
+\subsubsection[{\texorpdfstring{notify(engine\+::\+Observable $\ast$)}{notify(engine::Observable *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Hud\+Fox\+::notify (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Observable} $\ast$}]{game\+\_\+object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmindscape_1_1_hud_fox_af2076f6d6287cbab6305f09432512e93}{}\label{classmindscape_1_1_hud_fox_af2076f6d6287cbab6305f09432512e93}
+
+
+Notifies Hud \hyperlink{classmindscape_1_1_fox}{Fox} of \hyperlink{classmindscape_1_1_fox}{Fox}\textquotesingle{}s state. 
+
+Verifies \hyperlink{classmindscape_1_1_fox}{Fox}\textquotesingle{}s state and sets stars\textquotesingle{} animation depending of the quantity of stars collected.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+object} & Object for observe game\textquotesingle{}s situation, in this case, the \hyperlink{classmindscape_1_1_fox}{Fox}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/hud\+\_\+fox.\+hpp\item 
-src/hud\+\_\+fox.\+cpp\end{DoxyCompactItemize}
+include/\hyperlink{hud__fox_8hpp}{hud\+\_\+fox.\+hpp}\item 
+src/\hyperlink{hud__fox_8cpp}{hud\+\_\+fox.\+cpp}\end{DoxyCompactItemize}

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['is_5factive',['is_active',['../classengine_1_1_component.html#ae1a97027b9862ee3e41e6566501d765e',1,'engine::Component::is_active()'],['../classengine_1_1_game_object.html#aac0171415e6af36c39c61288a704c613',1,'engine::GameObject::is_active()']]]
+  ['heal',['heal',['../classmindscape_1_1_fighter.html#a8672d19748aba79323c77a2b93166d1d',1,'mindscape::Fighter']]],
+  ['hudfox',['HudFox',['../classmindscape_1_1_hud_fox.html#affa10d22e2ffd68fb505630ff7f0bd5f',1,'mindscape::HudFox']]],
+  ['hudgirl',['HudGirl',['../classmindscape_1_1_hud_girl.html#a71122f6851e5be3bf3cd53647ba61ee4',1,'mindscape::HudGirl']]]
 ];

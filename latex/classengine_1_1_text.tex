@@ -2,6 +2,15 @@
 \label{classengine_1_1_text}\index{engine\+::\+Text@{engine\+::\+Text}}
 
 
+A text component class.  
+
+
+
+
+{\ttfamily \#include $<$text.\+hpp$>$}
+
+
+
 Inheritance diagram for engine\+:\+:Text\+:
 % FIG 0
 
@@ -11,21 +20,136 @@ Collaboration diagram for engine\+:\+:Text\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Text} (S\+D\+L\+\_\+\+Renderer $\ast$p\+\_\+renderer, std\+::string name, std\+::pair$<$ int, int $>$ displacement, int priority, std\+::string p\+\_\+text, std\+::string p\+\_\+font\+\_\+path, int p\+\_\+font\+\_\+size, \hyperlink{structengine_1_1_color}{Color} p\+\_\+color=\hyperlink{structengine_1_1_color}{Color}(), \hyperlink{structengine_1_1_color}{Color} p\+\_\+bg\+\_\+color=\hyperlink{structengine_1_1_color}{Color}(0x00, 0x00, 0x00, 0x00))\hypertarget{classengine_1_1_text_a425360c835a5b98475a830d6d561e5ed}{}\label{classengine_1_1_text_a425360c835a5b98475a830d6d561e5ed}
+\hyperlink{classengine_1_1_text_a425360c835a5b98475a830d6d561e5ed}{Text} (S\+D\+L\+\_\+\+Renderer $\ast$p\+\_\+renderer, std\+::string name, std\+::pair$<$ int, int $>$ displacement, int priority, std\+::string p\+\_\+text, std\+::string p\+\_\+font\+\_\+path, int p\+\_\+font\+\_\+size, \hyperlink{structengine_1_1_color}{Color} p\+\_\+color=\hyperlink{structengine_1_1_color}{Color}(), \hyperlink{structengine_1_1_color}{Color} p\+\_\+bg\+\_\+color=\hyperlink{structengine_1_1_color}{Color}(0x00, 0x00, 0x00, 0x00))
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classengine_1_1_text}{Text} component. \end{DoxyCompactList}\item 
+bool \hyperlink{classengine_1_1_text_a88ce89de3c78db0d163a7496261edc2d}{load} ()
+\begin{DoxyCompactList}\small\item\em Loads text. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_text_af6e2ba3f1cf543997b12dcc5ad5041c2}{free} ()
+\begin{DoxyCompactList}\small\item\em Frees the text. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_text_aab42d46b709807d21ba73a4c59c18408}{draw} (int, int)
+\begin{DoxyCompactList}\small\item\em Draws the text. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-bool {\bfseries load} ()\hypertarget{classengine_1_1_text_a88ce89de3c78db0d163a7496261edc2d}{}\label{classengine_1_1_text_a88ce89de3c78db0d163a7496261edc2d}
 
-\item 
-void {\bfseries free} ()\hypertarget{classengine_1_1_text_af6e2ba3f1cf543997b12dcc5ad5041c2}{}\label{classengine_1_1_text_af6e2ba3f1cf543997b12dcc5ad5041c2}
+\subsection{Detailed Description}
+A text component class. 
 
-\item 
-void {\bfseries draw} (int, int)\hypertarget{classengine_1_1_text_aab42d46b709807d21ba73a4c59c18408}{}\label{classengine_1_1_text_aab42d46b709807d21ba73a4c59c18408}
+A component class specific for handling texts. 
 
-\end{DoxyCompactItemize}
+\subsection{Constructor \& Destructor Documentation}
+\index{engine\+::\+Text@{engine\+::\+Text}!Text@{Text}}
+\index{Text@{Text}!engine\+::\+Text@{engine\+::\+Text}}
+\subsubsection[{\texorpdfstring{Text(\+S\+D\+L\+\_\+\+Renderer $\ast$p\+\_\+renderer, std\+::string name, std\+::pair$<$ int, int $>$ displacement, int priority, std\+::string p\+\_\+text, std\+::string p\+\_\+font\+\_\+path, int p\+\_\+font\+\_\+size, Color p\+\_\+color=\+Color(), Color p\+\_\+bg\+\_\+color=\+Color(0x00, 0x00, 0x00, 0x00))}{Text(SDL_Renderer *p_renderer, std::string name, std::pair< int, int > displacement, int priority, std::string p_text, std::string p_font_path, int p_font_size, Color p_color=Color(), Color p_bg_color=Color(0x00, 0x00, 0x00, 0x00))}}]{\setlength{\rightskip}{0pt plus 5cm}engine\+::\+Text\+::\+Text (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{p\+\_\+renderer, }
+\item[{std\+::string}]{name, }
+\item[{std\+::pair$<$ int, int $>$}]{displacement, }
+\item[{int}]{priority, }
+\item[{std\+::string}]{p\+\_\+text, }
+\item[{std\+::string}]{p\+\_\+font\+\_\+path, }
+\item[{int}]{p\+\_\+font\+\_\+size, }
+\item[{{\bf Color}}]{p\+\_\+color = {\ttfamily {\bf Color}()}, }
+\item[{{\bf Color}}]{p\+\_\+bg\+\_\+color = {\ttfamily {\bf Color}(0x00,~0x00,~0x00,~0x00)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classengine_1_1_text_a425360c835a5b98475a830d6d561e5ed}{}\label{classengine_1_1_text_a425360c835a5b98475a830d6d561e5ed}
+
+
+Constructor for \hyperlink{classengine_1_1_text}{Text} component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+renderer} & S\+DL renderer for writting the text \\
+\hline
+{\em name} & Name given for the component \\
+\hline
+{\em displacement} & Pair of integers with the displacement \\
+\hline
+{\em priority} & Integer representing the priority of rendering \\
+\hline
+{\em p\+\_\+text} & The text to be written \\
+\hline
+{\em p\+\_\+font\+\_\+path} & The path for the font file \\
+\hline
+{\em p\+\_\+font\+\_\+size} & Size of the font \\
+\hline
+{\em p\+\_\+color} & R\+G\+BA color for the text \\
+\hline
+{\em p\+\_\+bg\+\_\+color} & R\+G\+BA color for the text\textquotesingle{}s background\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+Text@{engine\+::\+Text}!draw@{draw}}
+\index{draw@{draw}!engine\+::\+Text@{engine\+::\+Text}}
+\subsubsection[{\texorpdfstring{draw(int, int)}{draw(int, int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Text\+::draw (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classengine_1_1_text_aab42d46b709807d21ba73a4c59c18408}{}\label{classengine_1_1_text_aab42d46b709807d21ba73a4c59c18408}
+
+
+Draws the text. 
+
+Draws the thexo to the screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X position for the text \\
+\hline
+{\em y} & Y position for the text \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classengine_1_1_component}{engine\+::\+Component}.
+
+\index{engine\+::\+Text@{engine\+::\+Text}!free@{free}}
+\index{free@{free}!engine\+::\+Text@{engine\+::\+Text}}
+\subsubsection[{\texorpdfstring{free()}{free()}}]{\setlength{\rightskip}{0pt plus 5cm}void Text\+::free (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classengine_1_1_text_af6e2ba3f1cf543997b12dcc5ad5041c2}{}\label{classengine_1_1_text_af6e2ba3f1cf543997b12dcc5ad5041c2}
+
+
+Frees the text. 
+
+Frees the text from the memory
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_component}{engine\+::\+Component}.
+
+\index{engine\+::\+Text@{engine\+::\+Text}!load@{load}}
+\index{load@{load}!engine\+::\+Text@{engine\+::\+Text}}
+\subsubsection[{\texorpdfstring{load()}{load()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Text\+::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classengine_1_1_text_a88ce89de3c78db0d163a7496261edc2d}{}\label{classengine_1_1_text_a88ce89de3c78db0d163a7496261edc2d}
+
+
+Loads text. 
+
+Loads the text and get it ready to be displayed on the screen
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_component}{engine\+::\+Component}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/include/text.\+hpp\item 
-engine/src/text.\+cpp\end{DoxyCompactItemize}
+engine/include/\hyperlink{text_8hpp}{text.\+hpp}\item 
+engine/src/\hyperlink{text_8cpp}{text.\+cpp}\end{DoxyCompactItemize}

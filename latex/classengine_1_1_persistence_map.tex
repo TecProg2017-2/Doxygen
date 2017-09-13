@@ -1,5 +1,14 @@
 \hypertarget{classengine_1_1_persistence_map}{}\section{engine\+:\+:Persistence\+Map Class Reference}
 \label{classengine_1_1_persistence_map}\index{engine\+::\+Persistence\+Map@{engine\+::\+Persistence\+Map}}
+
+
+A \hyperlink{classengine_1_1_persistence}{Persistence} map class.  
+
+
+
+
+{\ttfamily \#include $<$persistence\+\_\+map.\+hpp$>$}
+
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -15,18 +24,14 @@ typedef Object\+Vector\+::const\+\_\+iterator {\bfseries const\+\_\+iterator}\hy
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ {\bfseries get\+\_\+object\+\_\+by\+\_\+id} (std\+::string)\hypertarget{classengine_1_1_persistence_map_a2384a770ad55e71db81e3a9736e3bcd9}{}\label{classengine_1_1_persistence_map_a2384a770ad55e71db81e3a9736e3bcd9}
-
-\item 
-void {\bfseries insert\+\_\+object} (std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$)\hypertarget{classengine_1_1_persistence_map_af7ab5be461caff60a22523ed2d9d91d8}{}\label{classengine_1_1_persistence_map_af7ab5be461caff60a22523ed2d9d91d8}
-
-\item 
-void {\bfseries insert\+\_\+object\+\_\+data} (std\+::string, std\+::string, std\+::string)\hypertarget{classengine_1_1_persistence_map_a3a0b83db916b9488ebdf1be39db15c6e}{}\label{classengine_1_1_persistence_map_a3a0b83db916b9488ebdf1be39db15c6e}
-
-\item 
-std\+::string {\bfseries get\+\_\+object\+\_\+data} (std\+::string, std\+::string)\hypertarget{classengine_1_1_persistence_map_a49b1c1a07503bb93ce7ca5fb4ebc92ee}{}\label{classengine_1_1_persistence_map_a49b1c1a07503bb93ce7ca5fb4ebc92ee}
-
-\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ \hyperlink{classengine_1_1_persistence_map_a2384a770ad55e71db81e3a9736e3bcd9}{get\+\_\+object\+\_\+by\+\_\+id} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Unordered Map. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_persistence_map_af7ab5be461caff60a22523ed2d9d91d8}{insert\+\_\+object} (std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$)
+\begin{DoxyCompactList}\small\item\em Insert Object. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_persistence_map_a3a0b83db916b9488ebdf1be39db15c6e}{insert\+\_\+object\+\_\+data} (std\+::string, std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em Insert object data. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classengine_1_1_persistence_map_a49b1c1a07503bb93ce7ca5fb4ebc92ee}{get\+\_\+object\+\_\+data} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em Get Object Data. \end{DoxyCompactList}\item 
 iterator {\bfseries begin} ()\hypertarget{classengine_1_1_persistence_map_a5471e31f0aee2f59f51680365ac318d4}{}\label{classengine_1_1_persistence_map_a5471e31f0aee2f59f51680365ac318d4}
 
 \item 
@@ -35,7 +40,108 @@ iterator {\bfseries end} ()\hypertarget{classengine_1_1_persistence_map_a4bd8c7b
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A \hyperlink{classengine_1_1_persistence}{Persistence} map class. 
+
+This class is responsible for keep the persistence of the map. 
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+Persistence\+Map@{engine\+::\+Persistence\+Map}!get\+\_\+object\+\_\+by\+\_\+id@{get\+\_\+object\+\_\+by\+\_\+id}}
+\index{get\+\_\+object\+\_\+by\+\_\+id@{get\+\_\+object\+\_\+by\+\_\+id}!engine\+::\+Persistence\+Map@{engine\+::\+Persistence\+Map}}
+\subsubsection[{\texorpdfstring{get\+\_\+object\+\_\+by\+\_\+id(std\+::string)}{get_object_by_id(std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ Persistence\+Map\+::get\+\_\+object\+\_\+by\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_persistence_map_a2384a770ad55e71db81e3a9736e3bcd9}{}\label{classengine_1_1_persistence_map_a2384a770ad55e71db81e3a9736e3bcd9}
+
+
+Unordered Map. 
+
+Method responsible for ordered the state map of an object
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & object id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{engine\+::\+Persistence\+Map@{engine\+::\+Persistence\+Map}!get\+\_\+object\+\_\+data@{get\+\_\+object\+\_\+data}}
+\index{get\+\_\+object\+\_\+data@{get\+\_\+object\+\_\+data}!engine\+::\+Persistence\+Map@{engine\+::\+Persistence\+Map}}
+\subsubsection[{\texorpdfstring{get\+\_\+object\+\_\+data(std\+::string, std\+::string)}{get_object_data(std::string, std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Persistence\+Map\+::get\+\_\+object\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{id, }
+\item[{std\+::string}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_persistence_map_a49b1c1a07503bb93ce7ca5fb4ebc92ee}{}\label{classengine_1_1_persistence_map_a49b1c1a07503bb93ce7ca5fb4ebc92ee}
+
+
+Get Object Data. 
+
+Responsible for get the data of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & of the object \\
+\hline
+{\em key} & for the data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{engine\+::\+Persistence\+Map@{engine\+::\+Persistence\+Map}!insert\+\_\+object@{insert\+\_\+object}}
+\index{insert\+\_\+object@{insert\+\_\+object}!engine\+::\+Persistence\+Map@{engine\+::\+Persistence\+Map}}
+\subsubsection[{\texorpdfstring{insert\+\_\+object(std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$)}{insert_object(std::unordered_map< std::string, std::string >)}}]{\setlength{\rightskip}{0pt plus 5cm}void Persistence\+Map\+::insert\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$}]{object}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_persistence_map_af7ab5be461caff60a22523ed2d9d91d8}{}\label{classengine_1_1_persistence_map_af7ab5be461caff60a22523ed2d9d91d8}
+
+
+Insert Object. 
+
+Method Responsible for insert a map state in an object
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & object of the game\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{engine\+::\+Persistence\+Map@{engine\+::\+Persistence\+Map}!insert\+\_\+object\+\_\+data@{insert\+\_\+object\+\_\+data}}
+\index{insert\+\_\+object\+\_\+data@{insert\+\_\+object\+\_\+data}!engine\+::\+Persistence\+Map@{engine\+::\+Persistence\+Map}}
+\subsubsection[{\texorpdfstring{insert\+\_\+object\+\_\+data(std\+::string, std\+::string, std\+::string)}{insert_object_data(std::string, std::string, std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}void Persistence\+Map\+::insert\+\_\+object\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{id, }
+\item[{std\+::string}]{key, }
+\item[{std\+::string}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_persistence_map_a3a0b83db916b9488ebdf1be39db15c6e}{}\label{classengine_1_1_persistence_map_a3a0b83db916b9488ebdf1be39db15c6e}
+
+
+Insert object data. 
+
+Method responsible to insert the data in the object of the game
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & of the object \\
+\hline
+{\em key} & key for the data \\
+\hline
+{\em data} & of the object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/include/persistence\+\_\+map.\+hpp\item 
-engine/src/persistence\+\_\+map.\+cpp\end{DoxyCompactItemize}
+engine/include/\hyperlink{persistence__map_8hpp}{persistence\+\_\+map.\+hpp}\item 
+engine/src/\hyperlink{persistence__map_8cpp}{persistence\+\_\+map.\+cpp}\end{DoxyCompactItemize}

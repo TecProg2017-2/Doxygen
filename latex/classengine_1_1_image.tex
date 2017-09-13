@@ -2,6 +2,15 @@
 \label{classengine_1_1_image}\index{engine\+::\+Image@{engine\+::\+Image}}
 
 
+A \hyperlink{classengine_1_1_image}{Image} class.  
+
+
+
+
+{\ttfamily \#include $<$image.\+hpp$>$}
+
+
+
 Inheritance diagram for engine\+:\+:Image\+:
 % FIG 0
 
@@ -14,24 +23,18 @@ Collaboration diagram for engine\+:\+:Image\+:
 {\bfseries Image} (S\+D\+L\+\_\+\+Renderer $\ast$p\+\_\+renderer, std\+::string path, bool \hyperlink{classengine_1_1_component_ae1a97027b9862ee3e41e6566501d765e}{is\+\_\+active}, std\+::pair$<$ int, int $>$ displacement, int priority)\hypertarget{classengine_1_1_image_aa3429cf7f78e43a8c28a536f6849716c}{}\label{classengine_1_1_image_aa3429cf7f78e43a8c28a536f6849716c}
 
 \item 
-void {\bfseries set\+\_\+values} (std\+::pair$<$ int, int $>$ dimension\+\_\+on\+\_\+screen, std\+::pair$<$ int, int $>$ dimension\+On\+Texture, std\+::pair$<$ int, int $>$ coordinates\+On\+Texture)\hypertarget{classengine_1_1_image_aa0ed04e99b416fb5780f0c7ceb99f843}{}\label{classengine_1_1_image_aa0ed04e99b416fb5780f0c7ceb99f843}
-
-\item 
-bool {\bfseries load} ()\hypertarget{classengine_1_1_image_a1a393960f7402515428bd982c32f59af}{}\label{classengine_1_1_image_a1a393960f7402515428bd982c32f59af}
-
-\item 
-int {\bfseries get\+\_\+width} ()\hypertarget{classengine_1_1_image_a4eeafefc0bae9658ffe8877c5cf681e7}{}\label{classengine_1_1_image_a4eeafefc0bae9658ffe8877c5cf681e7}
-
-\item 
-int {\bfseries get\+\_\+height} ()\hypertarget{classengine_1_1_image_a5082f1fdc63e6bb76a105348e72e2e02}{}\label{classengine_1_1_image_a5082f1fdc63e6bb76a105348e72e2e02}
-
-\item 
-void {\bfseries free} ()\hypertarget{classengine_1_1_image_aa70272a861bcaa5297e6967c9106197f}{}\label{classengine_1_1_image_aa70272a861bcaa5297e6967c9106197f}
-
-\item 
-void {\bfseries draw} (int x, int y)\hypertarget{classengine_1_1_image_a45ce17ceb8619e732f2d09ec6d1cc1b9}{}\label{classengine_1_1_image_a45ce17ceb8619e732f2d09ec6d1cc1b9}
-
-\end{DoxyCompactItemize}
+void \hyperlink{classengine_1_1_image_aa0ed04e99b416fb5780f0c7ceb99f843}{set\+\_\+values} (std\+::pair$<$ int, int $>$ dimension\+\_\+on\+\_\+screen, std\+::pair$<$ int, int $>$ dimension\+On\+Texture, std\+::pair$<$ int, int $>$ coordinates\+On\+Texture)
+\begin{DoxyCompactList}\small\item\em Methods Set values. \end{DoxyCompactList}\item 
+bool \hyperlink{classengine_1_1_image_a1a393960f7402515428bd982c32f59af}{load} ()
+\begin{DoxyCompactList}\small\item\em Method Load. \end{DoxyCompactList}\item 
+int \hyperlink{classengine_1_1_image_a4eeafefc0bae9658ffe8877c5cf681e7}{get\+\_\+width} ()
+\begin{DoxyCompactList}\small\item\em Get Width. \end{DoxyCompactList}\item 
+int \hyperlink{classengine_1_1_image_a5082f1fdc63e6bb76a105348e72e2e02}{get\+\_\+height} ()
+\begin{DoxyCompactList}\small\item\em Get Height. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_image_aa70272a861bcaa5297e6967c9106197f}{free} ()
+\begin{DoxyCompactList}\small\item\em Free Method. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_image_a45ce17ceb8619e732f2d09ec6d1cc1b9}{draw} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -55,7 +58,135 @@ std\+::pair$<$ int, int $>$ {\bfseries coordinates\+On\+Texture}\hypertarget{cla
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A \hyperlink{classengine_1_1_image}{Image} class. 
+
+The \hyperlink{classengine_1_1_image}{Image} class is responsible for rendering images and textures of the game 
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+Image@{engine\+::\+Image}!draw@{draw}}
+\index{draw@{draw}!engine\+::\+Image@{engine\+::\+Image}}
+\subsubsection[{\texorpdfstring{draw(int x, int y)}{draw(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+::draw (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classengine_1_1_image_a45ce17ceb8619e732f2d09ec6d1cc1b9}{}\label{classengine_1_1_image_a45ce17ceb8619e732f2d09ec6d1cc1b9}
+
+
+Draw. 
+
+Draw the image on the screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & position in axis x on the screen \\
+\hline
+{\em y} & position in axis y on the screen\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_component}{engine\+::\+Component}.
+
+\index{engine\+::\+Image@{engine\+::\+Image}!free@{free}}
+\index{free@{free}!engine\+::\+Image@{engine\+::\+Image}}
+\subsubsection[{\texorpdfstring{free()}{free()}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+::free (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classengine_1_1_image_aa70272a861bcaa5297e6967c9106197f}{}\label{classengine_1_1_image_aa70272a861bcaa5297e6967c9106197f}
+
+
+Free Method. 
+
+Method responsible for close the game
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_component}{engine\+::\+Component}.
+
+\index{engine\+::\+Image@{engine\+::\+Image}!get\+\_\+height@{get\+\_\+height}}
+\index{get\+\_\+height@{get\+\_\+height}!engine\+::\+Image@{engine\+::\+Image}}
+\subsubsection[{\texorpdfstring{get\+\_\+height()}{get_height()}}]{\setlength{\rightskip}{0pt plus 5cm}int Image\+::get\+\_\+height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_image_a5082f1fdc63e6bb76a105348e72e2e02}{}\label{classengine_1_1_image_a5082f1fdc63e6bb76a105348e72e2e02}
+
+
+Get Height. 
+
+\begin{DoxyReturn}{Returns}
+the height dimension 
+\end{DoxyReturn}
+\index{engine\+::\+Image@{engine\+::\+Image}!get\+\_\+width@{get\+\_\+width}}
+\index{get\+\_\+width@{get\+\_\+width}!engine\+::\+Image@{engine\+::\+Image}}
+\subsubsection[{\texorpdfstring{get\+\_\+width()}{get_width()}}]{\setlength{\rightskip}{0pt plus 5cm}int Image\+::get\+\_\+width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_image_a4eeafefc0bae9658ffe8877c5cf681e7}{}\label{classengine_1_1_image_a4eeafefc0bae9658ffe8877c5cf681e7}
+
+
+Get Width. 
+
+\begin{DoxyReturn}{Returns}
+width dimension 
+\end{DoxyReturn}
+\index{engine\+::\+Image@{engine\+::\+Image}!load@{load}}
+\index{load@{load}!engine\+::\+Image@{engine\+::\+Image}}
+\subsubsection[{\texorpdfstring{load()}{load()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Image\+::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classengine_1_1_image_a1a393960f7402515428bd982c32f59af}{}\label{classengine_1_1_image_a1a393960f7402515428bd982c32f59af}
+
+
+Method Load. 
+
+Responsible for load the game images and create the texture
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_component}{engine\+::\+Component}.
+
+\index{engine\+::\+Image@{engine\+::\+Image}!set\+\_\+values@{set\+\_\+values}}
+\index{set\+\_\+values@{set\+\_\+values}!engine\+::\+Image@{engine\+::\+Image}}
+\subsubsection[{\texorpdfstring{set\+\_\+values(std\+::pair$<$ int, int $>$ dimension\+\_\+on\+\_\+screen, std\+::pair$<$ int, int $>$ dimension\+On\+Texture, std\+::pair$<$ int, int $>$ coordinates\+On\+Texture)}{set_values(std::pair< int, int > dimension_on_screen, std::pair< int, int > dimensionOnTexture, std::pair< int, int > coordinatesOnTexture)}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+::set\+\_\+values (
+\begin{DoxyParamCaption}
+\item[{std\+::pair$<$ int, int $>$}]{\+\_\+dimension\+\_\+on\+\_\+screen, }
+\item[{std\+::pair$<$ int, int $>$}]{\+\_\+dimension\+\_\+on\+\_\+texture, }
+\item[{std\+::pair$<$ int, int $>$}]{\+\_\+coordinates\+\_\+on\+\_\+texture}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_image_aa0ed04e99b416fb5780f0c7ceb99f843}{}\label{classengine_1_1_image_aa0ed04e99b416fb5780f0c7ceb99f843}
+
+
+Methods Set values. 
+
+Set the position and dimension of the texture on the screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+dimension\+\_\+on\+\_\+screen} & size in the screen of the texture \\
+\hline
+{\em \+\_\+dimension\+\_\+on\+\_\+texture} & size of the texture \\
+\hline
+{\em \+\_\+coordinates\+\_\+on\+\_\+texture} & coordinates in axis x,y \\
+\hline
+\end{DoxyParams}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/include/image.\+hpp\item 
-engine/src/image.\+cpp\end{DoxyCompactItemize}
+engine/include/\hyperlink{image_8hpp}{image.\+hpp}\item 
+engine/src/\hyperlink{image_8cpp}{image.\+cpp}\end{DoxyCompactItemize}

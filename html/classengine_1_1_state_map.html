@@ -114,22 +114,94 @@ $(document).ready(function(){initNavTree('classengine_1_1_state_map.html','');})
 <div class="title">engine::StateMap Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A <a class="el" href="classengine_1_1_state_map.html" title="A StateMap class. ">StateMap</a> class.  
+ <a href="classengine_1_1_state_map.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="state__map_8hpp_source.html">state_map.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d49650e10a07c9be8573ef118fa56c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d49650e10a07c9be8573ef118fa56c8"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StateMap</b> (std::unordered_map&lt; std::string, std::string &gt; p_states={{}})</td></tr>
 <tr class="separator:a9d49650e10a07c9be8573ef118fa56c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c8cce5f3ca6a05ab4be75f88785f866"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c8cce5f3ca6a05ab4be75f88785f866"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_state</b> (std::string, std::string)</td></tr>
+<tr class="memitem:a1c8cce5f3ca6a05ab4be75f88785f866"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_state_map.html#a1c8cce5f3ca6a05ab4be75f88785f866">set_state</a> (std::string, std::string)</td></tr>
+<tr class="memdesc:a1c8cce5f3ca6a05ab4be75f88785f866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a state to the game or characters.  <a href="#a1c8cce5f3ca6a05ab4be75f88785f866">More...</a><br /></td></tr>
 <tr class="separator:a1c8cce5f3ca6a05ab4be75f88785f866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05d2de75fb7d905cabca3c33fcca6d12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05d2de75fb7d905cabca3c33fcca6d12"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_state</b> (std::string)</td></tr>
+<tr class="memitem:a05d2de75fb7d905cabca3c33fcca6d12"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_state_map.html#a05d2de75fb7d905cabca3c33fcca6d12">get_state</a> (std::string)</td></tr>
+<tr class="memdesc:a05d2de75fb7d905cabca3c33fcca6d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get state of the game and characters.  <a href="#a05d2de75fb7d905cabca3c33fcca6d12">More...</a><br /></td></tr>
 <tr class="separator:a05d2de75fb7d905cabca3c33fcca6d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A <a class="el" href="classengine_1_1_state_map.html" title="A StateMap class. ">StateMap</a> class. </p>
+<p>Define a state of the game or of the characters. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a05d2de75fb7d905cabca3c33fcca6d12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string StateMap::get_state </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>state_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get state of the game and characters. </p>
+<p>This method was implemented to get an actual state of the game or the characters that have an animation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state_name</td><td>Description's name of the actual state. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string The return is a string of a determined state. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1c8cce5f3ca6a05ab4be75f88785f866"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StateMap::set_state </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>state_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>state_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a state to the game or characters. </p>
+<p>This method was implemented to set an state to the game or the characters that have an animation, where can be on attack, attacking dying, normal, looking left, looking right, falling, jumping, refuted, on ground, vulnerable, and others.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state_name</td><td>Description's name of state defined by other classes method. </td></tr>
+    <tr><td class="paramname">state_value</td><td>Description's value type represented by a string and defined by other classes method. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>engine/include/<a class="el" href="state__map_8hpp_source.html">state_map.hpp</a></li>
-<li>engine/src/state_map.cpp</li>
+<li>engine/src/<a class="el" href="state__map_8cpp.html">state_map.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

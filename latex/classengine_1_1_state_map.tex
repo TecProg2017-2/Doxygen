@@ -1,20 +1,80 @@
 \hypertarget{classengine_1_1_state_map}{}\section{engine\+:\+:State\+Map Class Reference}
 \label{classengine_1_1_state_map}\index{engine\+::\+State\+Map@{engine\+::\+State\+Map}}
+
+
+A \hyperlink{classengine_1_1_state_map}{State\+Map} class.  
+
+
+
+
+{\ttfamily \#include $<$state\+\_\+map.\+hpp$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 {\bfseries State\+Map} (std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ p\+\_\+states=\{\{\}\})\hypertarget{classengine_1_1_state_map_a9d49650e10a07c9be8573ef118fa56c8}{}\label{classengine_1_1_state_map_a9d49650e10a07c9be8573ef118fa56c8}
 
 \item 
-void {\bfseries set\+\_\+state} (std\+::string, std\+::string)\hypertarget{classengine_1_1_state_map_a1c8cce5f3ca6a05ab4be75f88785f866}{}\label{classengine_1_1_state_map_a1c8cce5f3ca6a05ab4be75f88785f866}
+void \hyperlink{classengine_1_1_state_map_a1c8cce5f3ca6a05ab4be75f88785f866}{set\+\_\+state} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em Set a state to the game or characters. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classengine_1_1_state_map_a05d2de75fb7d905cabca3c33fcca6d12}{get\+\_\+state} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Get state of the game and characters. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-std\+::string {\bfseries get\+\_\+state} (std\+::string)\hypertarget{classengine_1_1_state_map_a05d2de75fb7d905cabca3c33fcca6d12}{}\label{classengine_1_1_state_map_a05d2de75fb7d905cabca3c33fcca6d12}
 
-\end{DoxyCompactItemize}
+\subsection{Detailed Description}
+A \hyperlink{classengine_1_1_state_map}{State\+Map} class. 
+
+Define a state of the game or of the characters. 
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+State\+Map@{engine\+::\+State\+Map}!get\+\_\+state@{get\+\_\+state}}
+\index{get\+\_\+state@{get\+\_\+state}!engine\+::\+State\+Map@{engine\+::\+State\+Map}}
+\subsubsection[{\texorpdfstring{get\+\_\+state(std\+::string)}{get_state(std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string State\+Map\+::get\+\_\+state (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{state\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_state_map_a05d2de75fb7d905cabca3c33fcca6d12}{}\label{classengine_1_1_state_map_a05d2de75fb7d905cabca3c33fcca6d12}
+
+
+Get state of the game and characters. 
+
+This method was implemented to get an actual state of the game or the characters that have an animation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state\+\_\+name} & Description\textquotesingle{}s name of the actual state. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The return is a string of a determined state. 
+\end{DoxyReturn}
+\index{engine\+::\+State\+Map@{engine\+::\+State\+Map}!set\+\_\+state@{set\+\_\+state}}
+\index{set\+\_\+state@{set\+\_\+state}!engine\+::\+State\+Map@{engine\+::\+State\+Map}}
+\subsubsection[{\texorpdfstring{set\+\_\+state(std\+::string, std\+::string)}{set_state(std::string, std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}void State\+Map\+::set\+\_\+state (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{state\+\_\+name, }
+\item[{std\+::string}]{state\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_state_map_a1c8cce5f3ca6a05ab4be75f88785f866}{}\label{classengine_1_1_state_map_a1c8cce5f3ca6a05ab4be75f88785f866}
+
+
+Set a state to the game or characters. 
+
+This method was implemented to set an state to the game or the characters that have an animation, where can be on attack, attacking dying, normal, looking left, looking right, falling, jumping, refuted, on ground, vulnerable, and others.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state\+\_\+name} & Description\textquotesingle{}s name of state defined by other classes method. \\
+\hline
+{\em state\+\_\+value} & Description\textquotesingle{}s value type represented by a string and defined by other classes method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/include/state\+\_\+map.\+hpp\item 
-engine/src/state\+\_\+map.\+cpp\end{DoxyCompactItemize}
+engine/include/\hyperlink{state__map_8hpp}{state\+\_\+map.\+hpp}\item 
+engine/src/\hyperlink{state__map_8cpp}{state\+\_\+map.\+cpp}\end{DoxyCompactItemize}

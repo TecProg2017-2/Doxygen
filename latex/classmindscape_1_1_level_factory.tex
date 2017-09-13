@@ -1,26 +1,119 @@
 \hypertarget{classmindscape_1_1_level_factory}{}\section{mindscape\+:\+:Level\+Factory Class Reference}
 \label{classmindscape_1_1_level_factory}\index{mindscape\+::\+Level\+Factory@{mindscape\+::\+Level\+Factory}}
+
+
+A Level Factory class.  
+
+
+
+
+{\ttfamily \#include $<$level\+\_\+factory.\+hpp$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries update\+\_\+level} (\hyperlink{classengine_1_1_level}{engine\+::\+Level} $\ast$, std\+::string)\hypertarget{classmindscape_1_1_level_factory_a3efd3986dfa9743e991136c2fd0fdfa7}{}\label{classmindscape_1_1_level_factory_a3efd3986dfa9743e991136c2fd0fdfa7}
-
-\item 
-std\+::vector$<$ \hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object} $\ast$ $>$ {\bfseries execute\+\_\+dat} (\hyperlink{classengine_1_1_level}{engine\+::\+Level} $\ast$, std\+::string)\hypertarget{classmindscape_1_1_level_factory_a7cbf020dcecda609facd675301f6500b}{}\label{classmindscape_1_1_level_factory_a7cbf020dcecda609facd675301f6500b}
-
-\item 
+void \hyperlink{classmindscape_1_1_level_factory_a3efd3986dfa9743e991136c2fd0fdfa7}{update\+\_\+level} (\hyperlink{classengine_1_1_level}{engine\+::\+Level} $\ast$, std\+::string)
+\begin{DoxyCompactList}\small\item\em Updates \hyperlink{class_game}{Game} level. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object} $\ast$ $>$ \hyperlink{classmindscape_1_1_level_factory_a7cbf020dcecda609facd675301f6500b}{execute\+\_\+dat} (\hyperlink{classengine_1_1_level}{engine\+::\+Level} $\ast$, std\+::string)
+\begin{DoxyCompactList}\small\item\em Executes Level\textquotesingle{}s data. \end{DoxyCompactList}\item 
 \hyperlink{classengine_1_1_level}{engine\+::\+Level} $\ast$ {\bfseries fabricate\+\_\+level} (std\+::string)\hypertarget{classmindscape_1_1_level_factory_a67ad7ffcf945347c5ad92e978981a7fc}{}\label{classmindscape_1_1_level_factory_a67ad7ffcf945347c5ad92e978981a7fc}
 
 \item 
-\hyperlink{classengine_1_1_level}{engine\+::\+Level} $\ast$ {\bfseries fabricate\+\_\+menu} ()\hypertarget{classmindscape_1_1_level_factory_a034add473a2869c13784de4f321cd279}{}\label{classmindscape_1_1_level_factory_a034add473a2869c13784de4f321cd279}
+\hyperlink{classengine_1_1_level}{engine\+::\+Level} $\ast$ \hyperlink{classmindscape_1_1_level_factory_a034add473a2869c13784de4f321cd279}{fabricate\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Fabricates Menu. \end{DoxyCompactList}\item 
+\hyperlink{classengine_1_1_level}{engine\+::\+Level} $\ast$ \hyperlink{classmindscape_1_1_level_factory_ab1db9f9c0e7a7ce23c46580750a3e222}{fabricate\+\_\+game\+\_\+over} ()
+\begin{DoxyCompactList}\small\item\em Fabricates \hyperlink{class_game}{Game} Over. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-\hyperlink{classengine_1_1_level}{engine\+::\+Level} $\ast$ {\bfseries fabricate\+\_\+game\+\_\+over} ()\hypertarget{classmindscape_1_1_level_factory_ab1db9f9c0e7a7ce23c46580750a3e222}{}\label{classmindscape_1_1_level_factory_ab1db9f9c0e7a7ce23c46580750a3e222}
 
-\end{DoxyCompactItemize}
+\subsection{Detailed Description}
+A Level Factory class. 
+
+The class Level Factory is responsable of contruct the level element\textquotesingle{}s as object\textquotesingle{}s dimention, displacement and coordinates. 
+
+\subsection{Member Function Documentation}
+\index{mindscape\+::\+Level\+Factory@{mindscape\+::\+Level\+Factory}!execute\+\_\+dat@{execute\+\_\+dat}}
+\index{execute\+\_\+dat@{execute\+\_\+dat}!mindscape\+::\+Level\+Factory@{mindscape\+::\+Level\+Factory}}
+\subsubsection[{\texorpdfstring{execute\+\_\+dat(engine\+::\+Level $\ast$, std\+::string)}{execute_dat(engine::Level *, std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf engine\+::\+Game\+Object} $\ast$ $>$ Level\+Factory\+::execute\+\_\+dat (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Level} $\ast$}]{level, }
+\item[{std\+::string}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_level_factory_a7cbf020dcecda609facd675301f6500b}{}\label{classmindscape_1_1_level_factory_a7cbf020dcecda609facd675301f6500b}
+
+
+Executes Level\textquotesingle{}s data. 
+
+Sets all dimension, coordinates, audios and game\textquotesingle{}s objects in the level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Level to be changed. \\
+\hline
+{\em path} & Path of the level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Game\+Object Vector of new game objects. 
+\end{DoxyReturn}
+\index{mindscape\+::\+Level\+Factory@{mindscape\+::\+Level\+Factory}!fabricate\+\_\+game\+\_\+over@{fabricate\+\_\+game\+\_\+over}}
+\index{fabricate\+\_\+game\+\_\+over@{fabricate\+\_\+game\+\_\+over}!mindscape\+::\+Level\+Factory@{mindscape\+::\+Level\+Factory}}
+\subsubsection[{\texorpdfstring{fabricate\+\_\+game\+\_\+over()}{fabricate_game_over()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf engine\+::\+Level} $\ast$ Level\+Factory\+::fabricate\+\_\+game\+\_\+over (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_level_factory_ab1db9f9c0e7a7ce23c46580750a3e222}{}\label{classmindscape_1_1_level_factory_ab1db9f9c0e7a7ce23c46580750a3e222}
+
+
+Fabricates \hyperlink{class_game}{Game} Over. 
+
+Returns a level null for fabricates game over.
+
+\begin{DoxyReturn}{Returns}
+Level null. 
+\end{DoxyReturn}
+\index{mindscape\+::\+Level\+Factory@{mindscape\+::\+Level\+Factory}!fabricate\+\_\+menu@{fabricate\+\_\+menu}}
+\index{fabricate\+\_\+menu@{fabricate\+\_\+menu}!mindscape\+::\+Level\+Factory@{mindscape\+::\+Level\+Factory}}
+\subsubsection[{\texorpdfstring{fabricate\+\_\+menu()}{fabricate_menu()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf engine\+::\+Level} $\ast$ Level\+Factory\+::fabricate\+\_\+menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_level_factory_a034add473a2869c13784de4f321cd279}{}\label{classmindscape_1_1_level_factory_a034add473a2869c13784de4f321cd279}
+
+
+Fabricates Menu. 
+
+Returns a level null for fabricates the menu.
+
+\begin{DoxyReturn}{Returns}
+Level null. 
+\end{DoxyReturn}
+\index{mindscape\+::\+Level\+Factory@{mindscape\+::\+Level\+Factory}!update\+\_\+level@{update\+\_\+level}}
+\index{update\+\_\+level@{update\+\_\+level}!mindscape\+::\+Level\+Factory@{mindscape\+::\+Level\+Factory}}
+\subsubsection[{\texorpdfstring{update\+\_\+level(engine\+::\+Level $\ast$, std\+::string)}{update_level(engine::Level *, std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}void Level\+Factory\+::update\+\_\+level (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Level} $\ast$}]{level, }
+\item[{std\+::string}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_level_factory_a3efd3986dfa9743e991136c2fd0fdfa7}{}\label{classmindscape_1_1_level_factory_a3efd3986dfa9743e991136c2fd0fdfa7}
+
+
+Updates \hyperlink{class_game}{Game} level. 
+
+Initiates changing of level, such as changes of scenes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Level to be changed. \\
+\hline
+{\em path} & Path of new level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/level\+\_\+factory.\+hpp\item 
+include/\hyperlink{level__factory_8hpp}{level\+\_\+factory.\+hpp}\item 
 src/level\+\_\+factory.\+cpp\end{DoxyCompactItemize}

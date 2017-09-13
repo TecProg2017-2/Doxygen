@@ -1,26 +1,29 @@
 \hypertarget{classengine_1_1_time}{}\section{engine\+:\+:Time Class Reference}
 \label{classengine_1_1_time}\index{engine\+::\+Time@{engine\+::\+Time}}
+
+
+A \hyperlink{classengine_1_1_time}{Time} class.  
+
+
+
+
+{\ttfamily \#include $<$time.\+hpp$>$}
+
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static unsigned {\bfseries time\+\_\+elapsed} ()\hypertarget{classengine_1_1_time_a34c6353509709b70415bef938531eb92}{}\label{classengine_1_1_time_a34c6353509709b70415bef938531eb92}
-
-\item 
-static void {\bfseries pause\+\_\+timer} ()\hypertarget{classengine_1_1_time_ac04d488ad4706f86073f0e3aabd19c2a}{}\label{classengine_1_1_time_ac04d488ad4706f86073f0e3aabd19c2a}
-
-\item 
-static void {\bfseries resume\+\_\+timer} ()\hypertarget{classengine_1_1_time_a5d5df71d480f8b3d6dfe5d78870a5b79}{}\label{classengine_1_1_time_a5d5df71d480f8b3d6dfe5d78870a5b79}
-
-\item 
-static unsigned {\bfseries real\+\_\+time\+\_\+elapsed} ()\hypertarget{classengine_1_1_time_adf4f08d30fcf9839f534fd9b39cd2dc2}{}\label{classengine_1_1_time_adf4f08d30fcf9839f534fd9b39cd2dc2}
-
-\item 
-static void {\bfseries update\+\_\+time} (unsigned now)\hypertarget{classengine_1_1_time_a2b04ecff9825dbea41e8efa3300dc147}{}\label{classengine_1_1_time_a2b04ecff9825dbea41e8efa3300dc147}
-
-\item 
-static void {\bfseries init} ()\hypertarget{classengine_1_1_time_ac626e60d7767728dca61c1095cb9678c}{}\label{classengine_1_1_time_ac626e60d7767728dca61c1095cb9678c}
-
-\end{DoxyCompactItemize}
+static unsigned \hyperlink{classengine_1_1_time_a34c6353509709b70415bef938531eb92}{time\+\_\+elapsed} ()
+\begin{DoxyCompactList}\small\item\em Counts the time elapsed. \end{DoxyCompactList}\item 
+static void \hyperlink{classengine_1_1_time_ac04d488ad4706f86073f0e3aabd19c2a}{pause\+\_\+timer} ()
+\begin{DoxyCompactList}\small\item\em Pauses the timer. \end{DoxyCompactList}\item 
+static void \hyperlink{classengine_1_1_time_a5d5df71d480f8b3d6dfe5d78870a5b79}{resume\+\_\+timer} ()
+\begin{DoxyCompactList}\small\item\em Resumes the timer. \end{DoxyCompactList}\item 
+static unsigned \hyperlink{classengine_1_1_time_adf4f08d30fcf9839f534fd9b39cd2dc2}{real\+\_\+time\+\_\+elapsed} ()
+\begin{DoxyCompactList}\small\item\em Return elapsed time since game opening. \end{DoxyCompactList}\item 
+static void \hyperlink{classengine_1_1_time_a2b04ecff9825dbea41e8efa3300dc147}{update\+\_\+time} (unsigned now)
+\begin{DoxyCompactList}\small\item\em Updates the timer. \end{DoxyCompactList}\item 
+static void \hyperlink{classengine_1_1_time_ac626e60d7767728dca61c1095cb9678c}{init} ()
+\begin{DoxyCompactList}\small\item\em Initialize variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,7 +44,104 @@ static state {\bfseries m\+\_\+current\+\_\+state}\hypertarget{classengine_1_1_t
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A \hyperlink{classengine_1_1_time}{Time} class. 
+
+A class responsible for making time management easier. 
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+Time@{engine\+::\+Time}!init@{init}}
+\index{init@{init}!engine\+::\+Time@{engine\+::\+Time}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}void Time\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classengine_1_1_time_ac626e60d7767728dca61c1095cb9678c}{}\label{classengine_1_1_time_ac626e60d7767728dca61c1095cb9678c}
+
+
+Initialize variables. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{engine\+::\+Time@{engine\+::\+Time}!pause\+\_\+timer@{pause\+\_\+timer}}
+\index{pause\+\_\+timer@{pause\+\_\+timer}!engine\+::\+Time@{engine\+::\+Time}}
+\subsubsection[{\texorpdfstring{pause\+\_\+timer()}{pause_timer()}}]{\setlength{\rightskip}{0pt plus 5cm}void Time\+::pause\+\_\+timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classengine_1_1_time_ac04d488ad4706f86073f0e3aabd19c2a}{}\label{classengine_1_1_time_ac04d488ad4706f86073f0e3aabd19c2a}
+
+
+Pauses the timer. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{engine\+::\+Time@{engine\+::\+Time}!real\+\_\+time\+\_\+elapsed@{real\+\_\+time\+\_\+elapsed}}
+\index{real\+\_\+time\+\_\+elapsed@{real\+\_\+time\+\_\+elapsed}!engine\+::\+Time@{engine\+::\+Time}}
+\subsubsection[{\texorpdfstring{real\+\_\+time\+\_\+elapsed()}{real_time_elapsed()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Time\+::real\+\_\+time\+\_\+elapsed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classengine_1_1_time_adf4f08d30fcf9839f534fd9b39cd2dc2}{}\label{classengine_1_1_time_adf4f08d30fcf9839f534fd9b39cd2dc2}
+
+
+Return elapsed time since game opening. 
+
+\begin{DoxyReturn}{Returns}
+return the milliseconds since the game started 
+\end{DoxyReturn}
+\index{engine\+::\+Time@{engine\+::\+Time}!resume\+\_\+timer@{resume\+\_\+timer}}
+\index{resume\+\_\+timer@{resume\+\_\+timer}!engine\+::\+Time@{engine\+::\+Time}}
+\subsubsection[{\texorpdfstring{resume\+\_\+timer()}{resume_timer()}}]{\setlength{\rightskip}{0pt plus 5cm}void Time\+::resume\+\_\+timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classengine_1_1_time_a5d5df71d480f8b3d6dfe5d78870a5b79}{}\label{classengine_1_1_time_a5d5df71d480f8b3d6dfe5d78870a5b79}
+
+
+Resumes the timer. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{engine\+::\+Time@{engine\+::\+Time}!time\+\_\+elapsed@{time\+\_\+elapsed}}
+\index{time\+\_\+elapsed@{time\+\_\+elapsed}!engine\+::\+Time@{engine\+::\+Time}}
+\subsubsection[{\texorpdfstring{time\+\_\+elapsed()}{time_elapsed()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Time\+::time\+\_\+elapsed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classengine_1_1_time_a34c6353509709b70415bef938531eb92}{}\label{classengine_1_1_time_a34c6353509709b70415bef938531eb92}
+
+
+Counts the time elapsed. 
+
+\begin{DoxyReturn}{Returns}
+unsigned with the time elapsed 
+\end{DoxyReturn}
+\index{engine\+::\+Time@{engine\+::\+Time}!update\+\_\+time@{update\+\_\+time}}
+\index{update\+\_\+time@{update\+\_\+time}!engine\+::\+Time@{engine\+::\+Time}}
+\subsubsection[{\texorpdfstring{update\+\_\+time(unsigned now)}{update_time(unsigned now)}}]{\setlength{\rightskip}{0pt plus 5cm}void Time\+::update\+\_\+time (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{now}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classengine_1_1_time_a2b04ecff9825dbea41e8efa3300dc147}{}\label{classengine_1_1_time_a2b04ecff9825dbea41e8efa3300dc147}
+
+
+Updates the timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em now} & \hyperlink{classengine_1_1_time}{Time} on the given moment\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/include/time.\+hpp\item 
-engine/src/time.\+cpp\end{DoxyCompactItemize}
+engine/include/\hyperlink{time_8hpp}{time.\+hpp}\item 
+engine/src/\hyperlink{time_8cpp}{time.\+cpp}\end{DoxyCompactItemize}

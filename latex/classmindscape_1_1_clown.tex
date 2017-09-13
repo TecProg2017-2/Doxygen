@@ -2,6 +2,15 @@
 \label{classmindscape_1_1_clown}\index{mindscape\+::\+Clown@{mindscape\+::\+Clown}}
 
 
+\hyperlink{classmindscape_1_1_clown}{Clown} enemy class.  
+
+
+
+
+{\ttfamily \#include $<$clown.\+hpp$>$}
+
+
+
 Inheritance diagram for mindscape\+:\+:Clown\+:
 % FIG 0
 
@@ -11,22 +20,134 @@ Collaboration diagram for mindscape\+:\+:Clown\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Clown} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)\hypertarget{classmindscape_1_1_clown_a193ba548dc86723e9f9dc3837b303dcf}{}\label{classmindscape_1_1_clown_a193ba548dc86723e9f9dc3837b303dcf}
-
-\item 
-void {\bfseries on\+\_\+event} (\hyperlink{class_game_event}{Game\+Event})\hypertarget{classmindscape_1_1_clown_a54e259fdb78e80ea53b8ff2c9c4d7e13}{}\label{classmindscape_1_1_clown_a54e259fdb78e80ea53b8ff2c9c4d7e13}
-
-\item 
-void {\bfseries on\+\_\+collision} (\hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object} $\ast$, \hyperlink{classengine_1_1_hitbox}{engine\+::\+Hitbox} $\ast$, \hyperlink{classengine_1_1_hitbox}{engine\+::\+Hitbox} $\ast$)\hypertarget{classmindscape_1_1_clown_a738d25a413d4c112e4e98ef3d9da8520}{}\label{classmindscape_1_1_clown_a738d25a413d4c112e4e98ef3d9da8520}
-
-\item 
-void {\bfseries notify} (\hyperlink{classengine_1_1_observable}{engine\+::\+Observable} $\ast$)\hypertarget{classmindscape_1_1_clown_a0c5d3fc9f693402084cbcbc1b7110124}{}\label{classmindscape_1_1_clown_a0c5d3fc9f693402084cbcbc1b7110124}
-
-\end{DoxyCompactItemize}
+\hyperlink{classmindscape_1_1_clown_a193ba548dc86723e9f9dc3837b303dcf}{Clown} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)
+\begin{DoxyCompactList}\small\item\em Initializes \hyperlink{classmindscape_1_1_clown}{Clown} boss. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_clown_a54e259fdb78e80ea53b8ff2c9c4d7e13}{on\+\_\+event} (\hyperlink{class_game_event}{Game\+Event})
+\begin{DoxyCompactList}\small\item\em Register game events. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_clown_a738d25a413d4c112e4e98ef3d9da8520}{on\+\_\+collision} (\hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object} $\ast$, \hyperlink{classengine_1_1_hitbox}{engine\+::\+Hitbox} $\ast$, \hyperlink{classengine_1_1_hitbox}{engine\+::\+Hitbox} $\ast$)
+\begin{DoxyCompactList}\small\item\em On Collision event. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_clown_a0c5d3fc9f693402084cbcbc1b7110124}{notify} (\hyperlink{classengine_1_1_observable}{engine\+::\+Observable} $\ast$)
+\begin{DoxyCompactList}\small\item\em Notify if the object is in the range. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classmindscape_1_1_clown}{Clown} enemy class. 
+
+This class is responsible for the implementation of clown boss. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{mindscape\+::\+Clown@{mindscape\+::\+Clown}!Clown@{Clown}}
+\index{Clown@{Clown}!mindscape\+::\+Clown@{mindscape\+::\+Clown}}
+\subsubsection[{\texorpdfstring{Clown(std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)}{Clown(std::string name, std::pair< int, int > position, int priority)}}]{\setlength{\rightskip}{0pt plus 5cm}Clown\+::\+Clown (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{std\+::pair$<$ int, int $>$}]{position, }
+\item[{int}]{priority}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_clown_a193ba548dc86723e9f9dc3837b303dcf}{}\label{classmindscape_1_1_clown_a193ba548dc86723e9f9dc3837b303dcf}
+
+
+Initializes \hyperlink{classmindscape_1_1_clown}{Clown} boss. 
+
+Constructor responsible for initialize clown in game
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Object\textquotesingle{}s name \\
+\hline
+{\em position} & x nd y position \\
+\hline
+{\em priority} & rendering object priority \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{mindscape\+::\+Clown@{mindscape\+::\+Clown}!notify@{notify}}
+\index{notify@{notify}!mindscape\+::\+Clown@{mindscape\+::\+Clown}}
+\subsubsection[{\texorpdfstring{notify(engine\+::\+Observable $\ast$)}{notify(engine::Observable *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Clown\+::notify (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Observable} $\ast$}]{game\+\_\+object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmindscape_1_1_clown_a0c5d3fc9f693402084cbcbc1b7110124}{}\label{classmindscape_1_1_clown_a0c5d3fc9f693402084cbcbc1b7110124}
+
+
+Notify if the object is in the range. 
+
+Notify if there is any object that are in the range of the clown
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+object} & the game object passed in the notification\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classmindscape_1_1_enemy}{mindscape\+::\+Enemy}.
+
+\index{mindscape\+::\+Clown@{mindscape\+::\+Clown}!on\+\_\+collision@{on\+\_\+collision}}
+\index{on\+\_\+collision@{on\+\_\+collision}!mindscape\+::\+Clown@{mindscape\+::\+Clown}}
+\subsubsection[{\texorpdfstring{on\+\_\+collision(engine\+::\+Game\+Object $\ast$, engine\+::\+Hitbox $\ast$, engine\+::\+Hitbox $\ast$)}{on_collision(engine::GameObject *, engine::Hitbox *, engine::Hitbox *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Clown\+::on\+\_\+collision (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Game\+Object} $\ast$}]{other, }
+\item[{{\bf engine\+::\+Hitbox} $\ast$}]{p\+\_\+my\+\_\+hitbox, }
+\item[{{\bf engine\+::\+Hitbox} $\ast$}]{p\+\_\+other\+\_\+hitbox}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmindscape_1_1_clown_a738d25a413d4c112e4e98ef3d9da8520}{}\label{classmindscape_1_1_clown_a738d25a413d4c112e4e98ef3d9da8520}
+
+
+On Collision event. 
+
+Method called everytime there is a collision
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the other game object that collided \\
+\hline
+{\em p\+\_\+my\+\_\+hitbox} & hitbox that recives the collision \\
+\hline
+{\em p\+\_\+other\+\_\+hitbox} & hitbox that collided\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classmindscape_1_1_enemy}{mindscape\+::\+Enemy}.
+
+\index{mindscape\+::\+Clown@{mindscape\+::\+Clown}!on\+\_\+event@{on\+\_\+event}}
+\index{on\+\_\+event@{on\+\_\+event}!mindscape\+::\+Clown@{mindscape\+::\+Clown}}
+\subsubsection[{\texorpdfstring{on\+\_\+event(\+Game\+Event)}{on_event(GameEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void Clown\+::on\+\_\+event (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Event}}]{game\+\_\+event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmindscape_1_1_clown_a54e259fdb78e80ea53b8ff2c9c4d7e13}{}\label{classmindscape_1_1_clown_a54e259fdb78e80ea53b8ff2c9c4d7e13}
+
+
+Register game events. 
+
+Register an event for the clown
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+event} & triggering in-\/game events\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/clown.\+hpp\item 
-src/clown.\+cpp\end{DoxyCompactItemize}
+include/\hyperlink{clown_8hpp}{clown.\+hpp}\item 
+src/\hyperlink{clown_8cpp}{clown.\+cpp}\end{DoxyCompactItemize}

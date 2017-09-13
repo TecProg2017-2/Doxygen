@@ -1,29 +1,111 @@
 \hypertarget{classengine_1_1_physics}{}\section{engine\+:\+:Physics Class Reference}
 \label{classengine_1_1_physics}\index{engine\+::\+Physics@{engine\+::\+Physics}}
+
+
+A \hyperlink{classengine_1_1_physics}{Physics} class.  
+
+
+
+
+{\ttfamily \#include $<$physics.\+hpp$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void {\bfseries operator=} (\hyperlink{classengine_1_1_physics}{Physics} const \&)=delete\hypertarget{classengine_1_1_physics_a28a67fa9177a00fa17cc94235870aac6}{}\label{classengine_1_1_physics_a28a67fa9177a00fa17cc94235870aac6}
 
 \item 
-void {\bfseries add\+\_\+physicable} (\hyperlink{classengine_1_1_game_object}{Game\+Object} $\ast$)\hypertarget{classengine_1_1_physics_a3ea90787e9875fd848d60702b4d787b6}{}\label{classengine_1_1_physics_a3ea90787e9875fd848d60702b4d787b6}
-
-\item 
-float {\bfseries get\+\_\+gravity} ()\hypertarget{classengine_1_1_physics_a0467d64aa843a48a8af5e5eccc9a4407}{}\label{classengine_1_1_physics_a0467d64aa843a48a8af5e5eccc9a4407}
-
-\item 
-void {\bfseries act} ()\hypertarget{classengine_1_1_physics_a715afb08feafa90c9e50b51977825364}{}\label{classengine_1_1_physics_a715afb08feafa90c9e50b51977825364}
-
-\end{DoxyCompactItemize}
+void \hyperlink{classengine_1_1_physics_a3ea90787e9875fd848d60702b4d787b6}{add\+\_\+physicable} (\hyperlink{classengine_1_1_game_object}{Game\+Object} $\ast$)
+\begin{DoxyCompactList}\small\item\em Ensures that the game object will be affected by the physics engine. \end{DoxyCompactList}\item 
+float \hyperlink{classengine_1_1_physics_a0467d64aa843a48a8af5e5eccc9a4407}{get\+\_\+gravity} ()
+\begin{DoxyCompactList}\small\item\em Getter method for gravity. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_physics_a715afb08feafa90c9e50b51977825364}{act} ()
+\begin{DoxyCompactList}\small\item\em Ensures that the physical actions will affect all active objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classengine_1_1_physics}{Physics} $\ast$ {\bfseries get\+\_\+instance} ()\hypertarget{classengine_1_1_physics_ade5c34703f40c9a395ae4d03b7089f27}{}\label{classengine_1_1_physics_ade5c34703f40c9a395ae4d03b7089f27}
+static \hyperlink{classengine_1_1_physics}{Physics} $\ast$ \hyperlink{classengine_1_1_physics_ade5c34703f40c9a395ae4d03b7089f27}{get\+\_\+instance} ()
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classengine_1_1_physics}{Physics} object instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\end{DoxyCompactItemize}
+
+\subsection{Detailed Description}
+A \hyperlink{classengine_1_1_physics}{Physics} class. 
+
+A class responsible to ensure physics handling. 
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+Physics@{engine\+::\+Physics}!act@{act}}
+\index{act@{act}!engine\+::\+Physics@{engine\+::\+Physics}}
+\subsubsection[{\texorpdfstring{act()}{act()}}]{\setlength{\rightskip}{0pt plus 5cm}void Physics\+::act (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_physics_a715afb08feafa90c9e50b51977825364}{}\label{classengine_1_1_physics_a715afb08feafa90c9e50b51977825364}
+
+
+Ensures that the physical actions will affect all active objects. 
+
+If the object is active, it must be affected by physical actions
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Physics@{engine\+::\+Physics}!add\+\_\+physicable@{add\+\_\+physicable}}
+\index{add\+\_\+physicable@{add\+\_\+physicable}!engine\+::\+Physics@{engine\+::\+Physics}}
+\subsubsection[{\texorpdfstring{add\+\_\+physicable(\+Game\+Object $\ast$)}{add_physicable(GameObject *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Physics\+::add\+\_\+physicable (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Object} $\ast$}]{game\+\_\+object}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_physics_a3ea90787e9875fd848d60702b4d787b6}{}\label{classengine_1_1_physics_a3ea90787e9875fd848d60702b4d787b6}
+
+
+Ensures that the game object will be affected by the physics engine. 
+
+The object must me physicable to be affected by physical simulation
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & game object that will be affected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Physics@{engine\+::\+Physics}!get\+\_\+gravity@{get\+\_\+gravity}}
+\index{get\+\_\+gravity@{get\+\_\+gravity}!engine\+::\+Physics@{engine\+::\+Physics}}
+\subsubsection[{\texorpdfstring{get\+\_\+gravity()}{get_gravity()}}]{\setlength{\rightskip}{0pt plus 5cm}float Physics\+::get\+\_\+gravity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_physics_a0467d64aa843a48a8af5e5eccc9a4407}{}\label{classengine_1_1_physics_a0467d64aa843a48a8af5e5eccc9a4407}
+
+
+Getter method for gravity. 
+
+Makes gravity variable available outside the Engine
+
+\begin{DoxyReturn}{Returns}
+float with the gravity value. 
+\end{DoxyReturn}
+\index{engine\+::\+Physics@{engine\+::\+Physics}!get\+\_\+instance@{get\+\_\+instance}}
+\index{get\+\_\+instance@{get\+\_\+instance}!engine\+::\+Physics@{engine\+::\+Physics}}
+\subsubsection[{\texorpdfstring{get\+\_\+instance()}{get_instance()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Physics} $\ast$ Physics\+::get\+\_\+instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classengine_1_1_physics_ade5c34703f40c9a395ae4d03b7089f27}{}\label{classengine_1_1_physics_ade5c34703f40c9a395ae4d03b7089f27}
+
+
+Creates a \hyperlink{classengine_1_1_physics}{Physics} object instance. 
+
+\hyperlink{classengine_1_1_physics}{Physics} object is required to ensure physical simulation
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classengine_1_1_physics}{Physics} instance 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/include/physics.\+hpp\item 
-engine/src/physics.\+cpp\end{DoxyCompactItemize}
+engine/include/\hyperlink{physics_8hpp}{physics.\+hpp}\item 
+engine/src/\hyperlink{physics_8cpp}{physics.\+cpp}\end{DoxyCompactItemize}

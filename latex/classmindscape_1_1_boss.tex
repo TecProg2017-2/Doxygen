@@ -2,6 +2,15 @@
 \label{classmindscape_1_1_boss}\index{mindscape\+::\+Boss@{mindscape\+::\+Boss}}
 
 
+A \hyperlink{classmindscape_1_1_boss}{Boss} class.  
+
+
+
+
+{\ttfamily \#include $<$boss.\+hpp$>$}
+
+
+
 Inheritance diagram for mindscape\+:\+:Boss\+:
 % FIG 0
 
@@ -14,16 +23,62 @@ Collaboration diagram for mindscape\+:\+:Boss\+:
 {\bfseries Boss} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority, int HP=0)\hypertarget{classmindscape_1_1_boss_af33cbd15d9179b25695dd1c9165bf4c3}{}\label{classmindscape_1_1_boss_af33cbd15d9179b25695dd1c9165bf4c3}
 
 \item 
-std\+::map$<$ std\+::string, \hyperlink{classmindscape_1_1_enemy}{Enemy} $\ast$ $>$ {\bfseries get\+\_\+boss\+\_\+parts} ()\hypertarget{classmindscape_1_1_boss_a8d557eed8f62a95182140d7f6170ed9e}{}\label{classmindscape_1_1_boss_a8d557eed8f62a95182140d7f6170ed9e}
-
-\item 
-void {\bfseries set\+\_\+boss\+\_\+part} (std\+::string, \hyperlink{classmindscape_1_1_enemy}{Enemy} $\ast$)\hypertarget{classmindscape_1_1_boss_a1f4a5e7e3d9ab6a39c607a317440aabe}{}\label{classmindscape_1_1_boss_a1f4a5e7e3d9ab6a39c607a317440aabe}
-
-\end{DoxyCompactItemize}
+std\+::map$<$ std\+::string, \hyperlink{classmindscape_1_1_enemy}{Enemy} $\ast$ $>$ \hyperlink{classmindscape_1_1_boss_a8d557eed8f62a95182140d7f6170ed9e}{get\+\_\+boss\+\_\+parts} ()
+\begin{DoxyCompactList}\small\item\em Getter for boss\textquotesingle{} parts. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_boss_a1f4a5e7e3d9ab6a39c607a317440aabe}{set\+\_\+boss\+\_\+part} (std\+::string, \hyperlink{classmindscape_1_1_enemy}{Enemy} $\ast$)
+\begin{DoxyCompactList}\small\item\em Creates a boss. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classmindscape_1_1_boss}{Boss} class. 
+
+A class responsible to ensure boss handling. 
+
+\subsection{Member Function Documentation}
+\index{mindscape\+::\+Boss@{mindscape\+::\+Boss}!get\+\_\+boss\+\_\+parts@{get\+\_\+boss\+\_\+parts}}
+\index{get\+\_\+boss\+\_\+parts@{get\+\_\+boss\+\_\+parts}!mindscape\+::\+Boss@{mindscape\+::\+Boss}}
+\subsubsection[{\texorpdfstring{get\+\_\+boss\+\_\+parts()}{get_boss_parts()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$ std\+::string, {\bf Enemy} $\ast$ $>$ Boss\+::get\+\_\+boss\+\_\+parts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_boss_a8d557eed8f62a95182140d7f6170ed9e}{}\label{classmindscape_1_1_boss_a8d557eed8f62a95182140d7f6170ed9e}
+
+
+Getter for boss\textquotesingle{} parts. 
+
+If the boss\textquotesingle{} parts are needed, there must be a getter for it
+
+\begin{DoxyReturn}{Returns}
+std\+::map$<$std\+::string, Enemy$\ast$$>$ containing the boss\textquotesingle{} parts. 
+\end{DoxyReturn}
+\index{mindscape\+::\+Boss@{mindscape\+::\+Boss}!set\+\_\+boss\+\_\+part@{set\+\_\+boss\+\_\+part}}
+\index{set\+\_\+boss\+\_\+part@{set\+\_\+boss\+\_\+part}!mindscape\+::\+Boss@{mindscape\+::\+Boss}}
+\subsubsection[{\texorpdfstring{set\+\_\+boss\+\_\+part(std\+::string, Enemy $\ast$)}{set_boss_part(std::string, Enemy *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boss\+::set\+\_\+boss\+\_\+part (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{boss\+\_\+part\+\_\+name, }
+\item[{{\bf Enemy} $\ast$}]{boss\+\_\+part\+\_\+reference}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_boss_a1f4a5e7e3d9ab6a39c607a317440aabe}{}\label{classmindscape_1_1_boss_a1f4a5e7e3d9ab6a39c607a317440aabe}
+
+
+Creates a boss. 
+
+In order to be visible and interactable, the boss must exist
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & containing the boss name \\
+\hline
+{\em Enemy$\ast$} & containing the reference of the boss \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/boss.\+hpp\item 
-src/boss.\+cpp\end{DoxyCompactItemize}
+include/\hyperlink{boss_8hpp}{boss.\+hpp}\item 
+src/\hyperlink{boss_8cpp}{boss.\+cpp}\end{DoxyCompactItemize}

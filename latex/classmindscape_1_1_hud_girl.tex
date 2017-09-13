@@ -2,6 +2,15 @@
 \label{classmindscape_1_1_hud_girl}\index{mindscape\+::\+Hud\+Girl@{mindscape\+::\+Hud\+Girl}}
 
 
+A Hud Girl class.  
+
+
+
+
+{\ttfamily \#include $<$hud\+\_\+girl.\+hpp$>$}
+
+
+
 Inheritance diagram for mindscape\+:\+:Hud\+Girl\+:
 % FIG 0
 
@@ -11,16 +20,77 @@ Collaboration diagram for mindscape\+:\+:Hud\+Girl\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Hud\+Girl} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)\hypertarget{classmindscape_1_1_hud_girl_a71122f6851e5be3bf3cd53647ba61ee4}{}\label{classmindscape_1_1_hud_girl_a71122f6851e5be3bf3cd53647ba61ee4}
-
-\item 
-void {\bfseries notify} (\hyperlink{classengine_1_1_observable}{engine\+::\+Observable} $\ast$)\hypertarget{classmindscape_1_1_hud_girl_aab26eccf3b4c726074174e34ffac817e}{}\label{classmindscape_1_1_hud_girl_aab26eccf3b4c726074174e34ffac817e}
-
-\end{DoxyCompactItemize}
+\hyperlink{classmindscape_1_1_hud_girl_a71122f6851e5be3bf3cd53647ba61ee4}{Hud\+Girl} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)
+\begin{DoxyCompactList}\small\item\em Class Contructor. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_hud_girl_aab26eccf3b4c726074174e34ffac817e}{notify} (\hyperlink{classengine_1_1_observable}{engine\+::\+Observable} $\ast$)
+\begin{DoxyCompactList}\small\item\em Notifies Hud Girl of Girl\textquotesingle{}s state. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A Hud Girl class. 
+
+The class Hud Girl has attributes and methods for the Little Girl\textquotesingle{}s health bar. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{mindscape\+::\+Hud\+Girl@{mindscape\+::\+Hud\+Girl}!Hud\+Girl@{Hud\+Girl}}
+\index{Hud\+Girl@{Hud\+Girl}!mindscape\+::\+Hud\+Girl@{mindscape\+::\+Hud\+Girl}}
+\subsubsection[{\texorpdfstring{Hud\+Girl(std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)}{HudGirl(std::string name, std::pair< int, int > position, int priority)}}]{\setlength{\rightskip}{0pt plus 5cm}Hud\+Girl\+::\+Hud\+Girl (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{std\+::pair$<$ int, int $>$}]{position, }
+\item[{int}]{priority}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_hud_girl_a71122f6851e5be3bf3cd53647ba61ee4}{}\label{classmindscape_1_1_hud_girl_a71122f6851e5be3bf3cd53647ba61ee4}
+
+
+Class Contructor. 
+
+Sets Hud Girl\textquotesingle{}s firsts informations (attributes\textquotesingle{} values). (Hud Girl\+: Girl\textquotesingle{}s health bar).
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Hud Girl\textquotesingle{}s name(name of the object). \\
+\hline
+{\em position} & Hud Girl\textquotesingle{}s coordinates in the game\textquotesingle{}s map. \\
+\hline
+{\em priority} & Hud Girl\textquotesingle{}s priority in game\textquotesingle{}s execution. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{mindscape\+::\+Hud\+Girl@{mindscape\+::\+Hud\+Girl}!notify@{notify}}
+\index{notify@{notify}!mindscape\+::\+Hud\+Girl@{mindscape\+::\+Hud\+Girl}}
+\subsubsection[{\texorpdfstring{notify(engine\+::\+Observable $\ast$)}{notify(engine::Observable *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Hud\+Girl\+::notify (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Observable} $\ast$}]{game\+\_\+object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmindscape_1_1_hud_girl_aab26eccf3b4c726074174e34ffac817e}{}\label{classmindscape_1_1_hud_girl_aab26eccf3b4c726074174e34ffac817e}
+
+
+Notifies Hud Girl of Girl\textquotesingle{}s state. 
+
+Verifies Girl\textquotesingle{}s state and sets hp\textquotesingle{} animation depending of the quantity of life of the Girl.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+object} & Object for observe game\textquotesingle{}s situation, in this case, the Girl. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/hud\+\_\+girl.\+hpp\item 
-src/hud\+\_\+girl.\+cpp\end{DoxyCompactItemize}
+include/\hyperlink{hud__girl_8hpp}{hud\+\_\+girl.\+hpp}\item 
+src/\hyperlink{hud__girl_8cpp}{hud\+\_\+girl.\+cpp}\end{DoxyCompactItemize}

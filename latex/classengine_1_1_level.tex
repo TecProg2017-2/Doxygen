@@ -2,6 +2,15 @@
 \label{classengine_1_1_level}\index{engine\+::\+Level@{engine\+::\+Level}}
 
 
+A \hyperlink{classengine_1_1_level}{Level} class.  
+
+
+
+
+{\ttfamily \#include $<$level.\+hpp$>$}
+
+
+
 Inheritance diagram for engine\+:\+:Level\+:
 % FIG 0
 
@@ -11,19 +20,69 @@ Collaboration diagram for engine\+:\+:Level\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries load} ()\hypertarget{classengine_1_1_level_ab213ddeeb92129f90837246605430254}{}\label{classengine_1_1_level_ab213ddeeb92129f90837246605430254}
-
-\item 
-void {\bfseries free} ()\hypertarget{classengine_1_1_level_abb665514c17a427c4664dbc6bd1e488b}{}\label{classengine_1_1_level_abb665514c17a427c4664dbc6bd1e488b}
-
-\item 
-void {\bfseries draw} ()\hypertarget{classengine_1_1_level_a9b7478818e1aa80d3d4d059fa5faf9bf}{}\label{classengine_1_1_level_a9b7478818e1aa80d3d4d059fa5faf9bf}
-
-\end{DoxyCompactItemize}
+void \hyperlink{classengine_1_1_level_ab213ddeeb92129f90837246605430254}{load} ()
+\begin{DoxyCompactList}\small\item\em Load the new level. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_level_abb665514c17a427c4664dbc6bd1e488b}{free} ()
+\begin{DoxyCompactList}\small\item\em Free method. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_level_a9b7478818e1aa80d3d4d059fa5faf9bf}{draw} ()
+\begin{DoxyCompactList}\small\item\em Draw Method. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classengine_1_1_level}{Level} class. 
+
+This class is dedicated to controlling the level at which the character is playing. 
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+Level@{engine\+::\+Level}!draw@{draw}}
+\index{draw@{draw}!engine\+::\+Level@{engine\+::\+Level}}
+\subsubsection[{\texorpdfstring{draw()}{draw()}}]{\setlength{\rightskip}{0pt plus 5cm}void Level\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classengine_1_1_level_a9b7478818e1aa80d3d4d059fa5faf9bf}{}\label{classengine_1_1_level_a9b7478818e1aa80d3d4d059fa5faf9bf}
+
+
+Draw Method. 
+
+Draw the game objects 
+
+Reimplemented from \hyperlink{classengine_1_1_scene}{engine\+::\+Scene}.
+
+\index{engine\+::\+Level@{engine\+::\+Level}!free@{free}}
+\index{free@{free}!engine\+::\+Level@{engine\+::\+Level}}
+\subsubsection[{\texorpdfstring{free()}{free()}}]{\setlength{\rightskip}{0pt plus 5cm}void Level\+::free (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classengine_1_1_level_abb665514c17a427c4664dbc6bd1e488b}{}\label{classengine_1_1_level_abb665514c17a427c4664dbc6bd1e488b}
+
+
+Free method. 
+
+free the memory used to allocate the game objects 
+
+Reimplemented from \hyperlink{classengine_1_1_scene}{engine\+::\+Scene}.
+
+\index{engine\+::\+Level@{engine\+::\+Level}!load@{load}}
+\index{load@{load}!engine\+::\+Level@{engine\+::\+Level}}
+\subsubsection[{\texorpdfstring{load()}{load()}}]{\setlength{\rightskip}{0pt plus 5cm}void Level\+::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classengine_1_1_level_ab213ddeeb92129f90837246605430254}{}\label{classengine_1_1_level_ab213ddeeb92129f90837246605430254}
+
+
+Load the new level. 
+
+Initializes the game level 
+
+Reimplemented from \hyperlink{classengine_1_1_scene}{engine\+::\+Scene}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/include/level.\+hpp\item 
-engine/src/level.\+cpp\end{DoxyCompactItemize}
+engine/include/\hyperlink{level_8hpp}{level.\+hpp}\item 
+engine/src/\hyperlink{level_8cpp}{level.\+cpp}\end{DoxyCompactItemize}

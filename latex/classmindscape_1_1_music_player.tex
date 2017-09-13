@@ -2,6 +2,15 @@
 \label{classmindscape_1_1_music_player}\index{mindscape\+::\+Music\+Player@{mindscape\+::\+Music\+Player}}
 
 
+A Music Player class.  
+
+
+
+
+{\ttfamily \#include $<$music\+\_\+player.\+hpp$>$}
+
+
+
 Inheritance diagram for mindscape\+:\+:Music\+Player\+:
 % FIG 0
 
@@ -11,19 +20,96 @@ Collaboration diagram for mindscape\+:\+:Music\+Player\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Music\+Player} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)\hypertarget{classmindscape_1_1_music_player_a98268fcd0769466ccabef1b386be9cac}{}\label{classmindscape_1_1_music_player_a98268fcd0769466ccabef1b386be9cac}
-
-\item 
-void {\bfseries update\+\_\+state} ()\hypertarget{classmindscape_1_1_music_player_a21aa157610534ba64c9f87f7836cb9d9}{}\label{classmindscape_1_1_music_player_a21aa157610534ba64c9f87f7836cb9d9}
-
-\item 
-void {\bfseries on\+\_\+event} (\hyperlink{class_game_event}{Game\+Event})\hypertarget{classmindscape_1_1_music_player_a865555fc70044d188a23ec2e9da94037}{}\label{classmindscape_1_1_music_player_a865555fc70044d188a23ec2e9da94037}
-
-\end{DoxyCompactItemize}
+\hyperlink{classmindscape_1_1_music_player_a98268fcd0769466ccabef1b386be9cac}{Music\+Player} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmindscape_1_1_music_player}{Music\+Player} constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_music_player_a21aa157610534ba64c9f87f7836cb9d9}{update\+\_\+state} ()
+\begin{DoxyCompactList}\small\item\em Updates the state of the music player. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_music_player_a865555fc70044d188a23ec2e9da94037}{on\+\_\+event} (\hyperlink{class_game_event}{Game\+Event})
+\begin{DoxyCompactList}\small\item\em Receives and process game events. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A Music Player class. 
+
+Class responsible for managing the games\textquotesingle{} music. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{mindscape\+::\+Music\+Player@{mindscape\+::\+Music\+Player}!Music\+Player@{Music\+Player}}
+\index{Music\+Player@{Music\+Player}!mindscape\+::\+Music\+Player@{mindscape\+::\+Music\+Player}}
+\subsubsection[{\texorpdfstring{Music\+Player(std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)}{MusicPlayer(std::string name, std::pair< int, int > position, int priority)}}]{\setlength{\rightskip}{0pt plus 5cm}mindscape\+::\+Music\+Player\+::\+Music\+Player (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{std\+::pair$<$ int, int $>$}]{position, }
+\item[{int}]{priority}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmindscape_1_1_music_player_a98268fcd0769466ccabef1b386be9cac}{}\label{classmindscape_1_1_music_player_a98268fcd0769466ccabef1b386be9cac}
+
+
+\hyperlink{classmindscape_1_1_music_player}{Music\+Player} constructor. 
+
+This method initializes everything needed by the music player class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the object \\
+\hline
+{\em position} & Pair of integers representing x and y position \\
+\hline
+{\em priority} & Rendering priority of the object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{mindscape\+::\+Music\+Player@{mindscape\+::\+Music\+Player}!on\+\_\+event@{on\+\_\+event}}
+\index{on\+\_\+event@{on\+\_\+event}!mindscape\+::\+Music\+Player@{mindscape\+::\+Music\+Player}}
+\subsubsection[{\texorpdfstring{on\+\_\+event(\+Game\+Event)}{on_event(GameEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void Music\+Player\+::on\+\_\+event (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Event}}]{game\+\_\+event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmindscape_1_1_music_player_a865555fc70044d188a23ec2e9da94037}{}\label{classmindscape_1_1_music_player_a865555fc70044d188a23ec2e9da94037}
+
+
+Receives and process game events. 
+
+Responsible for receiving and processing expected events.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+event} & Tha event to be received\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object}.
+
+\index{mindscape\+::\+Music\+Player@{mindscape\+::\+Music\+Player}!update\+\_\+state@{update\+\_\+state}}
+\index{update\+\_\+state@{update\+\_\+state}!mindscape\+::\+Music\+Player@{mindscape\+::\+Music\+Player}}
+\subsubsection[{\texorpdfstring{update\+\_\+state()}{update_state()}}]{\setlength{\rightskip}{0pt plus 5cm}void Music\+Player\+::update\+\_\+state (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmindscape_1_1_music_player_a21aa157610534ba64c9f87f7836cb9d9}{}\label{classmindscape_1_1_music_player_a21aa157610534ba64c9f87f7836cb9d9}
+
+
+Updates the state of the music player. 
+
+Responsible for managing which music will play and when.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/music\+\_\+player.\+hpp\item 
-src/music\+\_\+player.\+cpp\end{DoxyCompactItemize}
+include/\hyperlink{music__player_8hpp}{music\+\_\+player.\+hpp}\item 
+src/\hyperlink{music__player_8cpp}{music\+\_\+player.\+cpp}\end{DoxyCompactItemize}

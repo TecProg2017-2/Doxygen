@@ -2,17 +2,24 @@
 \label{classengine_1_1_scene}\index{engine\+::\+Scene@{engine\+::\+Scene}}
 
 
+A \hyperlink{classengine_1_1_scene}{Scene} class.  
+
+
+
+
+{\ttfamily \#include $<$scene.\+hpp$>$}
+
+
+
 Inheritance diagram for engine\+:\+:Scene\+:
 % FIG 0
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries add\+\_\+object} (\hyperlink{classengine_1_1_game_object}{Game\+Object} $\ast$object)\hypertarget{classengine_1_1_scene_a1d7c1960d764159416a5eb332d0d2203}{}\label{classengine_1_1_scene_a1d7c1960d764159416a5eb332d0d2203}
-
-\item 
-\hyperlink{classengine_1_1_game_object}{Game\+Object} $\ast$ {\bfseries get\+\_\+object\+\_\+by\+\_\+name} (std\+::string)\hypertarget{classengine_1_1_scene_a565ca4778b3c81ac6b3434820d0a4cfa}{}\label{classengine_1_1_scene_a565ca4778b3c81ac6b3434820d0a4cfa}
-
-\item 
+void \hyperlink{classengine_1_1_scene_a1d7c1960d764159416a5eb332d0d2203}{add\+\_\+object} (\hyperlink{classengine_1_1_game_object}{Game\+Object} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Adds an object to the scene. \end{DoxyCompactList}\item 
+\hyperlink{classengine_1_1_game_object}{Game\+Object} $\ast$ \hyperlink{classengine_1_1_scene_a565ca4778b3c81ac6b3434820d0a4cfa}{get\+\_\+object\+\_\+by\+\_\+name} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Gets an object by giving its name. \end{DoxyCompactList}\item 
 virtual void {\bfseries draw} ()\hypertarget{classengine_1_1_scene_a257bc5515bb3e5af364fee377c431271}{}\label{classengine_1_1_scene_a257bc5515bb3e5af364fee377c431271}
 
 \item 
@@ -22,21 +29,16 @@ virtual void {\bfseries load} ()\hypertarget{classengine_1_1_scene_a1e46b23b6ef6
 virtual void {\bfseries free} ()\hypertarget{classengine_1_1_scene_a9ca5afc4c001e68939b61b4671e240fa}{}\label{classengine_1_1_scene_a9ca5afc4c001e68939b61b4671e240fa}
 
 \item 
-void {\bfseries activate\+\_\+game\+\_\+object} (\hyperlink{classengine_1_1_game_object}{Game\+Object} $\ast$)\hypertarget{classengine_1_1_scene_af63b3b770464494c0cdb56a7a13b50fb}{}\label{classengine_1_1_scene_af63b3b770464494c0cdb56a7a13b50fb}
-
-\item 
-void {\bfseries deactivate\+\_\+game\+\_\+object} (std\+::string name)\hypertarget{classengine_1_1_scene_af9c8a6de10c3d49300183f68cefadb39}{}\label{classengine_1_1_scene_af9c8a6de10c3d49300183f68cefadb39}
-
-\item 
-void {\bfseries deactivate} ()\hypertarget{classengine_1_1_scene_ad8fa30fc96100daf9f028922bb435daa}{}\label{classengine_1_1_scene_ad8fa30fc96100daf9f028922bb435daa}
-
-\item 
-void {\bfseries activate} ()\hypertarget{classengine_1_1_scene_adf671a288f878e3efa42ccbf34b0d6ed}{}\label{classengine_1_1_scene_adf671a288f878e3efa42ccbf34b0d6ed}
-
-\item 
-void {\bfseries update} ()\hypertarget{classengine_1_1_scene_aa24c7e636c10e4e42650c1374b90bb80}{}\label{classengine_1_1_scene_aa24c7e636c10e4e42650c1374b90bb80}
-
-\end{DoxyCompactItemize}
+void \hyperlink{classengine_1_1_scene_af63b3b770464494c0cdb56a7a13b50fb}{activate\+\_\+game\+\_\+object} (\hyperlink{classengine_1_1_game_object}{Game\+Object} $\ast$)
+\begin{DoxyCompactList}\small\item\em Activates a game object and adds a listener to notify other objects. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_scene_af9c8a6de10c3d49300183f68cefadb39}{deactivate\+\_\+game\+\_\+object} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Deactivated a game object and adds a listener to notify other objects. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_scene_ad8fa30fc96100daf9f028922bb435daa}{deactivate} ()
+\begin{DoxyCompactList}\small\item\em Deactivates a scene and adds a listener to notify other objects. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_scene_adf671a288f878e3efa42ccbf34b0d6ed}{activate} ()
+\begin{DoxyCompactList}\small\item\em Activates a scene and adds a listener to notify other objects. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_scene_aa24c7e636c10e4e42650c1374b90bb80}{update} ()
+\begin{DoxyCompactList}\small\item\em Updates the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -45,7 +47,147 @@ std\+::vector$<$ \hyperlink{classengine_1_1_game_object}{Game\+Object} $\ast$ $>
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A \hyperlink{classengine_1_1_scene}{Scene} class. 
+
+A class responsible to ensure scene handling. 
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+Scene@{engine\+::\+Scene}!activate@{activate}}
+\index{activate@{activate}!engine\+::\+Scene@{engine\+::\+Scene}}
+\subsubsection[{\texorpdfstring{activate()}{activate()}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::activate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_scene_adf671a288f878e3efa42ccbf34b0d6ed}{}\label{classengine_1_1_scene_adf671a288f878e3efa42ccbf34b0d6ed}
+
+
+Activates a scene and adds a listener to notify other objects. 
+
+When the scene is Activated, the others must be notified
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Scene@{engine\+::\+Scene}!activate\+\_\+game\+\_\+object@{activate\+\_\+game\+\_\+object}}
+\index{activate\+\_\+game\+\_\+object@{activate\+\_\+game\+\_\+object}!engine\+::\+Scene@{engine\+::\+Scene}}
+\subsubsection[{\texorpdfstring{activate\+\_\+game\+\_\+object(\+Game\+Object $\ast$)}{activate_game_object(GameObject *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::activate\+\_\+game\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Object} $\ast$}]{go}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_scene_af63b3b770464494c0cdb56a7a13b50fb}{}\label{classengine_1_1_scene_af63b3b770464494c0cdb56a7a13b50fb}
+
+
+Activates a game object and adds a listener to notify other objects. 
+
+When the object is activated, the others must be notified.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classengine_1_1_game_object}{Game\+Object}} & that will be activated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Scene@{engine\+::\+Scene}!add\+\_\+object@{add\+\_\+object}}
+\index{add\+\_\+object@{add\+\_\+object}!engine\+::\+Scene@{engine\+::\+Scene}}
+\subsubsection[{\texorpdfstring{add\+\_\+object(\+Game\+Object $\ast$object)}{add_object(GameObject *object)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::add\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Game\+Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_scene_a1d7c1960d764159416a5eb332d0d2203}{}\label{classengine_1_1_scene_a1d7c1960d764159416a5eb332d0d2203}
+
+
+Adds an object to the scene. 
+
+The object, in order to be seen, must be added to the scene
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classengine_1_1_game_object}{Game\+Object}} & that will be added to the scene \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classengine_1_1_scene}{Scene} containing the added object. 
+\end{DoxyReturn}
+\index{engine\+::\+Scene@{engine\+::\+Scene}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!engine\+::\+Scene@{engine\+::\+Scene}}
+\subsubsection[{\texorpdfstring{deactivate()}{deactivate()}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::deactivate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_scene_ad8fa30fc96100daf9f028922bb435daa}{}\label{classengine_1_1_scene_ad8fa30fc96100daf9f028922bb435daa}
+
+
+Deactivates a scene and adds a listener to notify other objects. 
+
+When the scene is deactivated, the others must be notified
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Scene@{engine\+::\+Scene}!deactivate\+\_\+game\+\_\+object@{deactivate\+\_\+game\+\_\+object}}
+\index{deactivate\+\_\+game\+\_\+object@{deactivate\+\_\+game\+\_\+object}!engine\+::\+Scene@{engine\+::\+Scene}}
+\subsubsection[{\texorpdfstring{deactivate\+\_\+game\+\_\+object(std\+::string name)}{deactivate_game_object(std::string name)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::deactivate\+\_\+game\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{game\+\_\+object\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_scene_af9c8a6de10c3d49300183f68cefadb39}{}\label{classengine_1_1_scene_af9c8a6de10c3d49300183f68cefadb39}
+
+
+Deactivated a game object and adds a listener to notify other objects. 
+
+When the object is deactivated, the others must be notified.
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & containing the name of the game object that will be deactivated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Scene@{engine\+::\+Scene}!get\+\_\+object\+\_\+by\+\_\+name@{get\+\_\+object\+\_\+by\+\_\+name}}
+\index{get\+\_\+object\+\_\+by\+\_\+name@{get\+\_\+object\+\_\+by\+\_\+name}!engine\+::\+Scene@{engine\+::\+Scene}}
+\subsubsection[{\texorpdfstring{get\+\_\+object\+\_\+by\+\_\+name(std\+::string)}{get_object_by_name(std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\+Object} $\ast$ Scene\+::get\+\_\+object\+\_\+by\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_scene_a565ca4778b3c81ac6b3434820d0a4cfa}{}\label{classengine_1_1_scene_a565ca4778b3c81ac6b3434820d0a4cfa}
+
+
+Gets an object by giving its name. 
+
+Simplifies object searching
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & containing the name of the object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the \hyperlink{classengine_1_1_game_object}{Game\+Object} if it was found or N\+U\+LL if it wasn\textquotesingle{}t. 
+\end{DoxyReturn}
+\index{engine\+::\+Scene@{engine\+::\+Scene}!update@{update}}
+\index{update@{update}!engine\+::\+Scene@{engine\+::\+Scene}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_scene_aa24c7e636c10e4e42650c1374b90bb80}{}\label{classengine_1_1_scene_aa24c7e636c10e4e42650c1374b90bb80}
+
+
+Updates the scene. 
+
+All the method related to physics must be activated at once every scene update
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/include/scene.\+hpp\item 
-engine/src/scene.\+cpp\end{DoxyCompactItemize}
+engine/include/\hyperlink{scene_8hpp}{scene.\+hpp}\item 
+engine/src/\hyperlink{scene_8cpp}{scene.\+cpp}\end{DoxyCompactItemize}

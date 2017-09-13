@@ -1,11 +1,19 @@
 \hypertarget{classengine_1_1_translator}{}\section{engine\+:\+:Translator Class Reference}
 \label{classengine_1_1_translator}\index{engine\+::\+Translator@{engine\+::\+Translator}}
+
+
+A \hyperlink{classengine_1_1_translator}{Translator} class.  
+
+
+
+
+{\ttfamily \#include $<$translator.\+hpp$>$}
+
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static std\+::list$<$ \hyperlink{class_game_event}{Game\+Event} $>$ {\bfseries keyboard\+\_\+events\+\_\+to\+\_\+game\+\_\+events} (std\+::list$<$ \hyperlink{classengine_1_1_keyboard_event}{Keyboard\+Event} $>$)\hypertarget{classengine_1_1_translator_af01485c63cb4b6e16546f526a6c7c18a}{}\label{classengine_1_1_translator_af01485c63cb4b6e16546f526a6c7c18a}
-
-\end{DoxyCompactItemize}
+static std\+::list$<$ \hyperlink{class_game_event}{Game\+Event} $>$ \hyperlink{classengine_1_1_translator_af01485c63cb4b6e16546f526a6c7c18a}{keyboard\+\_\+events\+\_\+to\+\_\+game\+\_\+events} (std\+::list$<$ \hyperlink{classengine_1_1_keyboard_event}{Keyboard\+Event} $>$)
+\begin{DoxyCompactList}\small\item\em Create a list of \hyperlink{class_game_event}{Game\+Event}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -14,7 +22,31 @@ static bool {\bfseries is\+\_\+a\+\_\+valid\+\_\+event}\hypertarget{classengine_
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A \hyperlink{classengine_1_1_translator}{Translator} class. 
+
+This class is responsable to describe the interaction of user and the keyboard, where each key corresponds to an action. 
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+Translator@{engine\+::\+Translator}!keyboard\+\_\+events\+\_\+to\+\_\+game\+\_\+events@{keyboard\+\_\+events\+\_\+to\+\_\+game\+\_\+events}}
+\index{keyboard\+\_\+events\+\_\+to\+\_\+game\+\_\+events@{keyboard\+\_\+events\+\_\+to\+\_\+game\+\_\+events}!engine\+::\+Translator@{engine\+::\+Translator}}
+\subsubsection[{\texorpdfstring{keyboard\+\_\+events\+\_\+to\+\_\+game\+\_\+events(std\+::list$<$ Keyboard\+Event $>$)}{keyboard_events_to_game_events(std::list< KeyboardEvent >)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<$ {\bf Game\+Event} $>$ Translator\+::keyboard\+\_\+events\+\_\+to\+\_\+game\+\_\+events (
+\begin{DoxyParamCaption}
+\item[{std\+::list$<$ {\bf Keyboard\+Event} $>$}]{keyboard\+\_\+events}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classengine_1_1_translator_af01485c63cb4b6e16546f526a6c7c18a}{}\label{classengine_1_1_translator_af01485c63cb4b6e16546f526a6c7c18a}
+
+
+Create a list of \hyperlink{class_game_event}{Game\+Event}. 
+
+Creates a list of events for each key listed, checking if each key has already been listed before, defining a key with an action.
+
+@ param keyboard\+\_\+events Events for each key configured. \begin{DoxyReturn}{Returns}
+list$<$\+Game\+Event$>$ List of keys that has an event associated. 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/include/translator.\+hpp\item 
-engine/src/translator.\+cpp\end{DoxyCompactItemize}
+engine/include/\hyperlink{translator_8hpp}{translator.\+hpp}\item 
+engine/src/\hyperlink{translator_8cpp}{translator.\+cpp}\end{DoxyCompactItemize}

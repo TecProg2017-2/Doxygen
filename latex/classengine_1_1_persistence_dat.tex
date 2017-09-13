@@ -2,6 +2,15 @@
 \label{classengine_1_1_persistence_dat}\index{engine\+::\+Persistence\+Dat@{engine\+::\+Persistence\+Dat}}
 
 
+A \hyperlink{classengine_1_1_persistence}{Persistence} data class.  
+
+
+
+
+{\ttfamily \#include $<$persistence\+\_\+dat.\+hpp$>$}
+
+
+
 Inheritance diagram for engine\+:\+:Persistence\+Dat\+:
 % FIG 0
 
@@ -14,21 +23,95 @@ Collaboration diagram for engine\+:\+:Persistence\+Dat\+:
 void {\bfseries operator=} (\hyperlink{classengine_1_1_persistence_dat}{Persistence\+Dat} const \&)=delete\hypertarget{classengine_1_1_persistence_dat_a207058814fa0d5cf6ab693eb6c2bcd58}{}\label{classengine_1_1_persistence_dat_a207058814fa0d5cf6ab693eb6c2bcd58}
 
 \item 
-\hyperlink{classengine_1_1_persistence_map}{Persistence\+Map} $\ast$ {\bfseries load} (std\+::string)\hypertarget{classengine_1_1_persistence_dat_afd72460731bf0fab23f002ad0c895925}{}\label{classengine_1_1_persistence_dat_afd72460731bf0fab23f002ad0c895925}
-
-\item 
-bool {\bfseries dump} (std\+::string, \hyperlink{classengine_1_1_persistence_map}{Persistence\+Map} $\ast$)\hypertarget{classengine_1_1_persistence_dat_a967c33fc78f68fb756b6d730f2fc38e0}{}\label{classengine_1_1_persistence_dat_a967c33fc78f68fb756b6d730f2fc38e0}
-
-\end{DoxyCompactItemize}
+\hyperlink{classengine_1_1_persistence_map}{Persistence\+Map} $\ast$ \hyperlink{classengine_1_1_persistence_dat_afd72460731bf0fab23f002ad0c895925}{load} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Load Method. \end{DoxyCompactList}\item 
+bool \hyperlink{classengine_1_1_persistence_dat_a967c33fc78f68fb756b6d730f2fc38e0}{dump} (std\+::string, \hyperlink{classengine_1_1_persistence_map}{Persistence\+Map} $\ast$)
+\begin{DoxyCompactList}\small\item\em Dump Method. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classengine_1_1_persistence_dat}{Persistence\+Dat} $\ast$ {\bfseries get\+\_\+instance} ()\hypertarget{classengine_1_1_persistence_dat_a10d573b0dc2ac097d53b2e445625fe6f}{}\label{classengine_1_1_persistence_dat_a10d573b0dc2ac097d53b2e445625fe6f}
+static \hyperlink{classengine_1_1_persistence_dat}{Persistence\+Dat} $\ast$ \hyperlink{classengine_1_1_persistence_dat_a10d573b0dc2ac097d53b2e445625fe6f}{get\+\_\+instance} ()
+\begin{DoxyCompactList}\small\item\em Get Instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\end{DoxyCompactItemize}
+
+\subsection{Detailed Description}
+A \hyperlink{classengine_1_1_persistence}{Persistence} data class. 
+
+Class responsible for keep the persistence of game data. 
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+Persistence\+Dat@{engine\+::\+Persistence\+Dat}!dump@{dump}}
+\index{dump@{dump}!engine\+::\+Persistence\+Dat@{engine\+::\+Persistence\+Dat}}
+\subsubsection[{\texorpdfstring{dump(std\+::string, Persistence\+Map $\ast$)}{dump(std::string, PersistenceMap *)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Persistence\+Dat\+::dump (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{path, }
+\item[{{\bf Persistence\+Map} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classengine_1_1_persistence_dat_a967c33fc78f68fb756b6d730f2fc38e0}{}\label{classengine_1_1_persistence_dat_a967c33fc78f68fb756b6d730f2fc38e0}
+
+
+Dump Method. 
+
+Method responsible for dump
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path to save the open game in a file \\
+\hline
+{\em data} & saved game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classengine_1_1_persistence}{engine\+::\+Persistence}.
+
+\index{engine\+::\+Persistence\+Dat@{engine\+::\+Persistence\+Dat}!get\+\_\+instance@{get\+\_\+instance}}
+\index{get\+\_\+instance@{get\+\_\+instance}!engine\+::\+Persistence\+Dat@{engine\+::\+Persistence\+Dat}}
+\subsubsection[{\texorpdfstring{get\+\_\+instance()}{get_instance()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Persistence\+Dat} $\ast$ Persistence\+Dat\+::get\+\_\+instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classengine_1_1_persistence_dat_a10d573b0dc2ac097d53b2e445625fe6f}{}\label{classengine_1_1_persistence_dat_a10d573b0dc2ac097d53b2e445625fe6f}
+
+
+Get Instance. 
+
+Method responsible for get instance
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{engine\+::\+Persistence\+Dat@{engine\+::\+Persistence\+Dat}!load@{load}}
+\index{load@{load}!engine\+::\+Persistence\+Dat@{engine\+::\+Persistence\+Dat}}
+\subsubsection[{\texorpdfstring{load(std\+::string)}{load(std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Persistence\+Map} $\ast$ Persistence\+Dat\+::load (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{p\+\_\+path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classengine_1_1_persistence_dat_afd72460731bf0fab23f002ad0c895925}{}\label{classengine_1_1_persistence_dat_afd72460731bf0fab23f002ad0c895925}
+
+
+Load Method. 
+
+Method responsible for load the saved game
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+path} & path to saved game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+game loaded 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classengine_1_1_persistence}{engine\+::\+Persistence}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/include/persistence\+\_\+dat.\+hpp\item 
-engine/src/persistence\+\_\+dat.\+cpp\end{DoxyCompactItemize}
+engine/include/\hyperlink{persistence__dat_8hpp}{persistence\+\_\+dat.\+hpp}\item 
+engine/src/\hyperlink{persistence__dat_8cpp}{persistence\+\_\+dat.\+cpp}\end{DoxyCompactItemize}

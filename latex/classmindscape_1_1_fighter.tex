@@ -2,6 +2,15 @@
 \label{classmindscape_1_1_fighter}\index{mindscape\+::\+Fighter@{mindscape\+::\+Fighter}}
 
 
+A \hyperlink{classmindscape_1_1_fighter}{Fighter} class.  
+
+
+
+
+{\ttfamily \#include $<$fighter.\+hpp$>$}
+
+
+
 Inheritance diagram for mindscape\+:\+:Fighter\+:
 % FIG 0
 \subsection*{Public Member Functions}
@@ -19,27 +28,112 @@ virtual void {\bfseries on\+\_\+attack} (\hyperlink{classengine_1_1_game_object}
 virtual void {\bfseries die} (\hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object} $\ast$)\hypertarget{classmindscape_1_1_fighter_a6cdc510f287d740f57ac76d5ae220c1c}{}\label{classmindscape_1_1_fighter_a6cdc510f287d740f57ac76d5ae220c1c}
 
 \item 
-int {\bfseries get\+\_\+hp} ()\hypertarget{classmindscape_1_1_fighter_a36f9714df967354dc98f97bf0eabe6b2}{}\label{classmindscape_1_1_fighter_a36f9714df967354dc98f97bf0eabe6b2}
-
-\item 
-void {\bfseries set\+\_\+hp} (int)\hypertarget{classmindscape_1_1_fighter_a0c048e02ee77ba088a47c51211dbf6c7}{}\label{classmindscape_1_1_fighter_a0c048e02ee77ba088a47c51211dbf6c7}
-
-\item 
-void {\bfseries heal} (int)\hypertarget{classmindscape_1_1_fighter_a8672d19748aba79323c77a2b93166d1d}{}\label{classmindscape_1_1_fighter_a8672d19748aba79323c77a2b93166d1d}
-
-\item 
+int \hyperlink{classmindscape_1_1_fighter_a36f9714df967354dc98f97bf0eabe6b2}{get\+\_\+hp} ()
+\begin{DoxyCompactList}\small\item\em Gets the character\textquotesingle{}s life. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_fighter_a0c048e02ee77ba088a47c51211dbf6c7}{set\+\_\+hp} (int)
+\begin{DoxyCompactList}\small\item\em Sets the character\textquotesingle{}s life. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_fighter_a8672d19748aba79323c77a2b93166d1d}{heal} (int)
+\begin{DoxyCompactList}\small\item\em Increases the character life. \end{DoxyCompactList}\item 
 void {\bfseries hit} (\hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object} $\ast$, int)\hypertarget{classmindscape_1_1_fighter_a76feabe253ef5ca18450c9cf2df15bdf}{}\label{classmindscape_1_1_fighter_a76feabe253ef5ca18450c9cf2df15bdf}
 
 \item 
-bool {\bfseries is\+\_\+life\+\_\+full} ()\hypertarget{classmindscape_1_1_fighter_ae399b769b99f8ed693b86240382b6f0c}{}\label{classmindscape_1_1_fighter_ae399b769b99f8ed693b86240382b6f0c}
+bool \hyperlink{classmindscape_1_1_fighter_ae399b769b99f8ed693b86240382b6f0c}{is\+\_\+life\+\_\+full} ()
+\begin{DoxyCompactList}\small\item\em Verify if the character is full. \end{DoxyCompactList}\item 
+bool \hyperlink{classmindscape_1_1_fighter_acb398a29adbf1de62658e5ae96ac5cb6}{is\+\_\+alive} ()
+\begin{DoxyCompactList}\small\item\em Verify if the character is alive. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-bool {\bfseries is\+\_\+alive} ()\hypertarget{classmindscape_1_1_fighter_acb398a29adbf1de62658e5ae96ac5cb6}{}\label{classmindscape_1_1_fighter_acb398a29adbf1de62658e5ae96ac5cb6}
 
-\end{DoxyCompactItemize}
+\subsection{Detailed Description}
+A \hyperlink{classmindscape_1_1_fighter}{Fighter} class. 
+
+The class \hyperlink{classmindscape_1_1_fighter}{Fighter} has atributtes and methods for all chacteres(classes) that need information about hp, attacks, range of hitpoints and if it is alive or not. 
+
+\subsection{Member Function Documentation}
+\index{mindscape\+::\+Fighter@{mindscape\+::\+Fighter}!get\+\_\+hp@{get\+\_\+hp}}
+\index{get\+\_\+hp@{get\+\_\+hp}!mindscape\+::\+Fighter@{mindscape\+::\+Fighter}}
+\subsubsection[{\texorpdfstring{get\+\_\+hp()}{get_hp()}}]{\setlength{\rightskip}{0pt plus 5cm}int Fighter\+::get\+\_\+hp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_fighter_a36f9714df967354dc98f97bf0eabe6b2}{}\label{classmindscape_1_1_fighter_a36f9714df967354dc98f97bf0eabe6b2}
+
+
+Gets the character\textquotesingle{}s life. 
+
+Gets the value of the current character\textquotesingle{}s life. \begin{DoxyReturn}{Returns}
+int. 
+\end{DoxyReturn}
+\index{mindscape\+::\+Fighter@{mindscape\+::\+Fighter}!heal@{heal}}
+\index{heal@{heal}!mindscape\+::\+Fighter@{mindscape\+::\+Fighter}}
+\subsubsection[{\texorpdfstring{heal(int)}{heal(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Fighter\+::heal (
+\begin{DoxyParamCaption}
+\item[{int}]{p\+\_\+hitpoints}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_fighter_a8672d19748aba79323c77a2b93166d1d}{}\label{classmindscape_1_1_fighter_a8672d19748aba79323c77a2b93166d1d}
+
+
+Increases the character life. 
+
+Which time the character gains life(hp) bonus, this method is called and increases its life, respecting the life\textquotesingle{}s limit.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+hitpoints} & quantity of hp gained. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{mindscape\+::\+Fighter@{mindscape\+::\+Fighter}!is\+\_\+alive@{is\+\_\+alive}}
+\index{is\+\_\+alive@{is\+\_\+alive}!mindscape\+::\+Fighter@{mindscape\+::\+Fighter}}
+\subsubsection[{\texorpdfstring{is\+\_\+alive()}{is_alive()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Fighter\+::is\+\_\+alive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_fighter_acb398a29adbf1de62658e5ae96ac5cb6}{}\label{classmindscape_1_1_fighter_acb398a29adbf1de62658e5ae96ac5cb6}
+
+
+Verify if the character is alive. 
+
+Verify if the character\textquotesingle{}s life is smaller than zero. \begin{DoxyReturn}{Returns}
+bool True if the life is smaller than zero, false if it is not. 
+\end{DoxyReturn}
+\index{mindscape\+::\+Fighter@{mindscape\+::\+Fighter}!is\+\_\+life\+\_\+full@{is\+\_\+life\+\_\+full}}
+\index{is\+\_\+life\+\_\+full@{is\+\_\+life\+\_\+full}!mindscape\+::\+Fighter@{mindscape\+::\+Fighter}}
+\subsubsection[{\texorpdfstring{is\+\_\+life\+\_\+full()}{is_life_full()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Fighter\+::is\+\_\+life\+\_\+full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_fighter_ae399b769b99f8ed693b86240382b6f0c}{}\label{classmindscape_1_1_fighter_ae399b769b99f8ed693b86240382b6f0c}
+
+
+Verify if the character is full. 
+
+Verify if the character\textquotesingle{}s life is in the maximum. \begin{DoxyReturn}{Returns}
+bool True if the life is full, false if it is not. 
+\end{DoxyReturn}
+\index{mindscape\+::\+Fighter@{mindscape\+::\+Fighter}!set\+\_\+hp@{set\+\_\+hp}}
+\index{set\+\_\+hp@{set\+\_\+hp}!mindscape\+::\+Fighter@{mindscape\+::\+Fighter}}
+\subsubsection[{\texorpdfstring{set\+\_\+hp(int)}{set_hp(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Fighter\+::set\+\_\+hp (
+\begin{DoxyParamCaption}
+\item[{int}]{hp}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_fighter_a0c048e02ee77ba088a47c51211dbf6c7}{}\label{classmindscape_1_1_fighter_a0c048e02ee77ba088a47c51211dbf6c7}
+
+
+Sets the character\textquotesingle{}s life. 
+
+Sets the value of the current character\textquotesingle{}s life. 
+\begin{DoxyParams}{Parameters}
+{\em hp} & quantity of life. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/fighter.\+hpp\item 
-src/fighter.\+cpp\end{DoxyCompactItemize}
+include/\hyperlink{fighter_8hpp}{fighter.\+hpp}\item 
+src/\hyperlink{fighter_8cpp}{fighter.\+cpp}\end{DoxyCompactItemize}

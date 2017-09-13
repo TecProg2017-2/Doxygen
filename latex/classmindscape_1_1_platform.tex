@@ -2,6 +2,15 @@
 \label{classmindscape_1_1_platform}\index{mindscape\+::\+Platform@{mindscape\+::\+Platform}}
 
 
+A 2D \hyperlink{classmindscape_1_1_platform}{Platform} class.  
+
+
+
+
+{\ttfamily \#include $<$platform.\+hpp$>$}
+
+
+
 Inheritance diagram for mindscape\+:\+:Platform\+:
 % FIG 0
 
@@ -11,16 +20,77 @@ Collaboration diagram for mindscape\+:\+:Platform\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Platform} (std\+::string p\+\_\+name, std\+::pair$<$ int, int $>$ position, int priority)\hypertarget{classmindscape_1_1_platform_aebeb96487bd3261d8c9c1046aa225630}{}\label{classmindscape_1_1_platform_aebeb96487bd3261d8c9c1046aa225630}
-
-\item 
-void {\bfseries on\+\_\+event} (\hyperlink{class_game_event}{Game\+Event} game\+\_\+event)\hypertarget{classmindscape_1_1_platform_a6216741f82664014836e0d8a44a6cf9b}{}\label{classmindscape_1_1_platform_a6216741f82664014836e0d8a44a6cf9b}
-
-\end{DoxyCompactItemize}
+\hyperlink{classmindscape_1_1_platform_aebeb96487bd3261d8c9c1046aa225630}{Platform} (std\+::string p\+\_\+name, std\+::pair$<$ int, int $>$ position, int priority)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmindscape_1_1_platform}{Platform} class constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_platform_a6216741f82664014836e0d8a44a6cf9b}{on\+\_\+event} (\hyperlink{class_game_event}{Game\+Event} game\+\_\+event)
+\begin{DoxyCompactList}\small\item\em Event processor method. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A 2D \hyperlink{classmindscape_1_1_platform}{Platform} class. 
+
+Class responsible for managing the platforms used in the game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{mindscape\+::\+Platform@{mindscape\+::\+Platform}!Platform@{Platform}}
+\index{Platform@{Platform}!mindscape\+::\+Platform@{mindscape\+::\+Platform}}
+\subsubsection[{\texorpdfstring{Platform(std\+::string p\+\_\+name, std\+::pair$<$ int, int $>$ position, int priority)}{Platform(std::string p_name, std::pair< int, int > position, int priority)}}]{\setlength{\rightskip}{0pt plus 5cm}Platform\+::\+Platform (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{std\+::pair$<$ int, int $>$}]{position, }
+\item[{int}]{priority}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_platform_aebeb96487bd3261d8c9c1046aa225630}{}\label{classmindscape_1_1_platform_aebeb96487bd3261d8c9c1046aa225630}
+
+
+\hyperlink{classmindscape_1_1_platform}{Platform} class constructor. 
+
+Initializes everything need for the platform.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The object\textquotesingle{}s name. \\
+\hline
+{\em position} & Pair of integers representing the x and y position. \\
+\hline
+{\em priority} & Priority in object\textquotesingle{}s rendering.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{mindscape\+::\+Platform@{mindscape\+::\+Platform}!on\+\_\+event@{on\+\_\+event}}
+\index{on\+\_\+event@{on\+\_\+event}!mindscape\+::\+Platform@{mindscape\+::\+Platform}}
+\subsubsection[{\texorpdfstring{on\+\_\+event(\+Game\+Event game\+\_\+event)}{on_event(GameEvent game_event)}}]{\setlength{\rightskip}{0pt plus 5cm}void Platform\+::on\+\_\+event (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Event}}]{game\+\_\+event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmindscape_1_1_platform_a6216741f82664014836e0d8a44a6cf9b}{}\label{classmindscape_1_1_platform_a6216741f82664014836e0d8a44a6cf9b}
+
+
+Event processor method. 
+
+Process \hyperlink{class_game}{Game} Events received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+event} & The game event to be received.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/platform.\+hpp\item 
-src/platform.\+cpp\end{DoxyCompactItemize}
+include/\hyperlink{platform_8hpp}{platform.\+hpp}\item 
+src/\hyperlink{platform_8cpp}{platform.\+cpp}\end{DoxyCompactItemize}

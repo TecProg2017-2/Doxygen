@@ -2,6 +2,15 @@
 \label{classmindscape_1_1_arm}\index{mindscape\+::\+Arm@{mindscape\+::\+Arm}}
 
 
+A \hyperlink{classmindscape_1_1_arm}{Arm} class.  
+
+
+
+
+{\ttfamily \#include $<$arm.\+hpp$>$}
+
+
+
 Inheritance diagram for mindscape\+:\+:Arm\+:
 % FIG 0
 
@@ -11,19 +20,105 @@ Collaboration diagram for mindscape\+:\+:Arm\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Arm} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)\hypertarget{classmindscape_1_1_arm_a1fbc9ae5b007132b16ad08e1d3695aeb}{}\label{classmindscape_1_1_arm_a1fbc9ae5b007132b16ad08e1d3695aeb}
-
-\item 
-void {\bfseries on\+\_\+event} (\hyperlink{class_game_event}{Game\+Event})\hypertarget{classmindscape_1_1_arm_ae39e38ffd5567cd28202f51ee253b787}{}\label{classmindscape_1_1_arm_ae39e38ffd5567cd28202f51ee253b787}
-
-\item 
-void {\bfseries on\+\_\+collision} (\hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object} $\ast$, \hyperlink{classengine_1_1_hitbox}{engine\+::\+Hitbox} $\ast$, \hyperlink{classengine_1_1_hitbox}{engine\+::\+Hitbox} $\ast$)\hypertarget{classmindscape_1_1_arm_ac30e41db231cbf4be054dbe89572264b}{}\label{classmindscape_1_1_arm_ac30e41db231cbf4be054dbe89572264b}
-
-\end{DoxyCompactItemize}
+\hyperlink{classmindscape_1_1_arm_a1fbc9ae5b007132b16ad08e1d3695aeb}{Arm} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmindscape_1_1_arm}{Arm} constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_arm_ae39e38ffd5567cd28202f51ee253b787}{on\+\_\+event} (\hyperlink{class_game_event}{Game\+Event})
+\begin{DoxyCompactList}\small\item\em Register an event. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_arm_ac30e41db231cbf4be054dbe89572264b}{on\+\_\+collision} (\hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object} $\ast$, \hyperlink{classengine_1_1_hitbox}{engine\+::\+Hitbox} $\ast$, \hyperlink{classengine_1_1_hitbox}{engine\+::\+Hitbox} $\ast$)
+\begin{DoxyCompactList}\small\item\em Event for collisions. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classmindscape_1_1_arm}{Arm} class. 
+
+A class inherited from \hyperlink{classmindscape_1_1_enemy}{Enemy} for \hyperlink{classmindscape_1_1_arm}{Arm}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{mindscape\+::\+Arm@{mindscape\+::\+Arm}!Arm@{Arm}}
+\index{Arm@{Arm}!mindscape\+::\+Arm@{mindscape\+::\+Arm}}
+\subsubsection[{\texorpdfstring{Arm(std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)}{Arm(std::string name, std::pair< int, int > position, int priority)}}]{\setlength{\rightskip}{0pt plus 5cm}Arm\+::\+Arm (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{std\+::pair$<$ int, int $>$}]{position, }
+\item[{int}]{priority}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_arm_a1fbc9ae5b007132b16ad08e1d3695aeb}{}\label{classmindscape_1_1_arm_a1fbc9ae5b007132b16ad08e1d3695aeb}
+
+
+\hyperlink{classmindscape_1_1_arm}{Arm} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name for the given object \\
+\hline
+{\em position} & Pair of integers for its position \\
+\hline
+{\em priority} & Priority for rendering it on the screen\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{mindscape\+::\+Arm@{mindscape\+::\+Arm}!on\+\_\+collision@{on\+\_\+collision}}
+\index{on\+\_\+collision@{on\+\_\+collision}!mindscape\+::\+Arm@{mindscape\+::\+Arm}}
+\subsubsection[{\texorpdfstring{on\+\_\+collision(engine\+::\+Game\+Object $\ast$, engine\+::\+Hitbox $\ast$, engine\+::\+Hitbox $\ast$)}{on_collision(engine::GameObject *, engine::Hitbox *, engine::Hitbox *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Arm\+::on\+\_\+collision (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Game\+Object} $\ast$}]{other, }
+\item[{{\bf engine\+::\+Hitbox} $\ast$}]{p\+\_\+my\+\_\+hitbox, }
+\item[{{\bf engine\+::\+Hitbox} $\ast$}]{p\+\_\+other\+\_\+hitbox}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmindscape_1_1_arm_ac30e41db231cbf4be054dbe89572264b}{}\label{classmindscape_1_1_arm_ac30e41db231cbf4be054dbe89572264b}
+
+
+Event for collisions. 
+
+This method is triggered everytime a collision happens
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other game object which collided \\
+\hline
+{\em p\+\_\+my\+\_\+hitbox} & This object hitbox that received the collision \\
+\hline
+{\em p\+\_\+other\+\_\+hitbox} & The other object hitbox which provided the collision \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classmindscape_1_1_enemy}{mindscape\+::\+Enemy}.
+
+\index{mindscape\+::\+Arm@{mindscape\+::\+Arm}!on\+\_\+event@{on\+\_\+event}}
+\index{on\+\_\+event@{on\+\_\+event}!mindscape\+::\+Arm@{mindscape\+::\+Arm}}
+\subsubsection[{\texorpdfstring{on\+\_\+event(\+Game\+Event)}{on_event(GameEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void Arm\+::on\+\_\+event (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Event}}]{game\+\_\+event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmindscape_1_1_arm_ae39e38ffd5567cd28202f51ee253b787}{}\label{classmindscape_1_1_arm_ae39e38ffd5567cd28202f51ee253b787}
+
+
+Register an event. 
+
+This method register a \hyperlink{class_game_event}{Game\+Event} to the object
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+event} & The event to be called\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/arm.\+hpp\item 
-src/arm.\+cpp\end{DoxyCompactItemize}
+include/\hyperlink{arm_8hpp}{arm.\+hpp}\item 
+src/\hyperlink{arm_8cpp}{arm.\+cpp}\end{DoxyCompactItemize}

@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   rankdir="LR";
   Node1 [label="engine::Event",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classengine_1_1_event.html"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="engine::KeyboardEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classengine_1_1_keyboard_event.html"];
+  Node2 [label="engine::KeyboardEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classengine_1_1_keyboard_event.html",tooltip="A keyboard&#39;s event class. "];
 }

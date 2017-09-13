@@ -1,23 +1,27 @@
 \hypertarget{classengine_1_1_timer}{}\section{engine\+:\+:Timer Class Reference}
 \label{classengine_1_1_timer}\index{engine\+::\+Timer@{engine\+::\+Timer}}
+
+
+A \hyperlink{classengine_1_1_timer}{Timer} class.  
+
+
+
+
+{\ttfamily \#include $<$timer.\+hpp$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries init\+\_\+timer} ()\hypertarget{classengine_1_1_timer_a45123e6a818705f7f960c641a31e1b86}{}\label{classengine_1_1_timer_a45123e6a818705f7f960c641a31e1b86}
-
-\item 
-void {\bfseries stop\+\_\+timer} ()\hypertarget{classengine_1_1_timer_ac05cde2d44f1a1fc40554bf78a65fe0e}{}\label{classengine_1_1_timer_ac05cde2d44f1a1fc40554bf78a65fe0e}
-
-\item 
-void {\bfseries set\+\_\+interval} ()\hypertarget{classengine_1_1_timer_a230de9674796b8c15ec41a13f772f330}{}\label{classengine_1_1_timer_a230de9674796b8c15ec41a13f772f330}
-
-\item 
-int {\bfseries get\+\_\+elapsed\+\_\+time} ()\hypertarget{classengine_1_1_timer_aeb59bd6b4bb8d26575cb81a9164bd333}{}\label{classengine_1_1_timer_aeb59bd6b4bb8d26575cb81a9164bd333}
-
-\item 
-int {\bfseries get\+\_\+total\+\_\+time} ()\hypertarget{classengine_1_1_timer_ab5d8002dd5e97d720d5c1d11fcdf315f}{}\label{classengine_1_1_timer_ab5d8002dd5e97d720d5c1d11fcdf315f}
-
-\end{DoxyCompactItemize}
+void \hyperlink{classengine_1_1_timer_a45123e6a818705f7f960c641a31e1b86}{init\+\_\+timer} ()
+\begin{DoxyCompactList}\small\item\em Initialize the timer. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_timer_ac05cde2d44f1a1fc40554bf78a65fe0e}{stop\+\_\+timer} ()
+\begin{DoxyCompactList}\small\item\em Stop the timer. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_timer_a230de9674796b8c15ec41a13f772f330}{set\+\_\+interval} ()
+\begin{DoxyCompactList}\small\item\em Set interval of the game. \end{DoxyCompactList}\item 
+int \hyperlink{classengine_1_1_timer_aeb59bd6b4bb8d26575cb81a9164bd333}{get\+\_\+elapsed\+\_\+time} ()
+\begin{DoxyCompactList}\small\item\em Get elapsed time of the game. \end{DoxyCompactList}\item 
+int \hyperlink{classengine_1_1_timer_ab5d8002dd5e97d720d5c1d11fcdf315f}{get\+\_\+total\+\_\+time} ()
+\begin{DoxyCompactList}\small\item\em Get total time of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,7 +36,95 @@ int {\bfseries time\+\_\+interval}\hypertarget{classengine_1_1_timer_ab893c290a2
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A \hyperlink{classengine_1_1_timer}{Timer} class. 
+
+This class is responsible for build a timer for an specific occasion. 
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+Timer@{engine\+::\+Timer}!get\+\_\+elapsed\+\_\+time@{get\+\_\+elapsed\+\_\+time}}
+\index{get\+\_\+elapsed\+\_\+time@{get\+\_\+elapsed\+\_\+time}!engine\+::\+Timer@{engine\+::\+Timer}}
+\subsubsection[{\texorpdfstring{get\+\_\+elapsed\+\_\+time()}{get_elapsed_time()}}]{\setlength{\rightskip}{0pt plus 5cm}int Timer\+::get\+\_\+elapsed\+\_\+time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_timer_aeb59bd6b4bb8d26575cb81a9164bd333}{}\label{classengine_1_1_timer_aeb59bd6b4bb8d26575cb81a9164bd333}
+
+
+Get elapsed time of the game. 
+
+This method gets the elapsed time of the game, in milliseconds.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Timer@{engine\+::\+Timer}!get\+\_\+total\+\_\+time@{get\+\_\+total\+\_\+time}}
+\index{get\+\_\+total\+\_\+time@{get\+\_\+total\+\_\+time}!engine\+::\+Timer@{engine\+::\+Timer}}
+\subsubsection[{\texorpdfstring{get\+\_\+total\+\_\+time()}{get_total_time()}}]{\setlength{\rightskip}{0pt plus 5cm}int Timer\+::get\+\_\+total\+\_\+time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_timer_ab5d8002dd5e97d720d5c1d11fcdf315f}{}\label{classengine_1_1_timer_ab5d8002dd5e97d720d5c1d11fcdf315f}
+
+
+Get total time of the game. 
+
+This method get the total time of the game in milliseconds, but just if is running.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Timer@{engine\+::\+Timer}!init\+\_\+timer@{init\+\_\+timer}}
+\index{init\+\_\+timer@{init\+\_\+timer}!engine\+::\+Timer@{engine\+::\+Timer}}
+\subsubsection[{\texorpdfstring{init\+\_\+timer()}{init_timer()}}]{\setlength{\rightskip}{0pt plus 5cm}void Timer\+::init\+\_\+timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_timer_a45123e6a818705f7f960c641a31e1b86}{}\label{classengine_1_1_timer_a45123e6a818705f7f960c641a31e1b86}
+
+
+Initialize the timer. 
+
+This method initialize the timer.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Timer@{engine\+::\+Timer}!set\+\_\+interval@{set\+\_\+interval}}
+\index{set\+\_\+interval@{set\+\_\+interval}!engine\+::\+Timer@{engine\+::\+Timer}}
+\subsubsection[{\texorpdfstring{set\+\_\+interval()}{set_interval()}}]{\setlength{\rightskip}{0pt plus 5cm}void Timer\+::set\+\_\+interval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_timer_a230de9674796b8c15ec41a13f772f330}{}\label{classengine_1_1_timer_a230de9674796b8c15ec41a13f772f330}
+
+
+Set interval of the game. 
+
+This method set an interval, in milliseconds, on the timer if the timer is defined with running.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Timer@{engine\+::\+Timer}!stop\+\_\+timer@{stop\+\_\+timer}}
+\index{stop\+\_\+timer@{stop\+\_\+timer}!engine\+::\+Timer@{engine\+::\+Timer}}
+\subsubsection[{\texorpdfstring{stop\+\_\+timer()}{stop_timer()}}]{\setlength{\rightskip}{0pt plus 5cm}void Timer\+::stop\+\_\+timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_timer_ac05cde2d44f1a1fc40554bf78a65fe0e}{}\label{classengine_1_1_timer_ac05cde2d44f1a1fc40554bf78a65fe0e}
+
+
+Stop the timer. 
+
+This method stop the timer if it has already been initialized.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/include/timer.\+hpp\item 
-engine/src/timer.\+cpp\end{DoxyCompactItemize}
+engine/include/\hyperlink{timer_8hpp}{timer.\+hpp}\item 
+engine/src/\hyperlink{timer_8cpp}{timer.\+cpp}\end{DoxyCompactItemize}

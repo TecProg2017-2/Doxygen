@@ -2,6 +2,15 @@
 \label{classmindscape_1_1_button}\index{mindscape\+::\+Button@{mindscape\+::\+Button}}
 
 
+A \hyperlink{classmindscape_1_1_button}{Button} class.  
+
+
+
+
+{\ttfamily \#include $<$button.\+hpp$>$}
+
+
+
 Inheritance diagram for mindscape\+:\+:Button\+:
 % FIG 0
 
@@ -14,16 +23,71 @@ Collaboration diagram for mindscape\+:\+:Button\+:
 {\bfseries Button} (std\+::string p\+\_\+name, std\+::pair$<$ int, int $>$ position, int priority)\hypertarget{classmindscape_1_1_button_a7a787c4e0289867988522f676fcb5f76}{}\label{classmindscape_1_1_button_a7a787c4e0289867988522f676fcb5f76}
 
 \item 
-void {\bfseries set\+\_\+action} (\hyperlink{classmindscape_1_1_action}{Action} $\ast$, std\+::string param)\hypertarget{classmindscape_1_1_button_ae097539464c762e064650be581b1a5d8}{}\label{classmindscape_1_1_button_ae097539464c762e064650be581b1a5d8}
-
-\item 
-void {\bfseries on\+\_\+event} (\hyperlink{class_game_event}{Game\+Event} game\+\_\+event)\hypertarget{classmindscape_1_1_button_a1c5f7eea78429535c6cc76bcdf778a94}{}\label{classmindscape_1_1_button_a1c5f7eea78429535c6cc76bcdf778a94}
-
-\end{DoxyCompactItemize}
+void \hyperlink{classmindscape_1_1_button_ae097539464c762e064650be581b1a5d8}{set\+\_\+action} (\hyperlink{classmindscape_1_1_action}{Action} $\ast$, std\+::string param)
+\begin{DoxyCompactList}\small\item\em Sets an action for the button. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_button_a1c5f7eea78429535c6cc76bcdf778a94}{on\+\_\+event} (\hyperlink{class_game_event}{Game\+Event} game\+\_\+event)
+\begin{DoxyCompactList}\small\item\em Pauses or plays the game or changes the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classmindscape_1_1_button}{Button} class. 
+
+A class responsible to ensure button handling. 
+
+\subsection{Member Function Documentation}
+\index{mindscape\+::\+Button@{mindscape\+::\+Button}!on\+\_\+event@{on\+\_\+event}}
+\index{on\+\_\+event@{on\+\_\+event}!mindscape\+::\+Button@{mindscape\+::\+Button}}
+\subsubsection[{\texorpdfstring{on\+\_\+event(\+Game\+Event game\+\_\+event)}{on_event(GameEvent game_event)}}]{\setlength{\rightskip}{0pt plus 5cm}void Button\+::on\+\_\+event (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Event}}]{game\+\_\+event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmindscape_1_1_button_a1c5f7eea78429535c6cc76bcdf778a94}{}\label{classmindscape_1_1_button_a1c5f7eea78429535c6cc76bcdf778a94}
+
+
+Pauses or plays the game or changes the scene. 
+
+The button may have different actions depending on the event that occured
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_game_event}{Game\+Event}} & containing the game event that was triggered by a button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object}.
+
+\index{mindscape\+::\+Button@{mindscape\+::\+Button}!set\+\_\+action@{set\+\_\+action}}
+\index{set\+\_\+action@{set\+\_\+action}!mindscape\+::\+Button@{mindscape\+::\+Button}}
+\subsubsection[{\texorpdfstring{set\+\_\+action(\+Action $\ast$, std\+::string param)}{set_action(Action *, std::string param)}}]{\setlength{\rightskip}{0pt plus 5cm}void Button\+::set\+\_\+action (
+\begin{DoxyParamCaption}
+\item[{{\bf Action} $\ast$}]{p\+\_\+action, }
+\item[{std\+::string}]{p\+\_\+param}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_button_ae097539464c762e064650be581b1a5d8}{}\label{classmindscape_1_1_button_ae097539464c762e064650be581b1a5d8}
+
+
+Sets an action for the button. 
+
+Every button must present an action when pressed
+
+
+\begin{DoxyParams}{Parameters}
+{\em Action$\ast$} & containing the reference of an action \\
+\hline
+{\em std\+::string} & containing the name of the action \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/button.\+hpp\item 
-src/button.\+cpp\end{DoxyCompactItemize}
+include/\hyperlink{button_8hpp}{button.\+hpp}\item 
+src/\hyperlink{button_8cpp}{button.\+cpp}\end{DoxyCompactItemize}

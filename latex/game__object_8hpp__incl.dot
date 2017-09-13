@@ -34,13 +34,13 @@ digraph "engine/include/game_object.hpp"
   Node15 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
   Node15 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
   Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
-  Node16 [label="image.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$image_8hpp_source.html"];
+  Node16 [label="image.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$image_8hpp.html",tooltip="Purpose: Contains methods for managing game images. "];
   Node16 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
   Node16 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
   Node16 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
   Node16 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
   Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid"];
-  Node17 [label="text.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$text_8hpp_source.html"];
+  Node17 [label="text.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$text_8hpp.html",tooltip="Purpose: Contains methods to game class&#39; management. "];
   Node17 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
   Node17 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
   Node17 -> Node18 [color="midnightblue",fontsize="10",style="solid"];
@@ -51,7 +51,7 @@ digraph "engine/include/game_object.hpp"
   Node19 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
   Node19 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
   Node19 -> Node20 [color="midnightblue",fontsize="10",style="solid"];
-  Node20 [label="time.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$time_8hpp_source.html"];
+  Node20 [label="time.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$time_8hpp.html",tooltip="Purpose: Contains methods to time class&#39; management. "];
   Node20 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
   Node19 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
   Node1 -> Node21 [color="midnightblue",fontsize="10",style="solid"];
@@ -61,7 +61,7 @@ digraph "engine/include/game_object.hpp"
   Node21 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
   Node21 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
   Node1 -> Node22 [color="midnightblue",fontsize="10",style="solid"];
-  Node22 [label="keyboard_event.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$keyboard__event_8hpp_source.html"];
+  Node22 [label="keyboard_event.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$keyboard__event_8hpp.html",tooltip="Purpose: Contains methods to game class&#39; management. "];
   Node22 -> Node23 [color="midnightblue",fontsize="10",style="solid"];
   Node23 [label="event.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$event_8hpp_source.html"];
   Node23 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
@@ -69,7 +69,7 @@ digraph "engine/include/game_object.hpp"
   Node22 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
   Node22 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
   Node1 -> Node24 [color="midnightblue",fontsize="10",style="solid"];
-  Node24 [label="state_map.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$state__map_8hpp_source.html"];
+  Node24 [label="state_map.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$state__map_8hpp.html",tooltip="Purpose: Contain a class to states method&#39;s management. "];
   Node24 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
   Node24 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
   Node1 -> Node25 [color="midnightblue",fontsize="10",style="solid"];
@@ -81,7 +81,7 @@ digraph "engine/include/game_object.hpp"
   Node25 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
   Node25 -> Node20 [color="midnightblue",fontsize="10",style="solid"];
   Node25 -> Node26 [color="midnightblue",fontsize="10",style="solid"];
-  Node26 [label="timer.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$timer_8hpp_source.html"];
+  Node26 [label="timer.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$timer_8hpp.html",tooltip="Purpose: Contains methods to timer&#39;s management. "];
   Node26 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
   Node1 -> Node27 [color="midnightblue",fontsize="10",style="solid"];
   Node27 [label="observer.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$observer_8hpp_source.html"];

@@ -10,7 +10,7 @@ digraph "mindscape::HudFox"
   Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
   Node4 [label="engine::Observable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classengine_1_1_observable.html"];
   Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" states" ];
-  Node5 [label="engine::StateMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classengine_1_1_state_map.html"];
+  Node5 [label="engine::StateMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classengine_1_1_state_map.html",tooltip="A StateMap class. "];
   Node6 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" game_object_direction\nstate\nname" ];
   Node6 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
 }
