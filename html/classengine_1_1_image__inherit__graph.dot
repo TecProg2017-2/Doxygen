@@ -6,5 +6,5 @@ digraph "engine::Image"
   Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="engine::Component",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classengine_1_1_component.html",tooltip="A Component class. "];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="engine::Animation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classengine_1_1_animation.html"];
+  Node3 [label="engine::Animation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classengine_1_1_animation.html",tooltip="A Animation class. "];
 }

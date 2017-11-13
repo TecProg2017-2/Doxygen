@@ -105,6 +105,8 @@ $(document).ready(function(){initNavTree('persistence__dat_8cpp.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">persistence_dat.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -113,6 +115,7 @@ $(document).ready(function(){initNavTree('persistence__dat_8cpp.html','');});
 <p>Purpose: Contains methods to save the game.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="persistence__dat_8hpp_source.html">persistence_dat.hpp</a>&quot;</code><br />
+<code>#include &quot;../engine/include/log.hpp&quot;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
@@ -125,11 +128,67 @@ Include dependency graph for persistence_dat.cpp:</div>
 <div class="center"><img src="persistence__dat_8cpp__incl.png" border="0" usemap="#engine_2src_2persistence__dat_8cpp" alt=""/></div>
 <!-- MAP 0 -->
 </div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a04f575f93f5595eec5120106f0344be7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="persistence__dat_8cpp.html#a04f575f93f5595eec5120106f0344be7">write_file</a> (std::stack&lt; std::string &gt; paths, <a class="el" href="classengine_1_1_persistence_map.html">PersistenceMap</a> *data, std::string line)</td></tr>
+<tr class="memdesc:a04f575f93f5595eec5120106f0344be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes in file.  <a href="#a04f575f93f5595eec5120106f0344be7">More...</a><br /></td></tr>
+<tr class="separator:a04f575f93f5595eec5120106f0344be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Purpose: Contains methods to save the game. </p>
 <p>MIT License Copyright (c) 2017 MindScape</p>
 <p><a href="https://github.com/TecProg2017-2/mindscape/blob/master/LICENSE.md">https://github.com/TecProg2017-2/mindscape/blob/master/LICENSE.md</a> </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a04f575f93f5595eec5120106f0344be7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void write_file </td>
+          <td>(</td>
+          <td class="paramtype">std::stack&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>paths</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classengine_1_1_persistence_map.html">PersistenceMap</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes in file. </p>
+<p>This function allows writes the data in the files</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">paths.</td><td>Name of the path will be write. </td></tr>
+    <tr><td class="paramname">data.</td><td>Map states. </td></tr>
+    <tr><td class="paramname">line.</td><td>line that will be written in the file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void. </dd></dl>
+<p>&lt; string. Access key</p>
+<p>&lt; string. Data values</p>
+<p>&lt; istringstream. Input stream class to operate on strings.</p>
+<p>&lt; object of the dada </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

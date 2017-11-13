@@ -2,6 +2,15 @@
 \label{classengine_1_1_hitbox}\index{engine\+::\+Hitbox@{engine\+::\+Hitbox}}
 
 
+A \hyperlink{classengine_1_1_hitbox}{Hitbox} class.  
+
+
+
+
+{\ttfamily \#include $<$hitbox.\+hpp$>$}
+
+
+
 Inheritance diagram for engine\+:\+:Hitbox\+:
 % FIG 0
 
@@ -14,36 +23,214 @@ Collaboration diagram for engine\+:\+:Hitbox\+:
 {\bfseries Hitbox} (std\+::string name, std\+::pair$<$ int, int $>$ go\+\_\+coordinates, std\+::pair$<$ int, int $>$ displacement, std\+::pair$<$ int, int $>$ dimensions, S\+D\+L\+\_\+\+Renderer $\ast$p\+\_\+render, bool active=true, int priority=5)\hypertarget{classengine_1_1_hitbox_a5900c5e7899ab60e3c9f388bdf3d6a1a}{}\label{classengine_1_1_hitbox_a5900c5e7899ab60e3c9f388bdf3d6a1a}
 
 \item 
-std\+::pair$<$ int, int $>$ {\bfseries get\+\_\+dimensions} ()\hypertarget{classengine_1_1_hitbox_a6383a8d5f77c30dde5fac8f3d3089504}{}\label{classengine_1_1_hitbox_a6383a8d5f77c30dde5fac8f3d3089504}
+std\+::pair$<$ int, int $>$ \hyperlink{classengine_1_1_hitbox_a6383a8d5f77c30dde5fac8f3d3089504}{get\+\_\+dimensions} ()
+\begin{DoxyCompactList}\small\item\em This method return the width and height of the hitbox. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_hitbox_add67edc1c8aefeb1379ce5083c518993}{set\+\_\+dimensions} (std\+::pair$<$ int, int $>$)
+\begin{DoxyCompactList}\small\item\em This method set the width and height of the hitbox. \end{DoxyCompactList}\item 
+bool \hyperlink{classengine_1_1_hitbox_ab3528c88c18c2b671a5b7b39d0bb9fdf}{collides\+\_\+with} (\hyperlink{classengine_1_1_hitbox}{Hitbox} $\ast$)
+\begin{DoxyCompactList}\small\item\em Defines the collides with others hitboxes. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_hitbox_a61fef55605a99e6b5df28a63aa131609}{set\+\_\+displacement} (std\+::pair$<$ int, int $>$, std\+::pair$<$ int, int $>$)
+\begin{DoxyCompactList}\small\item\em Sets the new coordinate of the hitbox after its movement. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \hyperlink{classengine_1_1_hitbox_a7731c305c7a9c9a56b609e7b89d11cb2}{get\+\_\+coordinates} ()
+\begin{DoxyCompactList}\small\item\em This method gets the coordinates of the hitbox. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_hitbox_a039214e70d6043ddde6c130a92fd858f}{update} (std\+::pair$<$ int, int $>$)
+\begin{DoxyCompactList}\small\item\em Update the coordinate of the hitbox after its movement. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_hitbox_aa4b7afca0a7eb745b9a52d23538c5436}{draw} ()
+\begin{DoxyCompactList}\small\item\em Shows the image that was loaded and initialized on the screen. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_hitbox_afb153b598e3b99372a86229373da4e13}{initialize} ()
+\begin{DoxyCompactList}\small\item\em Load and show the hitbox on the screen. \end{DoxyCompactList}\item 
+bool \hyperlink{classengine_1_1_hitbox_a97553f82c37ed4270d507cc352180fb2}{wanna\+\_\+draw\+\_\+hitbox} ()
+\begin{DoxyCompactList}\small\item\em Help developers to debug the hitboxes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-void {\bfseries set\+\_\+dimensions} (std\+::pair$<$ int, int $>$)\hypertarget{classengine_1_1_hitbox_add67edc1c8aefeb1379ce5083c518993}{}\label{classengine_1_1_hitbox_add67edc1c8aefeb1379ce5083c518993}
 
-\item 
-bool {\bfseries collides\+\_\+with} (\hyperlink{classengine_1_1_hitbox}{Hitbox} $\ast$)\hypertarget{classengine_1_1_hitbox_ab3528c88c18c2b671a5b7b39d0bb9fdf}{}\label{classengine_1_1_hitbox_ab3528c88c18c2b671a5b7b39d0bb9fdf}
+\subsection{Detailed Description}
+A \hyperlink{classengine_1_1_hitbox}{Hitbox} class. 
 
-\item 
-void {\bfseries set\+\_\+displacement} (std\+::pair$<$ int, int $>$, std\+::pair$<$ int, int $>$)\hypertarget{classengine_1_1_hitbox_a61fef55605a99e6b5df28a63aa131609}{}\label{classengine_1_1_hitbox_a61fef55605a99e6b5df28a63aa131609}
+The class hitbox has atributtes and methods for all types of hitboxes. That need information about width, height, coordinates, displacement and others. 
 
-\item 
-std\+::pair$<$ int, int $>$ {\bfseries get\+\_\+coordinates} ()\hypertarget{classengine_1_1_hitbox_a7731c305c7a9c9a56b609e7b89d11cb2}{}\label{classengine_1_1_hitbox_a7731c305c7a9c9a56b609e7b89d11cb2}
+\subsection{Member Function Documentation}
+\index{engine\+::\+Hitbox@{engine\+::\+Hitbox}!collides\+\_\+with@{collides\+\_\+with}}
+\index{collides\+\_\+with@{collides\+\_\+with}!engine\+::\+Hitbox@{engine\+::\+Hitbox}}
+\subsubsection[{\texorpdfstring{collides\+\_\+with(\+Hitbox $\ast$)}{collides_with(Hitbox *)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Hitbox\+::collides\+\_\+with (
+\begin{DoxyParamCaption}
+\item[{{\bf Hitbox} $\ast$}]{other\+\_\+hitbox}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_hitbox_ab3528c88c18c2b671a5b7b39d0bb9fdf}{}\label{classengine_1_1_hitbox_ab3528c88c18c2b671a5b7b39d0bb9fdf}
 
-\item 
-void {\bfseries update} (std\+::pair$<$ int, int $>$)\hypertarget{classengine_1_1_hitbox_a039214e70d6043ddde6c130a92fd858f}{}\label{classengine_1_1_hitbox_a039214e70d6043ddde6c130a92fd858f}
 
-\item 
-void {\bfseries draw} ()\hypertarget{classengine_1_1_hitbox_aa4b7afca0a7eb745b9a52d23538c5436}{}\label{classengine_1_1_hitbox_aa4b7afca0a7eb745b9a52d23538c5436}
+Defines the collides with others hitboxes. 
 
-\item 
-void {\bfseries initialize} ()\hypertarget{classengine_1_1_hitbox_afb153b598e3b99372a86229373da4e13}{}\label{classengine_1_1_hitbox_afb153b598e3b99372a86229373da4e13}
+this method defines the collision with two hitbox, based in its coordinates and dimensions
 
-\item 
-bool {\bfseries wanna\+\_\+draw\+\_\+hitbox} ()\hypertarget{classengine_1_1_hitbox_a97553f82c37ed4270d507cc352180fb2}{}\label{classengine_1_1_hitbox_a97553f82c37ed4270d507cc352180fb2}
 
-\end{DoxyCompactItemize}
+\begin{DoxyParams}{Parameters}
+{\em other\+\_\+hitbox} & A hitbox object to identify collision between them. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true if the collision was identify. 
+\end{DoxyReturn}
+$<$ int. Coordinate of the hitbox in axis x
+
+$<$ int. Coordinate in axis x and width of the hitbox
+
+$<$ int. Coordinate of the hitbox in axis y
+
+$<$ int. Coordinate in axis y and height of the hitbox
+
+$<$ pair$<$int, int$>$. Dimensions of the hitbox. width and height
+
+$<$ pair$<$int, int$>$. Coordinates on the axis x and y
+
+$<$ int. Coordinate of the hitbox that will collide in axis x
+
+$<$ int. Coordinate in axis x and width of the hitbox
+
+$<$ int. Coordinate of the hitbox in axis y
+
+$<$ int. Coordinate in axis y and height of the hitbox \index{engine\+::\+Hitbox@{engine\+::\+Hitbox}!draw@{draw}}
+\index{draw@{draw}!engine\+::\+Hitbox@{engine\+::\+Hitbox}}
+\subsubsection[{\texorpdfstring{draw()}{draw()}}]{\setlength{\rightskip}{0pt plus 5cm}void Hitbox\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_hitbox_aa4b7afca0a7eb745b9a52d23538c5436}{}\label{classengine_1_1_hitbox_aa4b7afca0a7eb745b9a52d23538c5436}
+
+
+Shows the image that was loaded and initialized on the screen. 
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+$<$ S\+D\+L\+\_\+\+Rect. This render\+\_\+quad tells where the image will appear in the screen.\index{engine\+::\+Hitbox@{engine\+::\+Hitbox}!get\+\_\+coordinates@{get\+\_\+coordinates}}
+\index{get\+\_\+coordinates@{get\+\_\+coordinates}!engine\+::\+Hitbox@{engine\+::\+Hitbox}}
+\subsubsection[{\texorpdfstring{get\+\_\+coordinates()}{get_coordinates()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$ int, int $>$ Hitbox\+::get\+\_\+coordinates (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_hitbox_a7731c305c7a9c9a56b609e7b89d11cb2}{}\label{classengine_1_1_hitbox_a7731c305c7a9c9a56b609e7b89d11cb2}
+
+
+This method gets the coordinates of the hitbox. 
+
+\begin{DoxyReturn}{Returns}
+Returns the position in axis X and Y of the hitbox. 
+\end{DoxyReturn}
+\index{engine\+::\+Hitbox@{engine\+::\+Hitbox}!get\+\_\+dimensions@{get\+\_\+dimensions}}
+\index{get\+\_\+dimensions@{get\+\_\+dimensions}!engine\+::\+Hitbox@{engine\+::\+Hitbox}}
+\subsubsection[{\texorpdfstring{get\+\_\+dimensions()}{get_dimensions()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$ int, int $>$ Hitbox\+::get\+\_\+dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_hitbox_a6383a8d5f77c30dde5fac8f3d3089504}{}\label{classengine_1_1_hitbox_a6383a8d5f77c30dde5fac8f3d3089504}
+
+
+This method return the width and height of the hitbox. 
+
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$int, int$>$ Dimensions of the hitbox. 
+\end{DoxyReturn}
+\index{engine\+::\+Hitbox@{engine\+::\+Hitbox}!initialize@{initialize}}
+\index{initialize@{initialize}!engine\+::\+Hitbox@{engine\+::\+Hitbox}}
+\subsubsection[{\texorpdfstring{initialize()}{initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Hitbox\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_hitbox_afb153b598e3b99372a86229373da4e13}{}\label{classengine_1_1_hitbox_afb153b598e3b99372a86229373da4e13}
+
+
+Load and show the hitbox on the screen. 
+
+this method load an image and initialize as a hitbox.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+$<$ S\+D\+L\+\_\+\+Surface. Structure that contains a collection of pixels and images of the surface.
+
+$<$ S\+D\+L\+\_\+\+Texture. A group of pixels. \index{engine\+::\+Hitbox@{engine\+::\+Hitbox}!set\+\_\+dimensions@{set\+\_\+dimensions}}
+\index{set\+\_\+dimensions@{set\+\_\+dimensions}!engine\+::\+Hitbox@{engine\+::\+Hitbox}}
+\subsubsection[{\texorpdfstring{set\+\_\+dimensions(std\+::pair$<$ int, int $>$)}{set_dimensions(std::pair< int, int >)}}]{\setlength{\rightskip}{0pt plus 5cm}void Hitbox\+::set\+\_\+dimensions (
+\begin{DoxyParamCaption}
+\item[{std\+::pair$<$ int, int $>$}]{p\+\_\+dimensions}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_hitbox_add67edc1c8aefeb1379ce5083c518993}{}\label{classengine_1_1_hitbox_add67edc1c8aefeb1379ce5083c518993}
+
+
+This method set the width and height of the hitbox. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+dimensions} & is it the pointer that sets the dimensions of hitbox. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Hitbox@{engine\+::\+Hitbox}!set\+\_\+displacement@{set\+\_\+displacement}}
+\index{set\+\_\+displacement@{set\+\_\+displacement}!engine\+::\+Hitbox@{engine\+::\+Hitbox}}
+\subsubsection[{\texorpdfstring{set\+\_\+displacement(std\+::pair$<$ int, int $>$, std\+::pair$<$ int, int $>$)}{set_displacement(std::pair< int, int >, std::pair< int, int >)}}]{\setlength{\rightskip}{0pt plus 5cm}void Hitbox\+::set\+\_\+displacement (
+\begin{DoxyParamCaption}
+\item[{std\+::pair$<$ int, int $>$}]{go\+\_\+coordinates, }
+\item[{std\+::pair$<$ int, int $>$}]{p\+\_\+displacement}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_hitbox_a61fef55605a99e6b5df28a63aa131609}{}\label{classengine_1_1_hitbox_a61fef55605a99e6b5df28a63aa131609}
+
+
+Sets the new coordinate of the hitbox after its movement. 
+
+this method calculate the new coordinate of the hitbox based in the its coordinate plus its coordinate of the movement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em go\+\_\+coordinates} & coordinate that the hitbox will go. \\
+\hline
+{\em p\+\_\+displacement} & coordinate that the hitbox is. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Hitbox@{engine\+::\+Hitbox}!update@{update}}
+\index{update@{update}!engine\+::\+Hitbox@{engine\+::\+Hitbox}}
+\subsubsection[{\texorpdfstring{update(std\+::pair$<$ int, int $>$)}{update(std::pair< int, int >)}}]{\setlength{\rightskip}{0pt plus 5cm}void Hitbox\+::update (
+\begin{DoxyParamCaption}
+\item[{std\+::pair$<$ int, int $>$}]{go\+\_\+coordinates}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_hitbox_a039214e70d6043ddde6c130a92fd858f}{}\label{classengine_1_1_hitbox_a039214e70d6043ddde6c130a92fd858f}
+
+
+Update the coordinate of the hitbox after its movement. 
+
+this method updates the coordinate of the hitbox based in the its coordinate plus its coordinate of the movement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em go\+\_\+coordinates} & coordinate that the hitbox will go. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Hitbox@{engine\+::\+Hitbox}!wanna\+\_\+draw\+\_\+hitbox@{wanna\+\_\+draw\+\_\+hitbox}}
+\index{wanna\+\_\+draw\+\_\+hitbox@{wanna\+\_\+draw\+\_\+hitbox}!engine\+::\+Hitbox@{engine\+::\+Hitbox}}
+\subsubsection[{\texorpdfstring{wanna\+\_\+draw\+\_\+hitbox()}{wanna_draw_hitbox()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Hitbox\+::wanna\+\_\+draw\+\_\+hitbox (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_hitbox_a97553f82c37ed4270d507cc352180fb2}{}\label{classengine_1_1_hitbox_a97553f82c37ed4270d507cc352180fb2}
+
+
+Help developers to debug the hitboxes. 
+
+Help developers to debug the hitboxes because it allows you to show all hitboxes.
+
+\begin{DoxyReturn}{Returns}
+if return true, all of hitboxes will be showed on the screen. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/include/hitbox.\+hpp\item 
-engine/src/hitbox.\+cpp\end{DoxyCompactItemize}
+engine/include/\hyperlink{hitbox_8hpp}{hitbox.\+hpp}\item 
+engine/src/\hyperlink{hitbox_8cpp}{hitbox.\+cpp}\end{DoxyCompactItemize}

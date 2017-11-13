@@ -1,7 +1,11 @@
 var dir_bafa501d493553e442f19f5f8dd7b29c =
 [
-    [ "animation.hpp", "animation_8hpp_source.html", null ],
-    [ "audio.hpp", "audio_8hpp_source.html", null ],
+    [ "animation.hpp", "animation_8hpp.html", [
+      [ "Animation", "classengine_1_1_animation.html", "classengine_1_1_animation" ]
+    ] ],
+    [ "audio.hpp", "audio_8hpp.html", [
+      [ "Audio", "classengine_1_1_audio.html", "classengine_1_1_audio" ]
+    ] ],
     [ "color.hpp", "color_8hpp_source.html", null ],
     [ "component.hpp", "component_8hpp.html", [
       [ "Component", "classengine_1_1_component.html", "classengine_1_1_component" ]
@@ -12,7 +16,9 @@ var dir_bafa501d493553e442f19f5f8dd7b29c =
     [ "game_object.hpp", "game__object_8hpp.html", [
       [ "GameObject", "classengine_1_1_game_object.html", "classengine_1_1_game_object" ]
     ] ],
-    [ "hitbox.hpp", "hitbox_8hpp_source.html", null ],
+    [ "hitbox.hpp", "hitbox_8hpp.html", [
+      [ "Hitbox", "classengine_1_1_hitbox.html", "classengine_1_1_hitbox" ]
+    ] ],
     [ "image.hpp", "image_8hpp.html", [
       [ "Image", "classengine_1_1_image.html", "classengine_1_1_image" ]
     ] ],
@@ -22,6 +28,7 @@ var dir_bafa501d493553e442f19f5f8dd7b29c =
     [ "level.hpp", "level_8hpp.html", [
       [ "Level", "classengine_1_1_level.html", "classengine_1_1_level" ]
     ] ],
+    [ "log.hpp", "log_8hpp_source.html", null ],
     [ "observable.hpp", "observable_8hpp_source.html", null ],
     [ "observer.hpp", "observer_8hpp_source.html", null ],
     [ "persistence.hpp", "persistence_8hpp_source.html", null ],

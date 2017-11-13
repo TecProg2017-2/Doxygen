@@ -6,6 +6,7 @@ Purpose\+: Contains methods to save the game.
 
 
 {\ttfamily \#include \char`\"{}persistence\+\_\+dat.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../engine/include/log.\+hpp\char`\"{}}\\*
 {\ttfamily \#include $<$unordered\+\_\+map$>$}\\*
 {\ttfamily \#include $<$iostream$>$}\\*
 {\ttfamily \#include $<$fstream$>$}\\*
@@ -14,6 +15,11 @@ Purpose\+: Contains methods to save the game.
 {\ttfamily \#include $<$stack$>$}\\*
 Include dependency graph for persistence\+\_\+dat.\+cpp\+:
 % FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{persistence__dat_8cpp_a04f575f93f5595eec5120106f0344be7}{write\+\_\+file} (std\+::stack$<$ std\+::string $>$ paths, \hyperlink{classengine_1_1_persistence_map}{Persistence\+Map} $\ast$data, std\+::string line)
+\begin{DoxyCompactList}\small\item\em Writes in file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -22,3 +28,39 @@ Purpose\+: Contains methods to save the game.
 M\+IT License Copyright (c) 2017 Mind\+Scape
 
 \href{https://github.com/TecProg2017-2/mindscape/blob/master/LICENSE.md}{\tt https\+://github.\+com/\+Tec\+Prog2017-\/2/mindscape/blob/master/\+L\+I\+C\+E\+N\+S\+E.\+md} 
+
+\subsection{Function Documentation}
+\index{persistence\+\_\+dat.\+cpp@{persistence\+\_\+dat.\+cpp}!write\+\_\+file@{write\+\_\+file}}
+\index{write\+\_\+file@{write\+\_\+file}!persistence\+\_\+dat.\+cpp@{persistence\+\_\+dat.\+cpp}}
+\subsubsection[{\texorpdfstring{write\+\_\+file(std\+::stack$<$ std\+::string $>$ paths, Persistence\+Map $\ast$data, std\+::string line)}{write_file(std::stack< std::string > paths, PersistenceMap *data, std::string line)}}]{\setlength{\rightskip}{0pt plus 5cm}void write\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{std\+::stack$<$ std\+::string $>$}]{paths, }
+\item[{{\bf Persistence\+Map} $\ast$}]{data, }
+\item[{std\+::string}]{line}
+\end{DoxyParamCaption}
+)}\hypertarget{persistence__dat_8cpp_a04f575f93f5595eec5120106f0344be7}{}\label{persistence__dat_8cpp_a04f575f93f5595eec5120106f0344be7}
+
+
+Writes in file. 
+
+This function allows writes the data in the files
+
+
+\begin{DoxyParams}{Parameters}
+{\em paths.} & Name of the path will be write. \\
+\hline
+{\em data.} & Map states. \\
+\hline
+{\em line.} & line that will be written in the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+$<$ string. Access key
+
+$<$ string. Data values
+
+$<$ istringstream. Input stream class to operate on strings.
+
+$<$ object of the dada 

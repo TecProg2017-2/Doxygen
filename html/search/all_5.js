@@ -12,10 +12,11 @@ var searchData=
   ['fighter',['Fighter',['../classmindscape_1_1_fighter.html',1,'mindscape']]],
   ['fighter_2ecpp',['fighter.cpp',['../fighter_8cpp.html',1,'']]],
   ['fighter_2ehpp',['fighter.hpp',['../fighter_8hpp.html',1,'']]],
-  ['fox',['Fox',['../classmindscape_1_1_fox.html#a9c5e270000519e07ded5c549d16ad057',1,'mindscape::Fox']]],
+  ['first_5flevel_5fclown',['first_level_clown',['../classmindscape_1_1_platform.html#aa90710d3a7fcbe0c09eb8f63c9fbc102',1,'mindscape::Platform']]],
   ['fox',['Fox',['../classmindscape_1_1_fox.html',1,'mindscape']]],
+  ['fox',['Fox',['../classmindscape_1_1_fox.html#a9c5e270000519e07ded5c549d16ad057',1,'mindscape::Fox']]],
   ['fox_2ecpp',['fox.cpp',['../fox_8cpp.html',1,'']]],
   ['fox_2ehpp',['fox.hpp',['../fox_8hpp.html',1,'']]],
-  ['free',['free',['../classengine_1_1_game_object.html#ab4ab356f4d4499ac1edac37f9932056c',1,'engine::GameObject::free()'],['../classengine_1_1_image.html#aa70272a861bcaa5297e6967c9106197f',1,'engine::Image::free()'],['../classengine_1_1_level.html#abb665514c17a427c4664dbc6bd1e488b',1,'engine::Level::free()'],['../classengine_1_1_text.html#af6e2ba3f1cf543997b12dcc5ad5041c2',1,'engine::Text::free()']]],
+  ['free',['free',['../classengine_1_1_audio.html#afa4c5b2b7c325cafb74707ce026ddb3c',1,'engine::Audio::free()'],['../classengine_1_1_game_object.html#ab4ab356f4d4499ac1edac37f9932056c',1,'engine::GameObject::free()'],['../classengine_1_1_image.html#aa70272a861bcaa5297e6967c9106197f',1,'engine::Image::free()'],['../classengine_1_1_level.html#abb665514c17a427c4664dbc6bd1e488b',1,'engine::Level::free()'],['../classengine_1_1_text.html#af6e2ba3f1cf543997b12dcc5ad5041c2',1,'engine::Text::free()']]],
   ['free_5fmusic',['free_music',['../classengine_1_1_game_object.html#a1ce845a44c4ded5a8da397e00ea15e2c',1,'engine::GameObject']]]
 ];

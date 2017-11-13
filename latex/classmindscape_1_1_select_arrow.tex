@@ -20,7 +20,7 @@ Collaboration diagram for mindscape\+:\+:Select\+Arrow\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmindscape_1_1_select_arrow_ad6b1089e4898188b678b0f443781ced4}{Select\+Arrow} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)
+\hyperlink{classmindscape_1_1_select_arrow_ad6b1089e4898188b678b0f443781ced4}{Select\+Arrow} (std\+::string \hyperlink{classengine_1_1_game_object_a1f104f7af4f351e6d3278319762c9fe5}{name}, std\+::pair$<$ int, int $>$ position, int \hyperlink{classengine_1_1_game_object_a159ecaca30229e302793b11a75bd13c2}{priority})
 \begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classmindscape_1_1_select_arrow}{Select\+Arrow}. \end{DoxyCompactList}\item 
 void \hyperlink{classmindscape_1_1_select_arrow_aa9087f1fd52219fd23ad2cbdf717ca69}{on\+\_\+event} (\hyperlink{class_game_event}{Game\+Event} game\+\_\+event)
 \begin{DoxyCompactList}\small\item\em Process received \hyperlink{class_game}{Game} Events. \end{DoxyCompactList}\item 
@@ -28,7 +28,9 @@ void {\bfseries add\+\_\+action} (\hyperlink{classmindscape_1_1_action}{Action} 
 
 \item 
 void \hyperlink{classmindscape_1_1_select_arrow_a25e2956765898f2e9273df5704fe5973}{update\+\_\+state} ()
-\begin{DoxyCompactList}\small\item\em Updates the object state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Updates the object state. \end{DoxyCompactList}\item 
+void \hyperlink{classmindscape_1_1_select_arrow_a670507d263e6ae7a4f14ef01cc813d13}{arrow\+\_\+select} (std\+::string event\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Chose the arrow to be selected. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
@@ -66,6 +68,20 @@ void
 
 
 \subsection{Member Function Documentation}
+\index{mindscape\+::\+Select\+Arrow@{mindscape\+::\+Select\+Arrow}!arrow\+\_\+select@{arrow\+\_\+select}}
+\index{arrow\+\_\+select@{arrow\+\_\+select}!mindscape\+::\+Select\+Arrow@{mindscape\+::\+Select\+Arrow}}
+\subsubsection[{\texorpdfstring{arrow\+\_\+select(std\+::string event\+\_\+name)}{arrow_select(std::string event_name)}}]{\setlength{\rightskip}{0pt plus 5cm}void Select\+Arrow\+::arrow\+\_\+select (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{event\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classmindscape_1_1_select_arrow_a670507d263e6ae7a4f14ef01cc813d13}{}\label{classmindscape_1_1_select_arrow_a670507d263e6ae7a4f14ef01cc813d13}
+
+
+Chose the arrow to be selected. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 \index{mindscape\+::\+Select\+Arrow@{mindscape\+::\+Select\+Arrow}!on\+\_\+event@{on\+\_\+event}}
 \index{on\+\_\+event@{on\+\_\+event}!mindscape\+::\+Select\+Arrow@{mindscape\+::\+Select\+Arrow}}
 \subsubsection[{\texorpdfstring{on\+\_\+event(\+Game\+Event game\+\_\+event)}{on_event(GameEvent game_event)}}]{\setlength{\rightskip}{0pt plus 5cm}void Select\+Arrow\+::on\+\_\+event (

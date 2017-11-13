@@ -119,14 +119,11 @@ $(document).ready(function(){initNavTree('classengine_1_1_event_handler.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7897cdaa9aa300a3d73790ab9245ff62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7897cdaa9aa300a3d73790ab9245ff62"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>dispatch_pending_events</b> (unsigned now)</td></tr>
+<tr class="memitem:a7897cdaa9aa300a3d73790ab9245ff62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_event_handler.html#a7897cdaa9aa300a3d73790ab9245ff62">dispatch_pending_events</a> (unsigned now)</td></tr>
 <tr class="separator:a7897cdaa9aa300a3d73790ab9245ff62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a615ce0d67badc44977c3f71ecb911243"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a615ce0d67badc44977c3f71ecb911243"></a>
-std::list&lt; <a class="el" href="classengine_1_1_keyboard_event.html">KeyboardEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pending_keyboard_events</b> (unsigned now)</td></tr>
+<tr class="memitem:a615ce0d67badc44977c3f71ecb911243"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classengine_1_1_keyboard_event.html">KeyboardEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_event_handler.html#a615ce0d67badc44977c3f71ecb911243">pending_keyboard_events</a> (unsigned now)</td></tr>
 <tr class="separator:a615ce0d67badc44977c3f71ecb911243"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fc13e4f43fe29d3aafa1ed29018b6d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fc13e4f43fe29d3aafa1ed29018b6d2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>get_events_until_now</b> (unsigned now)</td></tr>
+<tr class="memitem:a6fc13e4f43fe29d3aafa1ed29018b6d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_event_handler.html#a6fc13e4f43fe29d3aafa1ed29018b6d2">get_events_until_now</a> (unsigned now)</td></tr>
 <tr class="separator:a6fc13e4f43fe29d3aafa1ed29018b6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -140,10 +137,88 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_listene
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:aabe7a62c9fdb036d998630f4ed86d2de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabe7a62c9fdb036d998630f4ed86d2de"></a>
-static std::list&lt; <a class="el" href="classengine_1_1_game_object.html">GameObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>listeners</b></td></tr>
+<tr class="memitem:aabe7a62c9fdb036d998630f4ed86d2de"><td class="memItemLeft" align="right" valign="top">static std::list&lt; <a class="el" href="classengine_1_1_game_object.html">GameObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_event_handler.html#aabe7a62c9fdb036d998630f4ed86d2de">listeners</a></td></tr>
 <tr class="separator:aabe7a62c9fdb036d998630f4ed86d2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7897cdaa9aa300a3d73790ab9245ff62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EventHandler::dispatch_pending_events </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>now</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>&lt; singleton game's instance</p>
+<p>&lt; keyboard events that were not processed yet</p>
+<p>&lt; game events created from keyboard events </p>
+
+</div>
+</div>
+<a class="anchor" id="a6fc13e4f43fe29d3aafa1ed29018b6d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EventHandler::get_events_until_now </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>now</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>&lt; loops while the number of events is greater than 0</p>
+<p>&lt; time of quit form the event </p>
+
+</div>
+</div>
+<a class="anchor" id="a615ce0d67badc44977c3f71ecb911243"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt; <a class="el" href="classengine_1_1_keyboard_event.html">KeyboardEvent</a> &gt; EventHandler::pending_keyboard_events </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>now</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>&lt; if the event is repeated by the same keys</p>
+<p>&lt; make variable responsible for checking if has events to be processed true </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aabe7a62c9fdb036d998630f4ed86d2de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt; <a class="el" href="classengine_1_1_game_object.html">GameObject</a> * &gt; EventHandler::listeners</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>list of game objects which will be notified</p>
+<p>objects listening for events triggers </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>engine/include/<a class="el" href="event__handler_8hpp_source.html">event_handler.hpp</a></li>
 <li>engine/src/event_handler.cpp</li>

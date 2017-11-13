@@ -1,0 +1,94 @@
+\hypertarget{game_8cpp}{}\section{engine/src/game.cpp File Reference}
+\label{game_8cpp}\index{engine/src/game.\+cpp@{engine/src/game.\+cpp}}
+
+
+Purpose\+: Contains methods that create and specify a hitbox.  
+
+
+{\ttfamily \#include \char`\"{}game.\+hpp\char`\"{}}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}log.\+hpp\char`\"{}}\\*
+Include dependency graph for game.\+cpp\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{game_8cpp_a8a837f498b1dc4fcb2fc8cc8a24f10ff}{throw\+\_\+error} (const char $\ast$function)
+\begin{DoxyCompactList}\small\item\em shows which function has an error and exits. \end{DoxyCompactList}\item 
+void \hyperlink{game_8cpp_a69158ac6fd74532aed22cdafe34aaa62}{render\+Screen} (S\+D\+L\+\_\+\+Renderer $\ast$renderer, \hyperlink{classengine_1_1_scene}{Scene} $\ast$actual\+\_\+scene)
+\begin{DoxyCompactList}\small\item\em Renders a given scene. \end{DoxyCompactList}\item 
+bool \hyperlink{game_8cpp_abe98536811196e58dab964e46f285c35}{R\+G\+B\+A\+\_\+color\+\_\+is\+\_\+valid} (int R, int G, int B, int A)
+\begin{DoxyCompactList}\small\item\em This routine validates an R\+G\+BA color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Purpose\+: Contains methods that create and specify a hitbox. 
+
+M\+IT License Copyright (c) 2017 Mind\+Scape
+
+\href{https://github.com/TecProg2017-2/mindscape/blob/master/LICENSE.md}{\tt https\+://github.\+com/\+Tec\+Prog2017-\/2/mindscape/blob/master/\+L\+I\+C\+E\+N\+S\+E.\+md} 
+
+\subsection{Function Documentation}
+\index{game.\+cpp@{game.\+cpp}!render\+Screen@{render\+Screen}}
+\index{render\+Screen@{render\+Screen}!game.\+cpp@{game.\+cpp}}
+\subsubsection[{\texorpdfstring{render\+Screen(\+S\+D\+L\+\_\+\+Renderer $\ast$renderer, Scene $\ast$actual\+\_\+scene)}{renderScreen(SDL_Renderer *renderer, Scene *actual_scene)}}]{\setlength{\rightskip}{0pt plus 5cm}void render\+Screen (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer, }
+\item[{{\bf Scene} $\ast$}]{actual\+\_\+scene}
+\end{DoxyParamCaption}
+)}\hypertarget{game_8cpp_a69158ac6fd74532aed22cdafe34aaa62}{}\label{game_8cpp_a69158ac6fd74532aed22cdafe34aaa62}
+
+
+Renders a given scene. 
+
+Given a scene, it replaces the previous with the given.
+
+S\+D\+L\+\_\+\+Renderer$\ast$ renderer that will render the new scene.  Scene$\ast$ actual\+\_\+scene that is the scene that will be updated.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{game.\+cpp@{game.\+cpp}!R\+G\+B\+A\+\_\+color\+\_\+is\+\_\+valid@{R\+G\+B\+A\+\_\+color\+\_\+is\+\_\+valid}}
+\index{R\+G\+B\+A\+\_\+color\+\_\+is\+\_\+valid@{R\+G\+B\+A\+\_\+color\+\_\+is\+\_\+valid}!game.\+cpp@{game.\+cpp}}
+\subsubsection[{\texorpdfstring{R\+G\+B\+A\+\_\+color\+\_\+is\+\_\+valid(int R, int G, int B, int A)}{RGBA_color_is_valid(int R, int G, int B, int A)}}]{\setlength{\rightskip}{0pt plus 5cm}bool R\+G\+B\+A\+\_\+color\+\_\+is\+\_\+valid (
+\begin{DoxyParamCaption}
+\item[{int}]{R, }
+\item[{int}]{G, }
+\item[{int}]{B, }
+\item[{int}]{A}
+\end{DoxyParamCaption}
+)}\hypertarget{game_8cpp_abe98536811196e58dab964e46f285c35}{}\label{game_8cpp_abe98536811196e58dab964e46f285c35}
+
+
+This routine validates an R\+G\+BA color. 
+
+It is important to use R\+G\+BA to change the opacity of the background. R (red) G (green) B (blue) is the regular colors and the A is the opacity nivel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em integer} & containing the quantity of the red color. \\
+\hline
+{\em integer} & containing the quantity of the green color. \\
+\hline
+{\em integer} & containing the quantity of the blue color. \\
+\hline
+{\em integer} & containing the quantity of the Alpha (A) opacity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{game.\+cpp@{game.\+cpp}!throw\+\_\+error@{throw\+\_\+error}}
+\index{throw\+\_\+error@{throw\+\_\+error}!game.\+cpp@{game.\+cpp}}
+\subsubsection[{\texorpdfstring{throw\+\_\+error(const char $\ast$function)}{throw_error(const char *function)}}]{\setlength{\rightskip}{0pt plus 5cm}void throw\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{function}
+\end{DoxyParamCaption}
+)}\hypertarget{game_8cpp_a8a837f498b1dc4fcb2fc8cc8a24f10ff}{}\label{game_8cpp_a8a837f498b1dc4fcb2fc8cc8a24f10ff}
+
+
+shows which function has an error and exits. 
+
+function that has an error. \begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}

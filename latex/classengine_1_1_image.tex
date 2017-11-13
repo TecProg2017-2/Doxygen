@@ -23,7 +23,7 @@ Collaboration diagram for engine\+:\+:Image\+:
 {\bfseries Image} (S\+D\+L\+\_\+\+Renderer $\ast$p\+\_\+renderer, std\+::string path, bool \hyperlink{classengine_1_1_component_ae1a97027b9862ee3e41e6566501d765e}{is\+\_\+active}, std\+::pair$<$ int, int $>$ displacement, int priority)\hypertarget{classengine_1_1_image_aa3429cf7f78e43a8c28a536f6849716c}{}\label{classengine_1_1_image_aa3429cf7f78e43a8c28a536f6849716c}
 
 \item 
-void \hyperlink{classengine_1_1_image_aa0ed04e99b416fb5780f0c7ceb99f843}{set\+\_\+values} (std\+::pair$<$ int, int $>$ dimension\+\_\+on\+\_\+screen, std\+::pair$<$ int, int $>$ dimension\+On\+Texture, std\+::pair$<$ int, int $>$ coordinates\+On\+Texture)
+void \hyperlink{classengine_1_1_image_aa0ed04e99b416fb5780f0c7ceb99f843}{set\+\_\+values} (std\+::pair$<$ int, int $>$ \hyperlink{classengine_1_1_image_abbbfdb4ce895511ce54105078fb39ebb}{dimension\+\_\+on\+\_\+screen}, std\+::pair$<$ int, int $>$ \hyperlink{classengine_1_1_image_aae242af0f586f7c31ffe38657bd0506c}{dimension\+On\+Texture}, std\+::pair$<$ int, int $>$ \hyperlink{classengine_1_1_image_ab050b1278f3e32a44ceffe9365aa867b}{coordinates\+On\+Texture})
 \begin{DoxyCompactList}\small\item\em Methods Set values. \end{DoxyCompactList}\item 
 bool \hyperlink{classengine_1_1_image_a1a393960f7402515428bd982c32f59af}{load} ()
 \begin{DoxyCompactList}\small\item\em Method Load. \end{DoxyCompactList}\item 
@@ -38,23 +38,17 @@ void \hyperlink{classengine_1_1_image_a45ce17ceb8619e732f2d09ec6d1cc1b9}{draw} (
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries texture}\hypertarget{classengine_1_1_image_a1aba43ce4fe48d3c18e4db97543c1077}{}\label{classengine_1_1_image_a1aba43ce4fe48d3c18e4db97543c1077}
-
+S\+D\+L\+\_\+\+Texture $\ast$ \hyperlink{classengine_1_1_image_a1aba43ce4fe48d3c18e4db97543c1077}{texture}
 \item 
-S\+D\+L\+\_\+\+Renderer $\ast$ {\bfseries renderer}\hypertarget{classengine_1_1_image_a5ec39840fc23236d16dcdef43b87fc91}{}\label{classengine_1_1_image_a5ec39840fc23236d16dcdef43b87fc91}
-
+S\+D\+L\+\_\+\+Renderer $\ast$ \hyperlink{classengine_1_1_image_a5ec39840fc23236d16dcdef43b87fc91}{renderer}
 \item 
-std\+::string {\bfseries image\+\_\+path}\hypertarget{classengine_1_1_image_a57960b0ab1636eacff1a5b64d7402b37}{}\label{classengine_1_1_image_a57960b0ab1636eacff1a5b64d7402b37}
-
+std\+::string \hyperlink{classengine_1_1_image_a57960b0ab1636eacff1a5b64d7402b37}{image\+\_\+path}
 \item 
-std\+::pair$<$ int, int $>$ {\bfseries dimension\+\_\+on\+\_\+screen}\hypertarget{classengine_1_1_image_abbbfdb4ce895511ce54105078fb39ebb}{}\label{classengine_1_1_image_abbbfdb4ce895511ce54105078fb39ebb}
-
+std\+::pair$<$ int, int $>$ \hyperlink{classengine_1_1_image_abbbfdb4ce895511ce54105078fb39ebb}{dimension\+\_\+on\+\_\+screen}
 \item 
-std\+::pair$<$ int, int $>$ {\bfseries dimension\+On\+Texture}\hypertarget{classengine_1_1_image_aae242af0f586f7c31ffe38657bd0506c}{}\label{classengine_1_1_image_aae242af0f586f7c31ffe38657bd0506c}
-
+std\+::pair$<$ int, int $>$ \hyperlink{classengine_1_1_image_aae242af0f586f7c31ffe38657bd0506c}{dimension\+On\+Texture}
 \item 
-std\+::pair$<$ int, int $>$ {\bfseries coordinates\+On\+Texture}\hypertarget{classengine_1_1_image_ab050b1278f3e32a44ceffe9365aa867b}{}\label{classengine_1_1_image_ab050b1278f3e32a44ceffe9365aa867b}
-
+std\+::pair$<$ int, int $>$ \hyperlink{classengine_1_1_image_ab050b1278f3e32a44ceffe9365aa867b}{coordinates\+On\+Texture}
 \end{DoxyCompactItemize}
 
 
@@ -88,7 +82,9 @@ Draw the image on the screen
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
+$<$ rectangle holding the images positions and dimensions
 
+$<$ on screen rendering rectangle 
 
 Reimplemented from \hyperlink{classengine_1_1_component}{engine\+::\+Component}.
 
@@ -156,7 +152,9 @@ Responsible for load the game images and create the texture
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
+$<$ sdl texture new texture converted
 
+$<$ surface loaded to be converted 
 
 Reimplemented from \hyperlink{classengine_1_1_component}{engine\+::\+Component}.
 
@@ -185,6 +183,27 @@ Set the position and dimension of the texture on the screen
 \hline
 \end{DoxyParams}
 
+
+\subsection{Member Data Documentation}
+\index{engine\+::\+Image@{engine\+::\+Image}!coordinates\+On\+Texture@{coordinates\+On\+Texture}}
+\index{coordinates\+On\+Texture@{coordinates\+On\+Texture}!engine\+::\+Image@{engine\+::\+Image}}
+\subsubsection[{\texorpdfstring{coordinates\+On\+Texture}{coordinatesOnTexture}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$int, int$>$ engine\+::\+Image\+::coordinates\+On\+Texture}\hypertarget{classengine_1_1_image_ab050b1278f3e32a44ceffe9365aa867b}{}\label{classengine_1_1_image_ab050b1278f3e32a44ceffe9365aa867b}
+coordinates on the texture \index{engine\+::\+Image@{engine\+::\+Image}!dimension\+\_\+on\+\_\+screen@{dimension\+\_\+on\+\_\+screen}}
+\index{dimension\+\_\+on\+\_\+screen@{dimension\+\_\+on\+\_\+screen}!engine\+::\+Image@{engine\+::\+Image}}
+\subsubsection[{\texorpdfstring{dimension\+\_\+on\+\_\+screen}{dimension_on_screen}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$int, int$>$ engine\+::\+Image\+::dimension\+\_\+on\+\_\+screen}\hypertarget{classengine_1_1_image_abbbfdb4ce895511ce54105078fb39ebb}{}\label{classengine_1_1_image_abbbfdb4ce895511ce54105078fb39ebb}
+pair of x and y on screen dimensions \index{engine\+::\+Image@{engine\+::\+Image}!dimension\+On\+Texture@{dimension\+On\+Texture}}
+\index{dimension\+On\+Texture@{dimension\+On\+Texture}!engine\+::\+Image@{engine\+::\+Image}}
+\subsubsection[{\texorpdfstring{dimension\+On\+Texture}{dimensionOnTexture}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$int, int$>$ engine\+::\+Image\+::dimension\+On\+Texture}\hypertarget{classengine_1_1_image_aae242af0f586f7c31ffe38657bd0506c}{}\label{classengine_1_1_image_aae242af0f586f7c31ffe38657bd0506c}
+pair of dimensions on the texture \index{engine\+::\+Image@{engine\+::\+Image}!image\+\_\+path@{image\+\_\+path}}
+\index{image\+\_\+path@{image\+\_\+path}!engine\+::\+Image@{engine\+::\+Image}}
+\subsubsection[{\texorpdfstring{image\+\_\+path}{image_path}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string engine\+::\+Image\+::image\+\_\+path}\hypertarget{classengine_1_1_image_a57960b0ab1636eacff1a5b64d7402b37}{}\label{classengine_1_1_image_a57960b0ab1636eacff1a5b64d7402b37}
+path of the image \index{engine\+::\+Image@{engine\+::\+Image}!renderer@{renderer}}
+\index{renderer@{renderer}!engine\+::\+Image@{engine\+::\+Image}}
+\subsubsection[{\texorpdfstring{renderer}{renderer}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Renderer$\ast$ engine\+::\+Image\+::renderer}\hypertarget{classengine_1_1_image_a5ec39840fc23236d16dcdef43b87fc91}{}\label{classengine_1_1_image_a5ec39840fc23236d16dcdef43b87fc91}
+renderer from type S\+D\+L\+\_\+\+Renderer \index{engine\+::\+Image@{engine\+::\+Image}!texture@{texture}}
+\index{texture@{texture}!engine\+::\+Image@{engine\+::\+Image}}
+\subsubsection[{\texorpdfstring{texture}{texture}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Texture$\ast$ engine\+::\+Image\+::texture}\hypertarget{classengine_1_1_image_a1aba43ce4fe48d3c18e4db97543c1077}{}\label{classengine_1_1_image_a1aba43ce4fe48d3c18e4db97543c1077}
+texture from type S\+D\+L\+\_\+\+Texture 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

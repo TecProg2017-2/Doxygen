@@ -49,7 +49,7 @@ digraph "include/music_player.hpp"
   Node19 [label="color.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$color_8hpp_source.html"];
   Node18 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node20 [label="audio.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$audio_8hpp_source.html"];
+  Node20 [label="audio.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$audio_8hpp.html",tooltip="Purpose: Contains attributes and methods for audio class. "];
   Node20 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node20 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node20 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -57,7 +57,7 @@ digraph "include/music_player.hpp"
   Node21 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node20 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node22 [label="hitbox.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hitbox_8hpp_source.html"];
+  Node22 [label="hitbox.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hitbox_8hpp.html",tooltip="Purpose: Contains classes to define methods management of the hitboxes. "];
   Node22 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node22 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node22 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -75,7 +75,7 @@ digraph "include/music_player.hpp"
   Node25 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node25 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 -> Node26 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node26 [label="animation.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$animation_8hpp_source.html"];
+  Node26 [label="animation.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$animation_8hpp.html",tooltip="Purpose: Contains classes to animation methods&#39; management. "];
   Node26 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node26 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node26 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

@@ -3,14 +3,11 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries dispatch\+\_\+pending\+\_\+events} (unsigned now)\hypertarget{classengine_1_1_event_handler_a7897cdaa9aa300a3d73790ab9245ff62}{}\label{classengine_1_1_event_handler_a7897cdaa9aa300a3d73790ab9245ff62}
-
+void \hyperlink{classengine_1_1_event_handler_a7897cdaa9aa300a3d73790ab9245ff62}{dispatch\+\_\+pending\+\_\+events} (unsigned now)
 \item 
-std\+::list$<$ \hyperlink{classengine_1_1_keyboard_event}{Keyboard\+Event} $>$ {\bfseries pending\+\_\+keyboard\+\_\+events} (unsigned now)\hypertarget{classengine_1_1_event_handler_a615ce0d67badc44977c3f71ecb911243}{}\label{classengine_1_1_event_handler_a615ce0d67badc44977c3f71ecb911243}
-
+std\+::list$<$ \hyperlink{classengine_1_1_keyboard_event}{Keyboard\+Event} $>$ \hyperlink{classengine_1_1_event_handler_a615ce0d67badc44977c3f71ecb911243}{pending\+\_\+keyboard\+\_\+events} (unsigned now)
 \item 
-void {\bfseries get\+\_\+events\+\_\+until\+\_\+now} (unsigned now)\hypertarget{classengine_1_1_event_handler_a6fc13e4f43fe29d3aafa1ed29018b6d2}{}\label{classengine_1_1_event_handler_a6fc13e4f43fe29d3aafa1ed29018b6d2}
-
+void \hyperlink{classengine_1_1_event_handler_a6fc13e4f43fe29d3aafa1ed29018b6d2}{get\+\_\+events\+\_\+until\+\_\+now} (unsigned now)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -24,10 +21,49 @@ static void {\bfseries remove\+\_\+listener} (\hyperlink{classengine_1_1_game_ob
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static std\+::list$<$ \hyperlink{classengine_1_1_game_object}{Game\+Object} $\ast$ $>$ {\bfseries listeners}\hypertarget{classengine_1_1_event_handler_aabe7a62c9fdb036d998630f4ed86d2de}{}\label{classengine_1_1_event_handler_aabe7a62c9fdb036d998630f4ed86d2de}
-
+static std\+::list$<$ \hyperlink{classengine_1_1_game_object}{Game\+Object} $\ast$ $>$ \hyperlink{classengine_1_1_event_handler_aabe7a62c9fdb036d998630f4ed86d2de}{listeners}
 \end{DoxyCompactItemize}
 
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+Event\+Handler@{engine\+::\+Event\+Handler}!dispatch\+\_\+pending\+\_\+events@{dispatch\+\_\+pending\+\_\+events}}
+\index{dispatch\+\_\+pending\+\_\+events@{dispatch\+\_\+pending\+\_\+events}!engine\+::\+Event\+Handler@{engine\+::\+Event\+Handler}}
+\subsubsection[{\texorpdfstring{dispatch\+\_\+pending\+\_\+events(unsigned now)}{dispatch_pending_events(unsigned now)}}]{\setlength{\rightskip}{0pt plus 5cm}void Event\+Handler\+::dispatch\+\_\+pending\+\_\+events (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{now}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_event_handler_a7897cdaa9aa300a3d73790ab9245ff62}{}\label{classengine_1_1_event_handler_a7897cdaa9aa300a3d73790ab9245ff62}
+$<$ singleton game\textquotesingle{}s instance
+
+$<$ keyboard events that were not processed yet
+
+$<$ game events created from keyboard events \index{engine\+::\+Event\+Handler@{engine\+::\+Event\+Handler}!get\+\_\+events\+\_\+until\+\_\+now@{get\+\_\+events\+\_\+until\+\_\+now}}
+\index{get\+\_\+events\+\_\+until\+\_\+now@{get\+\_\+events\+\_\+until\+\_\+now}!engine\+::\+Event\+Handler@{engine\+::\+Event\+Handler}}
+\subsubsection[{\texorpdfstring{get\+\_\+events\+\_\+until\+\_\+now(unsigned now)}{get_events_until_now(unsigned now)}}]{\setlength{\rightskip}{0pt plus 5cm}void Event\+Handler\+::get\+\_\+events\+\_\+until\+\_\+now (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{now}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_event_handler_a6fc13e4f43fe29d3aafa1ed29018b6d2}{}\label{classengine_1_1_event_handler_a6fc13e4f43fe29d3aafa1ed29018b6d2}
+$<$ loops while the number of events is greater than 0
+
+$<$ time of quit form the event \index{engine\+::\+Event\+Handler@{engine\+::\+Event\+Handler}!pending\+\_\+keyboard\+\_\+events@{pending\+\_\+keyboard\+\_\+events}}
+\index{pending\+\_\+keyboard\+\_\+events@{pending\+\_\+keyboard\+\_\+events}!engine\+::\+Event\+Handler@{engine\+::\+Event\+Handler}}
+\subsubsection[{\texorpdfstring{pending\+\_\+keyboard\+\_\+events(unsigned now)}{pending_keyboard_events(unsigned now)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<$ {\bf Keyboard\+Event} $>$ Event\+Handler\+::pending\+\_\+keyboard\+\_\+events (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{now}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_event_handler_a615ce0d67badc44977c3f71ecb911243}{}\label{classengine_1_1_event_handler_a615ce0d67badc44977c3f71ecb911243}
+$<$ if the event is repeated by the same keys
+
+$<$ make variable responsible for checking if has events to be processed true 
+
+\subsection{Member Data Documentation}
+\index{engine\+::\+Event\+Handler@{engine\+::\+Event\+Handler}!listeners@{listeners}}
+\index{listeners@{listeners}!engine\+::\+Event\+Handler@{engine\+::\+Event\+Handler}}
+\subsubsection[{\texorpdfstring{listeners}{listeners}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<$ {\bf Game\+Object} $\ast$ $>$ Event\+Handler\+::listeners\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classengine_1_1_event_handler_aabe7a62c9fdb036d998630f4ed86d2de}{}\label{classengine_1_1_event_handler_aabe7a62c9fdb036d998630f4ed86d2de}
+list of game objects which will be notified
+
+objects listening for events triggers 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

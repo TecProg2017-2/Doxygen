@@ -25,7 +25,6 @@ digraph "include/fighter.hpp"
   Node11 [label="src/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip="Purpose: Contains the main function. "];
   Node6 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
   Node12 [label="src/select_arrow.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$select__arrow_8cpp.html",tooltip="Purpose: Contains the methods for SelectArrow class. "];
-  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
   Node4 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
   Node4 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
   Node3 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];

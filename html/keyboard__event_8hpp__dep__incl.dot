@@ -6,7 +6,7 @@ digraph "engine/include/keyboard_event.hpp"
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="engine/include/game\l_object.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$game__object_8hpp.html",tooltip="Contains methods to game_object class&#39; management. This methods can control the entire game object..."];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="engine/include/animation.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$animation_8hpp_source.html"];
+  Node3 [label="engine/include/animation.hpp",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$animation_8hpp.html",tooltip="Purpose: Contains classes to animation methods&#39; management. "];
   Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="include/clown.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$clown_8hpp.html",tooltip="Purpose: Contains clown methods and attributes. "];

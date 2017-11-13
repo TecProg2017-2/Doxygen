@@ -20,7 +20,7 @@ Collaboration diagram for mindscape\+:\+:Spider\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmindscape_1_1_spider_a704f3d4f21322710c18928e0a1e9437d}{Spider} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)
+\hyperlink{classmindscape_1_1_spider_a704f3d4f21322710c18928e0a1e9437d}{Spider} (std\+::string \hyperlink{classengine_1_1_game_object_a1f104f7af4f351e6d3278319762c9fe5}{name}, std\+::pair$<$ int, int $>$ position, int \hyperlink{classengine_1_1_game_object_a159ecaca30229e302793b11a75bd13c2}{priority})
 \begin{DoxyCompactList}\small\item\em Initializes \hyperlink{classmindscape_1_1_spider}{Spider} enemy. \end{DoxyCompactList}\item 
 void \hyperlink{classmindscape_1_1_spider_aff8def99a1891b772563409c1098b16e}{move} (\hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object} $\ast$)
 \begin{DoxyCompactList}\small\item\em \hyperlink{classmindscape_1_1_spider}{Spider}\textquotesingle{}s move. \end{DoxyCompactList}\item 
@@ -108,7 +108,7 @@ Notify if there is an object in the \hyperlink{classmindscape_1_1_spider}{Spider
 \begin{DoxyReturn}{Returns}
 void. 
 \end{DoxyReturn}
-
+$<$ \hyperlink{classmindscape_1_1_little_girl}{Little\+Girl}. Gets as observable that tells when little\+\_\+girl is next. 
 
 Reimplemented from \hyperlink{classmindscape_1_1_enemy}{mindscape\+::\+Enemy}.
 
@@ -139,7 +139,13 @@ Method called everytime when two game objects collides.
 \begin{DoxyReturn}{Returns}
 void. 
 \end{DoxyReturn}
-
+$<$ \hyperlink{classmindscape_1_1_platform}{Platform}. References the map where is happening the collision. \begin{DoxyVerb}                                  < LittleGirl.
+\end{DoxyVerb}
+ References to \hyperlink{classmindscape_1_1_little_girl}{Little\+Girl} object. \begin{DoxyVerb}                                    < Hitbox.
+\end{DoxyVerb}
+ References to spider\textquotesingle{}s hitbox. \begin{DoxyVerb}                                       < Hitbox.
+\end{DoxyVerb}
+ References to girl\textquotesingle{}s hitbox. 
 
 Reimplemented from \hyperlink{classmindscape_1_1_enemy}{mindscape\+::\+Enemy}.
 
@@ -164,7 +170,9 @@ Register an event to \hyperlink{classmindscape_1_1_spider}{Spider}.
 \begin{DoxyReturn}{Returns}
 void. 
 \end{DoxyReturn}
-
+$<$ String. Gets an event catched by the spider. \begin{DoxyVerb}                        < Integer.
+\end{DoxyVerb}
+ Define the actual position of the spider on the screen. 
 
 Reimplemented from \hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object}.
 

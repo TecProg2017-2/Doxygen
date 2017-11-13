@@ -1,5 +1,14 @@
 \hypertarget{classengine_1_1_game}{}\section{engine\+:\+:Game Class Reference}
 \label{classengine_1_1_game}\index{engine\+::\+Game@{engine\+::\+Game}}
+
+
+A \hyperlink{classengine_1_1_hitbox}{Hitbox} class.  
+
+
+
+
+{\ttfamily \#include $<$game.\+hpp$>$}
+
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -12,60 +21,319 @@ enum {\bfseries State} \{ {\bfseries R\+U\+N\+N\+I\+NG},
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries run} ()\hypertarget{classengine_1_1_game_a1ab78f5ed0d5ea879157357cf2fb2afa}{}\label{classengine_1_1_game_a1ab78f5ed0d5ea879157357cf2fb2afa}
-
-\item 
-void {\bfseries close} ()\hypertarget{classengine_1_1_game_ad5133caa8447aadf71d6ba6c20d552bd}{}\label{classengine_1_1_game_ad5133caa8447aadf71d6ba6c20d552bd}
-
-\item 
-void {\bfseries load\+\_\+media} ()\hypertarget{classengine_1_1_game_a9d568f24b1fc461968892659f64a53ca}{}\label{classengine_1_1_game_a9d568f24b1fc461968892659f64a53ca}
-
-\item 
-bool {\bfseries is\+\_\+media\+\_\+loaded} ()\hypertarget{classengine_1_1_game_a1c0e0ff94cfbe6f74cfff0633628ae95}{}\label{classengine_1_1_game_a1c0e0ff94cfbe6f74cfff0633628ae95}
-
-\item 
-void {\bfseries change\+\_\+scene} (\hyperlink{classengine_1_1_scene}{Scene} $\ast$)\hypertarget{classengine_1_1_game_a241b7b4944e35a4a1fe5435107fbaf65}{}\label{classengine_1_1_game_a241b7b4944e35a4a1fe5435107fbaf65}
-
-\item 
-void {\bfseries set\+\_\+game\+\_\+background\+\_\+color} (int R, int G, int B, int A)\hypertarget{classengine_1_1_game_a355c2dcd99a84c813fc89b8d01c3d72b}{}\label{classengine_1_1_game_a355c2dcd99a84c813fc89b8d01c3d72b}
-
-\item 
-void {\bfseries set\+\_\+name} (std\+::string)\hypertarget{classengine_1_1_game_a7dd41abdb2a4d0c72f328e1035b2cd06}{}\label{classengine_1_1_game_a7dd41abdb2a4d0c72f328e1035b2cd06}
-
-\item 
-void {\bfseries set\+\_\+window\+\_\+dimensions} (std\+::pair$<$ int, int $>$)\hypertarget{classengine_1_1_game_ac3dff191e050d6da33c1846ac5590c09}{}\label{classengine_1_1_game_ac3dff191e050d6da33c1846ac5590c09}
-
-\item 
-std\+::pair$<$ int, int $>$ {\bfseries get\+\_\+window\+\_\+dimensions} ()\hypertarget{classengine_1_1_game_a212e95896eb7a9685106e410a2d9b90d}{}\label{classengine_1_1_game_a212e95896eb7a9685106e410a2d9b90d}
-
-\item 
-void {\bfseries set\+\_\+state} (State)\hypertarget{classengine_1_1_game_ad595dcad24a708d07939f050c02048ba}{}\label{classengine_1_1_game_ad595dcad24a708d07939f050c02048ba}
-
-\item 
-std\+::string {\bfseries get\+\_\+name} ()\hypertarget{classengine_1_1_game_a66f7b739325c22c7f782a947c83ceb7e}{}\label{classengine_1_1_game_a66f7b739325c22c7f782a947c83ceb7e}
-
-\item 
-State {\bfseries get\+\_\+state} ()\hypertarget{classengine_1_1_game_a3f1612365d0fa381d548294547efd105}{}\label{classengine_1_1_game_a3f1612365d0fa381d548294547efd105}
-
-\item 
-S\+D\+L\+\_\+\+Renderer $\ast$ {\bfseries get\+\_\+renderer} ()\hypertarget{classengine_1_1_game_a33c49c9cc938553b2458416c2ec2df5f}{}\label{classengine_1_1_game_a33c49c9cc938553b2458416c2ec2df5f}
-
-\item 
-\hyperlink{classengine_1_1_scene}{Scene} $\ast$ {\bfseries get\+\_\+actual\+\_\+scene} ()\hypertarget{classengine_1_1_game_ab8cb027a9a2b23ed81522b969c7b881c}{}\label{classengine_1_1_game_ab8cb027a9a2b23ed81522b969c7b881c}
-
-\end{DoxyCompactItemize}
+void \hyperlink{classengine_1_1_game_a1ab78f5ed0d5ea879157357cf2fb2afa}{run} ()
+\begin{DoxyCompactList}\small\item\em Runs the game. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_game_ad5133caa8447aadf71d6ba6c20d552bd}{close} ()
+\begin{DoxyCompactList}\small\item\em Closes the game. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_game_a9d568f24b1fc461968892659f64a53ca}{load\+\_\+media} ()
+\begin{DoxyCompactList}\small\item\em Load the media based its scene. \end{DoxyCompactList}\item 
+bool \hyperlink{classengine_1_1_game_a1c0e0ff94cfbe6f74cfff0633628ae95}{is\+\_\+media\+\_\+loaded} ()
+\begin{DoxyCompactList}\small\item\em This method is a test to know if media is loaded. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_game_a241b7b4944e35a4a1fe5435107fbaf65}{change\+\_\+scene} (\hyperlink{classengine_1_1_scene}{Scene} $\ast$)
+\begin{DoxyCompactList}\small\item\em Changes the scene. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_game_a355c2dcd99a84c813fc89b8d01c3d72b}{set\+\_\+game\+\_\+background\+\_\+color} (int R, int G, int B, int A)
+\begin{DoxyCompactList}\small\item\em This Routine set the game background color. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_game_a7dd41abdb2a4d0c72f328e1035b2cd06}{set\+\_\+name} (std\+::string)
+\begin{DoxyCompactList}\small\item\em This Routine set the name of the game. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_game_ac3dff191e050d6da33c1846ac5590c09}{set\+\_\+window\+\_\+dimensions} (std\+::pair$<$ int, int $>$)
+\begin{DoxyCompactList}\small\item\em This method set the window dimensions. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \hyperlink{classengine_1_1_game_a212e95896eb7a9685106e410a2d9b90d}{get\+\_\+window\+\_\+dimensions} ()
+\begin{DoxyCompactList}\small\item\em This method get the window dimensions. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_game_ad595dcad24a708d07939f050c02048ba}{set\+\_\+state} (State)
+\begin{DoxyCompactList}\small\item\em This method set the current game state. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classengine_1_1_game_a66f7b739325c22c7f782a947c83ceb7e}{get\+\_\+name} ()
+\begin{DoxyCompactList}\small\item\em This method get the current game name. \end{DoxyCompactList}\item 
+State \hyperlink{classengine_1_1_game_a3f1612365d0fa381d548294547efd105}{get\+\_\+state} ()
+\begin{DoxyCompactList}\small\item\em This method get the current game state. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ \hyperlink{classengine_1_1_game_a33c49c9cc938553b2458416c2ec2df5f}{get\+\_\+renderer} ()
+\begin{DoxyCompactList}\small\item\em This method get the renderer of the game. \end{DoxyCompactList}\item 
+\hyperlink{classengine_1_1_scene}{Scene} $\ast$ \hyperlink{classengine_1_1_game_ab8cb027a9a2b23ed81522b969c7b881c}{get\+\_\+actual\+\_\+scene} ()
+\begin{DoxyCompactList}\small\item\em This method get the current scene of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classengine_1_1_game}{Game} \& {\bfseries get\+\_\+instance} ()\hypertarget{classengine_1_1_game_a540dd8cd1cc25d3918d852f5dc490644}{}\label{classengine_1_1_game_a540dd8cd1cc25d3918d852f5dc490644}
+static \hyperlink{classengine_1_1_game}{Game} \& \hyperlink{classengine_1_1_game_a540dd8cd1cc25d3918d852f5dc490644}{get\+\_\+instance} ()
+\begin{DoxyCompactList}\small\item\em Checks if an instance was created. \end{DoxyCompactList}\item 
+static \hyperlink{classengine_1_1_game}{Game} \& \hyperlink{classengine_1_1_game_ad776281b7ef3dee78dba15deec2ffcf0}{initialize} (std\+::string, std\+::pair$<$ int, int $>$)
+\begin{DoxyCompactList}\small\item\em Initializes an instance if one does not exist. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-static \hyperlink{classengine_1_1_game}{Game} \& {\bfseries initialize} (std\+::string, std\+::pair$<$ int, int $>$)\hypertarget{classengine_1_1_game_ad776281b7ef3dee78dba15deec2ffcf0}{}\label{classengine_1_1_game_ad776281b7ef3dee78dba15deec2ffcf0}
 
-\end{DoxyCompactItemize}
+\subsection{Detailed Description}
+A \hyperlink{classengine_1_1_hitbox}{Hitbox} class. 
+
+This class is a model that contains all specifications of the game. What is necessary to load, pause and quit the game. All of attributes is too important to start the game, renderer, and resize the window. 
+
+\subsection{Member Function Documentation}
+\index{engine\+::\+Game@{engine\+::\+Game}!change\+\_\+scene@{change\+\_\+scene}}
+\index{change\+\_\+scene@{change\+\_\+scene}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{change\+\_\+scene(\+Scene $\ast$)}{change_scene(Scene *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::change\+\_\+scene (
+\begin{DoxyParamCaption}
+\item[{{\bf Scene} $\ast$}]{level}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_a241b7b4944e35a4a1fe5435107fbaf65}{}\label{classengine_1_1_game_a241b7b4944e35a4a1fe5435107fbaf65}
+
+
+Changes the scene. 
+
+Changes the scene based in its level and in its actual scene. Loads the media based in this.
+
+level pointer to know which scene will be loaded. \begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!close@{close}}
+\index{close@{close}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_ad5133caa8447aadf71d6ba6c20d552bd}{}\label{classengine_1_1_game_ad5133caa8447aadf71d6ba6c20d552bd}
+
+
+Closes the game. 
+
+Closes the game, destroying its renderer, window, functions of the game and medias.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!get\+\_\+actual\+\_\+scene@{get\+\_\+actual\+\_\+scene}}
+\index{get\+\_\+actual\+\_\+scene@{get\+\_\+actual\+\_\+scene}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{get\+\_\+actual\+\_\+scene()}{get_actual_scene()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scene} $\ast$ Game\+::get\+\_\+actual\+\_\+scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_ab8cb027a9a2b23ed81522b969c7b881c}{}\label{classengine_1_1_game_ab8cb027a9a2b23ed81522b969c7b881c}
+
+
+This method get the current scene of the game. 
+
+It is important to load the media of the game \index{engine\+::\+Game@{engine\+::\+Game}!get\+\_\+instance@{get\+\_\+instance}}
+\index{get\+\_\+instance@{get\+\_\+instance}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{get\+\_\+instance()}{get_instance()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game} \& Game\+::get\+\_\+instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classengine_1_1_game_a540dd8cd1cc25d3918d852f5dc490644}{}\label{classengine_1_1_game_a540dd8cd1cc25d3918d852f5dc490644}
+
+
+Checks if an instance was created. 
+
+In cases when dont have an instance created, it is alerted to create one and exits.
+
+\begin{DoxyReturn}{Returns}
+Returns the instance. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!get\+\_\+name@{get\+\_\+name}}
+\index{get\+\_\+name@{get\+\_\+name}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{get\+\_\+name()}{get_name()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Game\+::get\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_a66f7b739325c22c7f782a947c83ceb7e}{}\label{classengine_1_1_game_a66f7b739325c22c7f782a947c83ceb7e}
+
+
+This method get the current game name. 
+
+\begin{DoxyReturn}{Returns}
+string that contains the game name. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!get\+\_\+renderer@{get\+\_\+renderer}}
+\index{get\+\_\+renderer@{get\+\_\+renderer}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{get\+\_\+renderer()}{get_renderer()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Renderer $\ast$ Game\+::get\+\_\+renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_a33c49c9cc938553b2458416c2ec2df5f}{}\label{classengine_1_1_game_a33c49c9cc938553b2458416c2ec2df5f}
+
+
+This method get the renderer of the game. 
+
+it is most important because it\textquotesingle{}s the contact of the software with the user. It is one the principals parts to load and close the game.
+
+\begin{DoxyReturn}{Returns}
+renderer of the game. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!get\+\_\+state@{get\+\_\+state}}
+\index{get\+\_\+state@{get\+\_\+state}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{get\+\_\+state()}{get_state()}}]{\setlength{\rightskip}{0pt plus 5cm}Game\+::\+State Game\+::get\+\_\+state (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_a3f1612365d0fa381d548294547efd105}{}\label{classengine_1_1_game_a3f1612365d0fa381d548294547efd105}
+
+
+This method get the current game state. 
+
+It is important to know what the game state to run the game.
+
+\begin{DoxyReturn}{Returns}
+state of the game. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!get\+\_\+window\+\_\+dimensions@{get\+\_\+window\+\_\+dimensions}}
+\index{get\+\_\+window\+\_\+dimensions@{get\+\_\+window\+\_\+dimensions}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{get\+\_\+window\+\_\+dimensions()}{get_window_dimensions()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$ int, int $>$ Game\+::get\+\_\+window\+\_\+dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_a212e95896eb7a9685106e410a2d9b90d}{}\label{classengine_1_1_game_a212e95896eb7a9685106e410a2d9b90d}
+
+
+This method get the window dimensions. 
+
+It is important to resize the window dimensions accordingly the dimensions that need to run the game without bugs. \begin{DoxyReturn}{Returns}
+map that contains the window dimensions. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!initialize@{initialize}}
+\index{initialize@{initialize}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{initialize(std\+::string, std\+::pair$<$ int, int $>$)}{initialize(std::string, std::pair< int, int >)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game} \& Game\+::initialize (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{p\+\_\+name, }
+\item[{std\+::pair$<$ int, int $>$}]{p\+\_\+dimensions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classengine_1_1_game_ad776281b7ef3dee78dba15deec2ffcf0}{}\label{classengine_1_1_game_ad776281b7ef3dee78dba15deec2ffcf0}
+
+
+Initializes an instance if one does not exist. 
+
+p\+\_\+name name of the game.  p\+\_\+dimensions dimensions of the window. \begin{DoxyReturn}{Returns}
+Returns an instance created. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!is\+\_\+media\+\_\+loaded@{is\+\_\+media\+\_\+loaded}}
+\index{is\+\_\+media\+\_\+loaded@{is\+\_\+media\+\_\+loaded}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{is\+\_\+media\+\_\+loaded()}{is_media_loaded()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+::is\+\_\+media\+\_\+loaded (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_a1c0e0ff94cfbe6f74cfff0633628ae95}{}\label{classengine_1_1_game_a1c0e0ff94cfbe6f74cfff0633628ae95}
+
+
+This method is a test to know if media is loaded. 
+
+\begin{DoxyReturn}{Returns}
+Returns the situation of media. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!load\+\_\+media@{load\+\_\+media}}
+\index{load\+\_\+media@{load\+\_\+media}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{load\+\_\+media()}{load_media()}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::load\+\_\+media (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_a9d568f24b1fc461968892659f64a53ca}{}\label{classengine_1_1_game_a9d568f24b1fc461968892659f64a53ca}
+
+
+Load the media based its scene. 
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!run@{run}}
+\index{run@{run}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{run()}{run()}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_a1ab78f5ed0d5ea879157357cf2fb2afa}{}\label{classengine_1_1_game_a1ab78f5ed0d5ea879157357cf2fb2afa}
+
+
+Runs the game. 
+
+Runs the game updating the scenes and verifying the states.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!set\+\_\+game\+\_\+background\+\_\+color@{set\+\_\+game\+\_\+background\+\_\+color}}
+\index{set\+\_\+game\+\_\+background\+\_\+color@{set\+\_\+game\+\_\+background\+\_\+color}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{set\+\_\+game\+\_\+background\+\_\+color(int R, int G, int B, int A)}{set_game_background_color(int R, int G, int B, int A)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::set\+\_\+game\+\_\+background\+\_\+color (
+\begin{DoxyParamCaption}
+\item[{int}]{R, }
+\item[{int}]{G, }
+\item[{int}]{B, }
+\item[{int}]{A}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_a355c2dcd99a84c813fc89b8d01c3d72b}{}\label{classengine_1_1_game_a355c2dcd99a84c813fc89b8d01c3d72b}
+
+
+This Routine set the game background color. 
+
+It is important to use R\+G\+BA to change the opacity of the background. R (red) G (green) B (blue) is the regular colors and the A is the opacity nivel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em integer} & containing the quantity of the red color to be set to the background. \\
+\hline
+{\em integer} & containing the quantity of the green color to be set to the background. \\
+\hline
+{\em integer} & containing the quantity of the blue color to be set to the background. \\
+\hline
+{\em integer} & containing the quantity of the Alpha (A) opacity to be set to the background. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!set\+\_\+name@{set\+\_\+name}}
+\index{set\+\_\+name@{set\+\_\+name}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{set\+\_\+name(std\+::string)}{set_name(std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::set\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{p\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_a7dd41abdb2a4d0c72f328e1035b2cd06}{}\label{classengine_1_1_game_a7dd41abdb2a4d0c72f328e1035b2cd06}
+
+
+This Routine set the name of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & containing the game name to be set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!set\+\_\+state@{set\+\_\+state}}
+\index{set\+\_\+state@{set\+\_\+state}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{set\+\_\+state(\+State)}{set_state(State)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::set\+\_\+state (
+\begin{DoxyParamCaption}
+\item[{State}]{p\+\_\+state}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_ad595dcad24a708d07939f050c02048ba}{}\label{classengine_1_1_game_ad595dcad24a708d07939f050c02048ba}
+
+
+This method set the current game state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & that contains the game state. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Game@{engine\+::\+Game}!set\+\_\+window\+\_\+dimensions@{set\+\_\+window\+\_\+dimensions}}
+\index{set\+\_\+window\+\_\+dimensions@{set\+\_\+window\+\_\+dimensions}!engine\+::\+Game@{engine\+::\+Game}}
+\subsubsection[{\texorpdfstring{set\+\_\+window\+\_\+dimensions(std\+::pair$<$ int, int $>$)}{set_window_dimensions(std::pair< int, int >)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::set\+\_\+window\+\_\+dimensions (
+\begin{DoxyParamCaption}
+\item[{std\+::pair$<$ int, int $>$}]{p\+\_\+window\+\_\+dimensions}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_game_ac3dff191e050d6da33c1846ac5590c09}{}\label{classengine_1_1_game_ac3dff191e050d6da33c1846ac5590c09}
+
+
+This method set the window dimensions. 
+
+it is important to scale the window on the player screen and no errors happen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & that contains two integer that will set the width and the height. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 engine/include/game.\+hpp\item 
-engine/src/game.\+cpp\end{DoxyCompactItemize}
+engine/src/\hyperlink{game_8cpp}{game.\+cpp}\end{DoxyCompactItemize}

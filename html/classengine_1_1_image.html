@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3429cf7f78e43a8c28a536f6849716c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3429cf7f78e43a8c28a536f6849716c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Image</b> (SDL_Renderer *p_renderer, std::string path, bool <a class="el" href="classengine_1_1_component.html#ae1a97027b9862ee3e41e6566501d765e">is_active</a>, std::pair&lt; int, int &gt; displacement, int priority)</td></tr>
 <tr class="separator:aa3429cf7f78e43a8c28a536f6849716c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0ed04e99b416fb5780f0c7ceb99f843"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_image.html#aa0ed04e99b416fb5780f0c7ceb99f843">set_values</a> (std::pair&lt; int, int &gt; dimension_on_screen, std::pair&lt; int, int &gt; dimensionOnTexture, std::pair&lt; int, int &gt; coordinatesOnTexture)</td></tr>
+<tr class="memitem:aa0ed04e99b416fb5780f0c7ceb99f843"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_image.html#aa0ed04e99b416fb5780f0c7ceb99f843">set_values</a> (std::pair&lt; int, int &gt; <a class="el" href="classengine_1_1_image.html#abbbfdb4ce895511ce54105078fb39ebb">dimension_on_screen</a>, std::pair&lt; int, int &gt; <a class="el" href="classengine_1_1_image.html#aae242af0f586f7c31ffe38657bd0506c">dimensionOnTexture</a>, std::pair&lt; int, int &gt; <a class="el" href="classengine_1_1_image.html#ab050b1278f3e32a44ceffe9365aa867b">coordinatesOnTexture</a>)</td></tr>
 <tr class="memdesc:aa0ed04e99b416fb5780f0c7ceb99f843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methods Set values.  <a href="#aa0ed04e99b416fb5780f0c7ceb99f843">More...</a><br /></td></tr>
 <tr class="separator:aa0ed04e99b416fb5780f0c7ceb99f843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a393960f7402515428bd982c32f59af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_image.html#a1a393960f7402515428bd982c32f59af">load</a> ()</td></tr>
@@ -190,23 +190,17 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a1aba43ce4fe48d3c18e4db97543c1077"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1aba43ce4fe48d3c18e4db97543c1077"></a>
-SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b></td></tr>
+<tr class="memitem:a1aba43ce4fe48d3c18e4db97543c1077"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_image.html#a1aba43ce4fe48d3c18e4db97543c1077">texture</a></td></tr>
 <tr class="separator:a1aba43ce4fe48d3c18e4db97543c1077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ec39840fc23236d16dcdef43b87fc91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ec39840fc23236d16dcdef43b87fc91"></a>
-SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><b>renderer</b></td></tr>
+<tr class="memitem:a5ec39840fc23236d16dcdef43b87fc91"><td class="memItemLeft" align="right" valign="top">SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_image.html#a5ec39840fc23236d16dcdef43b87fc91">renderer</a></td></tr>
 <tr class="separator:a5ec39840fc23236d16dcdef43b87fc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57960b0ab1636eacff1a5b64d7402b37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57960b0ab1636eacff1a5b64d7402b37"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>image_path</b></td></tr>
+<tr class="memitem:a57960b0ab1636eacff1a5b64d7402b37"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_image.html#a57960b0ab1636eacff1a5b64d7402b37">image_path</a></td></tr>
 <tr class="separator:a57960b0ab1636eacff1a5b64d7402b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbbfdb4ce895511ce54105078fb39ebb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbbfdb4ce895511ce54105078fb39ebb"></a>
-std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dimension_on_screen</b></td></tr>
+<tr class="memitem:abbbfdb4ce895511ce54105078fb39ebb"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_image.html#abbbfdb4ce895511ce54105078fb39ebb">dimension_on_screen</a></td></tr>
 <tr class="separator:abbbfdb4ce895511ce54105078fb39ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae242af0f586f7c31ffe38657bd0506c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae242af0f586f7c31ffe38657bd0506c"></a>
-std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dimensionOnTexture</b></td></tr>
+<tr class="memitem:aae242af0f586f7c31ffe38657bd0506c"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_image.html#aae242af0f586f7c31ffe38657bd0506c">dimensionOnTexture</a></td></tr>
 <tr class="separator:aae242af0f586f7c31ffe38657bd0506c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab050b1278f3e32a44ceffe9365aa867b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab050b1278f3e32a44ceffe9365aa867b"></a>
-std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>coordinatesOnTexture</b></td></tr>
+<tr class="memitem:ab050b1278f3e32a44ceffe9365aa867b"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_image.html#ab050b1278f3e32a44ceffe9365aa867b">coordinatesOnTexture</a></td></tr>
 <tr class="separator:ab050b1278f3e32a44ceffe9365aa867b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -255,6 +249,8 @@ std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>&lt; rectangle holding the images positions and dimensions</p>
+<p>&lt; on screen rendering rectangle </p>
 
 <p>Reimplemented from <a class="el" href="classengine_1_1_component.html">engine::Component</a>.</p>
 
@@ -349,6 +345,8 @@ std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><
 <p>Method Load. </p>
 <p>Responsible for load the game images and create the texture</p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>&lt; sdl texture new texture converted</p>
+<p>&lt; surface loaded to be converted </p>
 
 <p>Reimplemented from <a class="el" href="classengine_1_1_component.html">engine::Component</a>.</p>
 
@@ -394,6 +392,85 @@ std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ab050b1278f3e32a44ceffe9365aa867b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt;int, int&gt; engine::Image::coordinatesOnTexture</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>coordinates on the texture </p>
+
+</div>
+</div>
+<a class="anchor" id="abbbfdb4ce895511ce54105078fb39ebb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt;int, int&gt; engine::Image::dimension_on_screen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>pair of x and y on screen dimensions </p>
+
+</div>
+</div>
+<a class="anchor" id="aae242af0f586f7c31ffe38657bd0506c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt;int, int&gt; engine::Image::dimensionOnTexture</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>pair of dimensions on the texture </p>
+
+</div>
+</div>
+<a class="anchor" id="a57960b0ab1636eacff1a5b64d7402b37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string engine::Image::image_path</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>path of the image </p>
+
+</div>
+</div>
+<a class="anchor" id="a5ec39840fc23236d16dcdef43b87fc91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Renderer* engine::Image::renderer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>renderer from type SDL_Renderer </p>
+
+</div>
+</div>
+<a class="anchor" id="a1aba43ce4fe48d3c18e4db97543c1077"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture* engine::Image::texture</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>texture from type SDL_Texture </p>
 
 </div>
 </div>

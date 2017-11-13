@@ -26,4 +26,9 @@ digraph "engine/src/image.cpp"
   Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
   Node2 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
   Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="log.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$log_8hpp_source.html"];
+  Node12 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="cstdlib",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
 }

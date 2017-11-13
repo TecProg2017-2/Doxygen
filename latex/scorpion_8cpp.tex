@@ -8,9 +8,22 @@ Purpose\+: Contains scorpion\textquotesingle{}s methods.
 {\ttfamily \#include \char`\"{}../include/scorpion.\+hpp\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}../include/platform.\+hpp\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}../include/little\+\_\+girl.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../engine/include/log.\+hpp\char`\"{}}\\*
 {\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
 Include dependency graph for scorpion.\+cpp\+:
 % FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{scorpion_8cpp_a91ac803269539e26ff87a536fac599c8}{set\+\_\+duration\+\_\+scorpion\+\_\+attacking} (\hyperlink{classengine_1_1_audio}{engine\+::\+Audio} $\ast$scorpion\+\_\+attacking)
+\begin{DoxyCompactList}\small\item\em Set the duration of the scorpion\textquotesingle{}s attacking audio. \end{DoxyCompactList}\item 
+void \hyperlink{scorpion_8cpp_aa5e86e353da5e898adc47c55ce94c043}{set\+\_\+duration\+\_\+scorpion\+\_\+on\+\_\+attack} (\hyperlink{classengine_1_1_audio}{engine\+::\+Audio} $\ast$scorpion\+\_\+on\+\_\+attack)
+\begin{DoxyCompactList}\small\item\em Set the duration of the scorpion\textquotesingle{}s under attack audio. \end{DoxyCompactList}\item 
+void \hyperlink{scorpion_8cpp_a866b89a7474fd0270f757fd6b088fcbf}{define\+\_\+final\+\_\+left\+\_\+animation} (\hyperlink{classengine_1_1_animation}{engine\+::\+Animation} $\ast$dying\+\_\+left\+\_\+animation)
+\item 
+void \hyperlink{scorpion_8cpp_ab527ceb727d4ed60e296cb0d90edc15c}{define\+\_\+final\+\_\+right\+\_\+animation} (\hyperlink{classengine_1_1_animation}{engine\+::\+Animation} $\ast$dying\+\_\+right\+\_\+animation)
+\begin{DoxyCompactList}\small\item\em Define Scorpion\textquotesingle{}s final right animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -19,3 +32,78 @@ Purpose\+: Contains scorpion\textquotesingle{}s methods.
 M\+IT License Copyright (c) 2017 Mind\+Scape
 
 \href{https://github.com/TecProg2017-2/mindscape/blob/master/LICENSE.md}{\tt https\+://github.\+com/\+Tec\+Prog2017-\/2/mindscape/blob/master/\+L\+I\+C\+E\+N\+S\+E.\+md} 
+
+\subsection{Function Documentation}
+\index{scorpion.\+cpp@{scorpion.\+cpp}!define\+\_\+final\+\_\+left\+\_\+animation@{define\+\_\+final\+\_\+left\+\_\+animation}}
+\index{define\+\_\+final\+\_\+left\+\_\+animation@{define\+\_\+final\+\_\+left\+\_\+animation}!scorpion.\+cpp@{scorpion.\+cpp}}
+\subsubsection[{\texorpdfstring{define\+\_\+final\+\_\+left\+\_\+animation(engine\+::\+Animation $\ast$dying\+\_\+left\+\_\+animation)}{define_final_left_animation(engine::Animation *dying_left_animation)}}]{\setlength{\rightskip}{0pt plus 5cm}void define\+\_\+final\+\_\+left\+\_\+animation (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Animation} $\ast$}]{dying\+\_\+left\+\_\+animation}
+\end{DoxyParamCaption}
+)}\hypertarget{scorpion_8cpp_a866b89a7474fd0270f757fd6b088fcbf}{}\label{scorpion_8cpp_a866b89a7474fd0270f757fd6b088fcbf}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{scorpion.\+cpp@{scorpion.\+cpp}!define\+\_\+final\+\_\+right\+\_\+animation@{define\+\_\+final\+\_\+right\+\_\+animation}}
+\index{define\+\_\+final\+\_\+right\+\_\+animation@{define\+\_\+final\+\_\+right\+\_\+animation}!scorpion.\+cpp@{scorpion.\+cpp}}
+\subsubsection[{\texorpdfstring{define\+\_\+final\+\_\+right\+\_\+animation(engine\+::\+Animation $\ast$dying\+\_\+right\+\_\+animation)}{define_final_right_animation(engine::Animation *dying_right_animation)}}]{\setlength{\rightskip}{0pt plus 5cm}void define\+\_\+final\+\_\+right\+\_\+animation (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Animation} $\ast$}]{dying\+\_\+right\+\_\+animation}
+\end{DoxyParamCaption}
+)}\hypertarget{scorpion_8cpp_ab527ceb727d4ed60e296cb0d90edc15c}{}\label{scorpion_8cpp_ab527ceb727d4ed60e296cb0d90edc15c}
+
+
+Define Scorpion\textquotesingle{}s final right animation. 
+
+Sets the dying right animation as the final animation of the scorpion, that works when it\textquotesingle{}s dying.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dying\+\_\+left\+\_\+animation} & animation object which contains a dying animation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{scorpion.\+cpp@{scorpion.\+cpp}!set\+\_\+duration\+\_\+scorpion\+\_\+attacking@{set\+\_\+duration\+\_\+scorpion\+\_\+attacking}}
+\index{set\+\_\+duration\+\_\+scorpion\+\_\+attacking@{set\+\_\+duration\+\_\+scorpion\+\_\+attacking}!scorpion.\+cpp@{scorpion.\+cpp}}
+\subsubsection[{\texorpdfstring{set\+\_\+duration\+\_\+scorpion\+\_\+attacking(engine\+::\+Audio $\ast$scorpion\+\_\+attacking)}{set_duration_scorpion_attacking(engine::Audio *scorpion_attacking)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+\_\+duration\+\_\+scorpion\+\_\+attacking (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Audio} $\ast$}]{scorpion\+\_\+attacking}
+\end{DoxyParamCaption}
+)}\hypertarget{scorpion_8cpp_a91ac803269539e26ff87a536fac599c8}{}\label{scorpion_8cpp_a91ac803269539e26ff87a536fac599c8}
+
+
+Set the duration of the scorpion\textquotesingle{}s attacking audio. 
+
+Define a duration an sets on the Scorpion\textquotesingle{}s audio object when it is attacking.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scorpion\+\_\+attacking} & audio object that contains the scorpion\textquotesingle{}s sound when it is attacking.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{scorpion.\+cpp@{scorpion.\+cpp}!set\+\_\+duration\+\_\+scorpion\+\_\+on\+\_\+attack@{set\+\_\+duration\+\_\+scorpion\+\_\+on\+\_\+attack}}
+\index{set\+\_\+duration\+\_\+scorpion\+\_\+on\+\_\+attack@{set\+\_\+duration\+\_\+scorpion\+\_\+on\+\_\+attack}!scorpion.\+cpp@{scorpion.\+cpp}}
+\subsubsection[{\texorpdfstring{set\+\_\+duration\+\_\+scorpion\+\_\+on\+\_\+attack(engine\+::\+Audio $\ast$scorpion\+\_\+on\+\_\+attack)}{set_duration_scorpion_on_attack(engine::Audio *scorpion_on_attack)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+\_\+duration\+\_\+scorpion\+\_\+on\+\_\+attack (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Audio} $\ast$}]{scorpion\+\_\+on\+\_\+attack}
+\end{DoxyParamCaption}
+)}\hypertarget{scorpion_8cpp_aa5e86e353da5e898adc47c55ce94c043}{}\label{scorpion_8cpp_aa5e86e353da5e898adc47c55ce94c043}
+
+
+Set the duration of the scorpion\textquotesingle{}s under attack audio. 
+
+Define a duration an sets on the Scorpion\textquotesingle{}s audio object when it is 8 under attack.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scorpion\+\_\+on\+\_\+attack} & audio object that contains the scorpion\textquotesingle{}s sound when it is under attack.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}

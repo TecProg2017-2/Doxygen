@@ -4,6 +4,9 @@ var searchData=
   ['text',['Text',['../classengine_1_1_text.html#a425360c835a5b98475a830d6d561e5ed',1,'engine::Text']]],
   ['text_2ecpp',['text.cpp',['../text_8cpp.html',1,'']]],
   ['text_2ehpp',['text.hpp',['../text_8hpp.html',1,'']]],
+  ['texts',['texts',['../classengine_1_1_game_object.html#aaff0b5ab01495a8f4cb806eb39300534',1,'engine::GameObject']]],
+  ['texture',['texture',['../classengine_1_1_image.html#a1aba43ce4fe48d3c18e4db97543c1077',1,'engine::Image']]],
+  ['throw_5ferror',['throw_error',['../game_8cpp.html#a8a837f498b1dc4fcb2fc8cc8a24f10ff',1,'game.cpp']]],
   ['time',['Time',['../classengine_1_1_time.html',1,'engine']]],
   ['time_2ecpp',['time.cpp',['../time_8cpp.html',1,'']]],
   ['time_2ehpp',['time.hpp',['../time_8hpp.html',1,'']]],
@@ -11,6 +14,8 @@ var searchData=
   ['timer',['Timer',['../classengine_1_1_timer.html',1,'engine']]],
   ['timer_2ecpp',['timer.cpp',['../timer_8cpp.html',1,'']]],
   ['timer_2ehpp',['timer.hpp',['../timer_8hpp.html',1,'']]],
+  ['total_5fsprites',['total_sprites',['../classengine_1_1_animation.html#a399696657e2466e4680f4b37ae2e6efd',1,'engine::Animation']]],
+  ['translations',['translations',['../classengine_1_1_game_object.html#a6ac31651c772a941b08c4ce6f89c3bbc',1,'engine::GameObject']]],
   ['translator',['Translator',['../classengine_1_1_translator.html',1,'engine']]],
   ['translator_2ecpp',['translator.cpp',['../translator_8cpp.html',1,'']]],
   ['translator_2ehpp',['translator.hpp',['../translator_8hpp.html',1,'']]]

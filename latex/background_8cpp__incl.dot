@@ -51,7 +51,7 @@ digraph "src/background.cpp"
   Node20 [label="color.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$color_8hpp_source.html"];
   Node19 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
   Node3 -> Node21 [color="midnightblue",fontsize="10",style="solid"];
-  Node21 [label="audio.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$audio_8hpp_source.html"];
+  Node21 [label="audio.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$audio_8hpp.html",tooltip="Purpose: Contains attributes and methods for audio class. "];
   Node21 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
   Node21 -> Node17 [color="midnightblue",fontsize="10",style="solid"];
   Node21 -> Node22 [color="midnightblue",fontsize="10",style="solid"];
@@ -59,7 +59,7 @@ digraph "src/background.cpp"
   Node22 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
   Node21 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
   Node3 -> Node23 [color="midnightblue",fontsize="10",style="solid"];
-  Node23 [label="hitbox.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hitbox_8hpp_source.html"];
+  Node23 [label="hitbox.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hitbox_8hpp.html",tooltip="Purpose: Contains classes to define methods management of the hitboxes. "];
   Node23 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
   Node23 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
   Node23 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
@@ -77,7 +77,7 @@ digraph "src/background.cpp"
   Node26 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
   Node26 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
   Node3 -> Node27 [color="midnightblue",fontsize="10",style="solid"];
-  Node27 [label="animation.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$animation_8hpp_source.html"];
+  Node27 [label="animation.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$animation_8hpp.html",tooltip="Purpose: Contains classes to animation methods&#39; management. "];
   Node27 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
   Node27 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
   Node27 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
@@ -110,4 +110,9 @@ digraph "src/background.cpp"
   Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
   Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
   Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node33 [color="midnightblue",fontsize="10",style="solid"];
+  Node33 [label="../engine/include/log.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$log_8hpp_source.html"];
+  Node33 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node33 -> Node34 [color="midnightblue",fontsize="10",style="solid"];
+  Node34 [label="cstdlib",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
 }

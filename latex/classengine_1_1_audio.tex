@@ -2,6 +2,15 @@
 \label{classengine_1_1_audio}\index{engine\+::\+Audio@{engine\+::\+Audio}}
 
 
+A audio class.  
+
+
+
+
+{\ttfamily \#include $<$audio.\+hpp$>$}
+
+
+
 Inheritance diagram for engine\+:\+:Audio\+:
 % FIG 0
 
@@ -22,42 +31,228 @@ enum {\bfseries Audio\+Type} \{ {\bfseries M\+U\+S\+IC},
 {\bfseries Audio} (std\+::string p\+\_\+name, std\+::string path, Audio\+Type m\+\_\+type, int repeat=0, int chanel=-\/1)\hypertarget{classengine_1_1_audio_a1b723136c787deae501ca667e3d367a1}{}\label{classengine_1_1_audio_a1b723136c787deae501ca667e3d367a1}
 
 \item 
-bool {\bfseries load} ()\hypertarget{classengine_1_1_audio_a98b4a31bcd84f4a6868b414f347bc72e}{}\label{classengine_1_1_audio_a98b4a31bcd84f4a6868b414f347bc72e}
-
-\item 
-void {\bfseries free} ()\hypertarget{classengine_1_1_audio_afa4c5b2b7c325cafb74707ce026ddb3c}{}\label{classengine_1_1_audio_afa4c5b2b7c325cafb74707ce026ddb3c}
-
-\item 
-void {\bfseries play\+\_\+effect} ()\hypertarget{classengine_1_1_audio_a337e36c3f7695aeb241bd2e6b46480b2}{}\label{classengine_1_1_audio_a337e36c3f7695aeb241bd2e6b46480b2}
-
-\item 
-void {\bfseries play\+\_\+music\+\_\+type} ()\hypertarget{classengine_1_1_audio_ad25f1248a483fc53bfa4d963b859355c}{}\label{classengine_1_1_audio_ad25f1248a483fc53bfa4d963b859355c}
-
-\item 
+bool \hyperlink{classengine_1_1_audio_a98b4a31bcd84f4a6868b414f347bc72e}{load} ()
+\begin{DoxyCompactList}\small\item\em This method load the audio. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_audio_afa4c5b2b7c325cafb74707ce026ddb3c}{free} ()
+\begin{DoxyCompactList}\small\item\em Stop the audio of the game. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_audio_a337e36c3f7695aeb241bd2e6b46480b2}{play\+\_\+effect} ()
+\begin{DoxyCompactList}\small\item\em This method play effects. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_audio_ad25f1248a483fc53bfa4d963b859355c}{play\+\_\+music\+\_\+type} ()
+\begin{DoxyCompactList}\small\item\em This method play music type. \end{DoxyCompactList}\item 
 void {\bfseries draw} (int x, int y)\hypertarget{classengine_1_1_audio_a0c8d23551a3a27ce6a666cb2560d7a75}{}\label{classengine_1_1_audio_a0c8d23551a3a27ce6a666cb2560d7a75}
 
 \item 
-void {\bfseries pause\+\_\+music} ()\hypertarget{classengine_1_1_audio_a04276d10a4c43f6997ce61d197d0cd06}{}\label{classengine_1_1_audio_a04276d10a4c43f6997ce61d197d0cd06}
+void \hyperlink{classengine_1_1_audio_a04276d10a4c43f6997ce61d197d0cd06}{pause\+\_\+music} ()
+\begin{DoxyCompactList}\small\item\em This method pause the music of the game. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_audio_a69d99c1da8a77dc660a18ae9234d57b9}{stop\+\_\+effect} ()
+\begin{DoxyCompactList}\small\item\em This method stop the effect. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_audio_ab2cf1a3543da1043fdf7321e17b3d75e}{set\+\_\+repetitions} (int repeat)
+\begin{DoxyCompactList}\small\item\em This method set the quantity of repetitions of the music. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_audio_a911a2913f86b8e09485662613d9c34a7}{set\+\_\+duration} (float duration)
+\begin{DoxyCompactList}\small\item\em This method set the duration of the effect. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_audio_a05a6030343dc02aedff9efd8030276fc}{set\+\_\+effect\+\_\+volume} (int \+\_\+volume)
+\begin{DoxyCompactList}\small\item\em This method set the volume of the effect. \end{DoxyCompactList}\item 
+void \hyperlink{classengine_1_1_audio_aa44f63fae08d1cf93ca787a05d29ab5f}{set\+\_\+music\+\_\+volume} (int \+\_\+volume)
+\begin{DoxyCompactList}\small\item\em This method set the volume of the music. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-void {\bfseries stop\+\_\+effect} ()\hypertarget{classengine_1_1_audio_a69d99c1da8a77dc660a18ae9234d57b9}{}\label{classengine_1_1_audio_a69d99c1da8a77dc660a18ae9234d57b9}
 
-\item 
-void {\bfseries set\+\_\+repetitions} (int repeat)\hypertarget{classengine_1_1_audio_ab2cf1a3543da1043fdf7321e17b3d75e}{}\label{classengine_1_1_audio_ab2cf1a3543da1043fdf7321e17b3d75e}
+\subsection{Detailed Description}
+A audio class. 
 
-\item 
-void {\bfseries set\+\_\+duration} (float duration)\hypertarget{classengine_1_1_audio_a911a2913f86b8e09485662613d9c34a7}{}\label{classengine_1_1_audio_a911a2913f86b8e09485662613d9c34a7}
+This class is a model that contains all specifications of the audio. The audio it is divided in music and chunk. That is used in different situations. 
 
-\item 
-void {\bfseries set\+\_\+effect\+\_\+volume} (int \+\_\+volume)\hypertarget{classengine_1_1_audio_a05a6030343dc02aedff9efd8030276fc}{}\label{classengine_1_1_audio_a05a6030343dc02aedff9efd8030276fc}
+\subsection{Member Function Documentation}
+\index{engine\+::\+Audio@{engine\+::\+Audio}!free@{free}}
+\index{free@{free}!engine\+::\+Audio@{engine\+::\+Audio}}
+\subsubsection[{\texorpdfstring{free()}{free()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::free (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classengine_1_1_audio_afa4c5b2b7c325cafb74707ce026ddb3c}{}\label{classengine_1_1_audio_afa4c5b2b7c325cafb74707ce026ddb3c}
 
-\item 
-void {\bfseries set\+\_\+music\+\_\+volume} (int \+\_\+volume)\hypertarget{classengine_1_1_audio_aa44f63fae08d1cf93ca787a05d29ab5f}{}\label{classengine_1_1_audio_aa44f63fae08d1cf93ca787a05d29ab5f}
 
-\end{DoxyCompactItemize}
+Stop the audio of the game. 
+
+It is important to free audio, chunk and free memory, when program was closed.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_component}{engine\+::\+Component}.
+
+\index{engine\+::\+Audio@{engine\+::\+Audio}!load@{load}}
+\index{load@{load}!engine\+::\+Audio@{engine\+::\+Audio}}
+\subsubsection[{\texorpdfstring{load()}{load()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classengine_1_1_audio_a98b4a31bcd84f4a6868b414f347bc72e}{}\label{classengine_1_1_audio_a98b4a31bcd84f4a6868b414f347bc72e}
+
+
+This method load the audio. 
+
+It is important to load and activate the audio, music or chunk, at the game. True to load is OK and false its not OK.
+
+\begin{DoxyReturn}{Returns}
+true or false based in its situation. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classengine_1_1_component}{engine\+::\+Component}.
+
+\index{engine\+::\+Audio@{engine\+::\+Audio}!pause\+\_\+music@{pause\+\_\+music}}
+\index{pause\+\_\+music@{pause\+\_\+music}!engine\+::\+Audio@{engine\+::\+Audio}}
+\subsubsection[{\texorpdfstring{pause\+\_\+music()}{pause_music()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::pause\+\_\+music (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_audio_a04276d10a4c43f6997ce61d197d0cd06}{}\label{classengine_1_1_audio_a04276d10a4c43f6997ce61d197d0cd06}
+
+
+This method pause the music of the game. 
+
+It is important to pause a music when the player think it is necessary.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Audio@{engine\+::\+Audio}!play\+\_\+effect@{play\+\_\+effect}}
+\index{play\+\_\+effect@{play\+\_\+effect}!engine\+::\+Audio@{engine\+::\+Audio}}
+\subsubsection[{\texorpdfstring{play\+\_\+effect()}{play_effect()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::play\+\_\+effect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_audio_a337e36c3f7695aeb241bd2e6b46480b2}{}\label{classengine_1_1_audio_a337e36c3f7695aeb241bd2e6b46480b2}
+
+
+This method play effects. 
+
+It is important to play a effect based in the time and in the scene wheres player is.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Audio@{engine\+::\+Audio}!play\+\_\+music\+\_\+type@{play\+\_\+music\+\_\+type}}
+\index{play\+\_\+music\+\_\+type@{play\+\_\+music\+\_\+type}!engine\+::\+Audio@{engine\+::\+Audio}}
+\subsubsection[{\texorpdfstring{play\+\_\+music\+\_\+type()}{play_music_type()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::play\+\_\+music\+\_\+type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_audio_ad25f1248a483fc53bfa4d963b859355c}{}\label{classengine_1_1_audio_ad25f1248a483fc53bfa4d963b859355c}
+
+
+This method play music type. 
+
+It is important to play music based in the theme and to ambientize the player at the game. That is a validation to know if resume or play the music.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Audio@{engine\+::\+Audio}!set\+\_\+duration@{set\+\_\+duration}}
+\index{set\+\_\+duration@{set\+\_\+duration}!engine\+::\+Audio@{engine\+::\+Audio}}
+\subsubsection[{\texorpdfstring{set\+\_\+duration(float duration)}{set_duration(float duration)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::set\+\_\+duration (
+\begin{DoxyParamCaption}
+\item[{float}]{duration}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_audio_a911a2913f86b8e09485662613d9c34a7}{}\label{classengine_1_1_audio_a911a2913f86b8e09485662613d9c34a7}
+
+
+This method set the duration of the effect. 
+
+It is important for the effect of the audio to last longer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em integer} & to know how the duration of the effect. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Audio@{engine\+::\+Audio}!set\+\_\+effect\+\_\+volume@{set\+\_\+effect\+\_\+volume}}
+\index{set\+\_\+effect\+\_\+volume@{set\+\_\+effect\+\_\+volume}!engine\+::\+Audio@{engine\+::\+Audio}}
+\subsubsection[{\texorpdfstring{set\+\_\+effect\+\_\+volume(int \+\_\+volume)}{set_effect_volume(int _volume)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::set\+\_\+effect\+\_\+volume (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+volume}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_audio_a05a6030343dc02aedff9efd8030276fc}{}\label{classengine_1_1_audio_a05a6030343dc02aedff9efd8030276fc}
+
+
+This method set the volume of the effect. 
+
+It is important to dont pass the limit of the volume. That is a condition to validate the limit.
+
+
+\begin{DoxyParams}{Parameters}
+{\em integer} & to identify the nivel of the effect volume. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Audio@{engine\+::\+Audio}!set\+\_\+music\+\_\+volume@{set\+\_\+music\+\_\+volume}}
+\index{set\+\_\+music\+\_\+volume@{set\+\_\+music\+\_\+volume}!engine\+::\+Audio@{engine\+::\+Audio}}
+\subsubsection[{\texorpdfstring{set\+\_\+music\+\_\+volume(int \+\_\+volume)}{set_music_volume(int _volume)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::set\+\_\+music\+\_\+volume (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+volume}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_audio_aa44f63fae08d1cf93ca787a05d29ab5f}{}\label{classengine_1_1_audio_aa44f63fae08d1cf93ca787a05d29ab5f}
+
+
+This method set the volume of the music. 
+
+It is important to dont pass the limit of the volume. That is a validate to increase and to decrease volume of the music.
+
+
+\begin{DoxyParams}{Parameters}
+{\em integer} & to identify the nivel of the music volume. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Audio@{engine\+::\+Audio}!set\+\_\+repetitions@{set\+\_\+repetitions}}
+\index{set\+\_\+repetitions@{set\+\_\+repetitions}!engine\+::\+Audio@{engine\+::\+Audio}}
+\subsubsection[{\texorpdfstring{set\+\_\+repetitions(int repeat)}{set_repetitions(int repeat)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::set\+\_\+repetitions (
+\begin{DoxyParamCaption}
+\item[{int}]{repeat}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_audio_ab2cf1a3543da1043fdf7321e17b3d75e}{}\label{classengine_1_1_audio_ab2cf1a3543da1043fdf7321e17b3d75e}
+
+
+This method set the quantity of repetitions of the music. 
+
+That is a condition to set the repeat.
+
+
+\begin{DoxyParams}{Parameters}
+{\em integer} & to know how many times is to repeat the music. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{engine\+::\+Audio@{engine\+::\+Audio}!stop\+\_\+effect@{stop\+\_\+effect}}
+\index{stop\+\_\+effect@{stop\+\_\+effect}!engine\+::\+Audio@{engine\+::\+Audio}}
+\subsubsection[{\texorpdfstring{stop\+\_\+effect()}{stop_effect()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::stop\+\_\+effect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classengine_1_1_audio_a69d99c1da8a77dc660a18ae9234d57b9}{}\label{classengine_1_1_audio_a69d99c1da8a77dc660a18ae9234d57b9}
+
+
+This method stop the effect. 
+
+It is important to aplly this method to stop the effect after finish the duration/action.
+
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/include/audio.\+hpp\item 
-engine/src/audio.\+cpp\end{DoxyCompactItemize}
+engine/include/\hyperlink{audio_8hpp}{audio.\+hpp}\item 
+engine/src/\hyperlink{audio_8cpp}{audio.\+cpp}\end{DoxyCompactItemize}

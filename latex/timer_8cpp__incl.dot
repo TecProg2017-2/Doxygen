@@ -17,4 +17,10 @@ digraph "engine/src/timer.cpp"
   Node7 [label="SDL2/SDL_ttf.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
   Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
   Node8 [label="SDL2/SDL_mixer.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="include/log.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$log_8hpp_source.html"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="iostream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="cstdlib",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
 }

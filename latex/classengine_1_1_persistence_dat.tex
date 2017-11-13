@@ -23,10 +23,10 @@ Collaboration diagram for engine\+:\+:Persistence\+Dat\+:
 void {\bfseries operator=} (\hyperlink{classengine_1_1_persistence_dat}{Persistence\+Dat} const \&)=delete\hypertarget{classengine_1_1_persistence_dat_a207058814fa0d5cf6ab693eb6c2bcd58}{}\label{classengine_1_1_persistence_dat_a207058814fa0d5cf6ab693eb6c2bcd58}
 
 \item 
-\hyperlink{classengine_1_1_persistence_map}{Persistence\+Map} $\ast$ \hyperlink{classengine_1_1_persistence_dat_afd72460731bf0fab23f002ad0c895925}{load} (std\+::string)
-\begin{DoxyCompactList}\small\item\em Load Method. \end{DoxyCompactList}\item 
 bool \hyperlink{classengine_1_1_persistence_dat_a967c33fc78f68fb756b6d730f2fc38e0}{dump} (std\+::string, \hyperlink{classengine_1_1_persistence_map}{Persistence\+Map} $\ast$)
-\begin{DoxyCompactList}\small\item\em Dump Method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Dump Method. \end{DoxyCompactList}\item 
+\hyperlink{classengine_1_1_persistence_map}{Persistence\+Map} $\ast$ \hyperlink{classengine_1_1_persistence_dat_afd72460731bf0fab23f002ad0c895925}{load} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Load Method. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -64,7 +64,7 @@ Method responsible for dump
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
-
+$<$ ofstream. Output stream class to operate on file 
 
 Implements \hyperlink{classengine_1_1_persistence}{engine\+::\+Persistence}.
 
@@ -105,7 +105,13 @@ Method responsible for load the saved game
 \begin{DoxyReturn}{Returns}
 game loaded 
 \end{DoxyReturn}
+$<$ \hyperlink{classengine_1_1_persistence_map}{Persistence\+Map}. Map states
 
+$<$ string. path name
+
+$<$ string. path name
+
+$<$ ifstream. Input stream class to operate on files 
 
 Implements \hyperlink{classengine_1_1_persistence}{engine\+::\+Persistence}.
 

@@ -105,6 +105,8 @@ $(document).ready(function(){initNavTree('action_8cpp.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">action.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -114,7 +116,7 @@ $(document).ready(function(){initNavTree('action_8cpp.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="action_8hpp_source.html">action.hpp</a>&quot;</code><br />
 <code>#include &quot;../engine/include/game.hpp&quot;</code><br />
-<code>#include &quot;<a class="el" href="level_8hpp_source.html">../engine/include/level.hpp</a>&quot;</code><br />
+<code>#include &quot;../engine/include/log.hpp&quot;</code><br />
 <code>#include &quot;<a class="el" href="level__factory_8hpp_source.html">level_factory.hpp</a>&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -123,11 +125,137 @@ Include dependency graph for action.cpp:</div>
 <div class="center"><img src="action_8cpp__incl.png" border="0" usemap="#src_2action_8cpp" alt=""/></div>
 <!-- MAP 0 -->
 </div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:acf0fb02b5827254beb61bd3fde9ff85a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8cpp.html#acf0fb02b5827254beb61bd3fde9ff85a">change_scene</a> (<a class="el" href="classengine_1_1_game.html">engine::Game</a> *game, std::string param)</td></tr>
+<tr class="memdesc:acf0fb02b5827254beb61bd3fde9ff85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes game scene.  <a href="#acf0fb02b5827254beb61bd3fde9ff85a">More...</a><br /></td></tr>
+<tr class="separator:acf0fb02b5827254beb61bd3fde9ff85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ef0194e627e0ded36a166562606d40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8cpp.html#aa4ef0194e627e0ded36a166562606d40">pause_game</a> (<a class="el" href="classengine_1_1_game.html">engine::Game</a> *game, std::string param)</td></tr>
+<tr class="memdesc:aa4ef0194e627e0ded36a166562606d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows pause the game.  <a href="#aa4ef0194e627e0ded36a166562606d40">More...</a><br /></td></tr>
+<tr class="separator:aa4ef0194e627e0ded36a166562606d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152e31a3541c5e0a0a69074109b02da2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8cpp.html#a152e31a3541c5e0a0a69074109b02da2">play_game</a> (<a class="el" href="classengine_1_1_game.html">engine::Game</a> *game, std::string param)</td></tr>
+<tr class="memdesc:a152e31a3541c5e0a0a69074109b02da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows play the game.  <a href="#a152e31a3541c5e0a0a69074109b02da2">More...</a><br /></td></tr>
+<tr class="separator:a152e31a3541c5e0a0a69074109b02da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Purpose: contains a method to ensure game executing. </p>
 <p>MIT License Copyright (c) 2017 MindScape</p>
 <p><a href="https://github.com/TecProg2017-2/mindscape/blob/master/LICENSE.md">https://github.com/TecProg2017-2/mindscape/blob/master/LICENSE.md</a> </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="acf0fb02b5827254beb61bd3fde9ff85a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void change_scene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1_game.html">engine::Game</a> *&#160;</td>
+          <td class="paramname"><em>game</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes game scene. </p>
+<p>Changes the game scene based on the param to changes level_factory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="classengine_1_1_game.html" title="A Hitbox class. ">engine::Game</a></td><td>*game game instance </td></tr>
+    <tr><td class="paramname">std::string</td><td>containing the level name </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; LevelFactory. Initialize a new LevelFactory</p>
+<p>&lt; <a class="el" href="classengine_1_1_level.html" title="A Level class. ">engine::Level</a>. Initialize the right level </p>
+
+</div>
+</div>
+<a class="anchor" id="aa4ef0194e627e0ded36a166562606d40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pause_game </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1_game.html">engine::Game</a> *&#160;</td>
+          <td class="paramname"><em>game</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows pause the game. </p>
+<p>Pause the game based in the game state.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="classengine_1_1_game.html" title="A Hitbox class. ">engine::Game</a></td><td>*game game instance </td></tr>
+    <tr><td class="paramname">std::string</td><td>containing the level name </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; A GameObject to change background to pause_background.</p>
+
+</div>
+</div>
+<a class="anchor" id="a152e31a3541c5e0a0a69074109b02da2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void play_game </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1_game.html">engine::Game</a> *&#160;</td>
+          <td class="paramname"><em>game</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows play the game. </p>
+<p>Changes the game state to RUNNING and play the game.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="classengine_1_1_game.html" title="A Hitbox class. ">engine::Game</a></td><td>*game game instance </td></tr>
+    <tr><td class="paramname">std::string</td><td>containing the level name </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; A GameObject to change background to pause_background.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

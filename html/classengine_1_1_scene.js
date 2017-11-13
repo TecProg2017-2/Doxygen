@@ -12,5 +12,5 @@ var classengine_1_1_scene =
     [ "get_object_by_name", "classengine_1_1_scene.html#a565ca4778b3c81ac6b3434820d0a4cfa", null ],
     [ "load", "classengine_1_1_scene.html#a1e46b23b6ef624d2b1107804085a9c96", null ],
     [ "update", "classengine_1_1_scene.html#aa24c7e636c10e4e42650c1374b90bb80", null ],
-    [ "objects", "classengine_1_1_scene.html#a96bc55879afea7cb0086df8172b3bc09", null ]
+    [ "objects", "classengine_1_1_scene.html#a6093b228c0c9c6de80cc3b46c8c5f2a2", null ]
 ];

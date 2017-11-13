@@ -20,7 +20,7 @@ Collaboration diagram for mindscape\+:\+:Goop\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmindscape_1_1_goop_a2875ad29c31b4f038c91048c2599630a}{Goop} (std\+::string name, std\+::pair$<$ int, int $>$ position, int priority)
+\hyperlink{classmindscape_1_1_goop_a2875ad29c31b4f038c91048c2599630a}{Goop} (std\+::string \hyperlink{classengine_1_1_game_object_a1f104f7af4f351e6d3278319762c9fe5}{name}, std\+::pair$<$ int, int $>$ position, int \hyperlink{classengine_1_1_game_object_a159ecaca30229e302793b11a75bd13c2}{priority})
 \begin{DoxyCompactList}\small\item\em Class Contructor. \end{DoxyCompactList}\item 
 void \hyperlink{classmindscape_1_1_goop_af4f468308a49c1055063dede23688eaf}{on\+\_\+event} (\hyperlink{class_game_event}{Game\+Event})
 \begin{DoxyCompactList}\small\item\em Gets \hyperlink{classmindscape_1_1_goop}{Goop}\textquotesingle{}s event. \end{DoxyCompactList}\item 
@@ -92,7 +92,11 @@ Produces the effect in \hyperlink{classmindscape_1_1_fox}{Fox} when it collides 
 \begin{DoxyReturn}{Returns}
 void. 
 \end{DoxyReturn}
+$<$ Plataform. Initialization the platform (floor)
 
+$<$ Hitbox. Initialization the goop hitbox
+
+$<$ Hitbox. Initialization the other hitbox 
 
 Reimplemented from \hyperlink{classmindscape_1_1_enemy}{mindscape\+::\+Enemy}.
 
@@ -117,7 +121,9 @@ Gets actual animation, position and modifies position in axis x if needed.
 \begin{DoxyReturn}{Returns}
 void. 
 \end{DoxyReturn}
+$<$ string. Initialization the goop as hitbox
 
+$<$ string. Initialization the goop as hitbox 
 
 Reimplemented from \hyperlink{classengine_1_1_game_object}{engine\+::\+Game\+Object}.
 

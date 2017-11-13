@@ -7,11 +7,20 @@ Purpose\+: contains a method to ensure game executing.
 
 {\ttfamily \#include \char`\"{}action.\+hpp\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}../engine/include/game.\+hpp\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}../engine/include/level.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../engine/include/log.\+hpp\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}level\+\_\+factory.\+hpp\char`\"{}}\\*
 {\ttfamily \#include $<$iostream$>$}\\*
 Include dependency graph for action.\+cpp\+:
 % FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{action_8cpp_acf0fb02b5827254beb61bd3fde9ff85a}{change\+\_\+scene} (\hyperlink{classengine_1_1_game}{engine\+::\+Game} $\ast$game, std\+::string param)
+\begin{DoxyCompactList}\small\item\em Changes game scene. \end{DoxyCompactList}\item 
+void \hyperlink{action_8cpp_aa4ef0194e627e0ded36a166562606d40}{pause\+\_\+game} (\hyperlink{classengine_1_1_game}{engine\+::\+Game} $\ast$game, std\+::string param)
+\begin{DoxyCompactList}\small\item\em Allows pause the game. \end{DoxyCompactList}\item 
+void \hyperlink{action_8cpp_a152e31a3541c5e0a0a69074109b02da2}{play\+\_\+game} (\hyperlink{classengine_1_1_game}{engine\+::\+Game} $\ast$game, std\+::string param)
+\begin{DoxyCompactList}\small\item\em Allows play the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -20,3 +29,71 @@ Purpose\+: contains a method to ensure game executing.
 M\+IT License Copyright (c) 2017 Mind\+Scape
 
 \href{https://github.com/TecProg2017-2/mindscape/blob/master/LICENSE.md}{\tt https\+://github.\+com/\+Tec\+Prog2017-\/2/mindscape/blob/master/\+L\+I\+C\+E\+N\+S\+E.\+md} 
+
+\subsection{Function Documentation}
+\index{action.\+cpp@{action.\+cpp}!change\+\_\+scene@{change\+\_\+scene}}
+\index{change\+\_\+scene@{change\+\_\+scene}!action.\+cpp@{action.\+cpp}}
+\subsubsection[{\texorpdfstring{change\+\_\+scene(engine\+::\+Game $\ast$game, std\+::string param)}{change_scene(engine::Game *game, std::string param)}}]{\setlength{\rightskip}{0pt plus 5cm}void change\+\_\+scene (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Game} $\ast$}]{game, }
+\item[{std\+::string}]{param}
+\end{DoxyParamCaption}
+)}\hypertarget{action_8cpp_acf0fb02b5827254beb61bd3fde9ff85a}{}\label{action_8cpp_acf0fb02b5827254beb61bd3fde9ff85a}
+
+
+Changes game scene. 
+
+Changes the game scene based on the param to changes level\+\_\+factory.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classengine_1_1_game}{engine\+::\+Game}} & $\ast$game game instance \\
+\hline
+{\em std\+::string} & containing the level name \\
+\hline
+\end{DoxyParams}
+$<$ Level\+Factory. Initialize a new Level\+Factory
+
+$<$ \hyperlink{classengine_1_1_level}{engine\+::\+Level}. Initialize the right level \index{action.\+cpp@{action.\+cpp}!pause\+\_\+game@{pause\+\_\+game}}
+\index{pause\+\_\+game@{pause\+\_\+game}!action.\+cpp@{action.\+cpp}}
+\subsubsection[{\texorpdfstring{pause\+\_\+game(engine\+::\+Game $\ast$game, std\+::string param)}{pause_game(engine::Game *game, std::string param)}}]{\setlength{\rightskip}{0pt plus 5cm}void pause\+\_\+game (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Game} $\ast$}]{game, }
+\item[{std\+::string}]{param}
+\end{DoxyParamCaption}
+)}\hypertarget{action_8cpp_aa4ef0194e627e0ded36a166562606d40}{}\label{action_8cpp_aa4ef0194e627e0ded36a166562606d40}
+
+
+Allows pause the game. 
+
+Pause the game based in the game state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classengine_1_1_game}{engine\+::\+Game}} & $\ast$game game instance \\
+\hline
+{\em std\+::string} & containing the level name \\
+\hline
+\end{DoxyParams}
+$<$ A Game\+Object to change background to pause\+\_\+background.\index{action.\+cpp@{action.\+cpp}!play\+\_\+game@{play\+\_\+game}}
+\index{play\+\_\+game@{play\+\_\+game}!action.\+cpp@{action.\+cpp}}
+\subsubsection[{\texorpdfstring{play\+\_\+game(engine\+::\+Game $\ast$game, std\+::string param)}{play_game(engine::Game *game, std::string param)}}]{\setlength{\rightskip}{0pt plus 5cm}void play\+\_\+game (
+\begin{DoxyParamCaption}
+\item[{{\bf engine\+::\+Game} $\ast$}]{game, }
+\item[{std\+::string}]{param}
+\end{DoxyParamCaption}
+)}\hypertarget{action_8cpp_a152e31a3541c5e0a0a69074109b02da2}{}\label{action_8cpp_a152e31a3541c5e0a0a69074109b02da2}
+
+
+Allows play the game. 
+
+Changes the game state to R\+U\+N\+N\+I\+NG and play the game.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classengine_1_1_game}{engine\+::\+Game}} & $\ast$game game instance \\
+\hline
+{\em std\+::string} & containing the level name \\
+\hline
+\end{DoxyParams}
+$<$ A Game\+Object to change background to pause\+\_\+background.

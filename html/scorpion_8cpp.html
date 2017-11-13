@@ -105,6 +105,8 @@ $(document).ready(function(){initNavTree('scorpion_8cpp.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">scorpion.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -115,18 +117,131 @@ $(document).ready(function(){initNavTree('scorpion_8cpp.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="scorpion_8hpp_source.html">../include/scorpion.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="platform_8hpp_source.html">../include/platform.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="little__girl_8hpp_source.html">../include/little_girl.hpp</a>&quot;</code><br />
+<code>#include &quot;../engine/include/log.hpp&quot;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for scorpion.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="scorpion_8cpp__incl.png" border="0" usemap="#src_2scorpion_8cpp" alt=""/></div>
 <!-- MAP 0 -->
 </div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a91ac803269539e26ff87a536fac599c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scorpion_8cpp.html#a91ac803269539e26ff87a536fac599c8">set_duration_scorpion_attacking</a> (<a class="el" href="classengine_1_1_audio.html">engine::Audio</a> *scorpion_attacking)</td></tr>
+<tr class="memdesc:a91ac803269539e26ff87a536fac599c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the duration of the scorpion's attacking audio.  <a href="#a91ac803269539e26ff87a536fac599c8">More...</a><br /></td></tr>
+<tr class="separator:a91ac803269539e26ff87a536fac599c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e86e353da5e898adc47c55ce94c043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scorpion_8cpp.html#aa5e86e353da5e898adc47c55ce94c043">set_duration_scorpion_on_attack</a> (<a class="el" href="classengine_1_1_audio.html">engine::Audio</a> *scorpion_on_attack)</td></tr>
+<tr class="memdesc:aa5e86e353da5e898adc47c55ce94c043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the duration of the scorpion's under attack audio.  <a href="#aa5e86e353da5e898adc47c55ce94c043">More...</a><br /></td></tr>
+<tr class="separator:aa5e86e353da5e898adc47c55ce94c043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866b89a7474fd0270f757fd6b088fcbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scorpion_8cpp.html#a866b89a7474fd0270f757fd6b088fcbf">define_final_left_animation</a> (<a class="el" href="classengine_1_1_animation.html">engine::Animation</a> *dying_left_animation)</td></tr>
+<tr class="separator:a866b89a7474fd0270f757fd6b088fcbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab527ceb727d4ed60e296cb0d90edc15c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scorpion_8cpp.html#ab527ceb727d4ed60e296cb0d90edc15c">define_final_right_animation</a> (<a class="el" href="classengine_1_1_animation.html">engine::Animation</a> *dying_right_animation)</td></tr>
+<tr class="memdesc:ab527ceb727d4ed60e296cb0d90edc15c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define Scorpion's final right animation.  <a href="#ab527ceb727d4ed60e296cb0d90edc15c">More...</a><br /></td></tr>
+<tr class="separator:ab527ceb727d4ed60e296cb0d90edc15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Purpose: Contains scorpion's methods. </p>
 <p>MIT License Copyright (c) 2017 MindScape</p>
 <p><a href="https://github.com/TecProg2017-2/mindscape/blob/master/LICENSE.md">https://github.com/TecProg2017-2/mindscape/blob/master/LICENSE.md</a> </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a866b89a7474fd0270f757fd6b088fcbf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void define_final_left_animation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1_animation.html">engine::Animation</a> *&#160;</td>
+          <td class="paramname"><em>dying_left_animation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>void. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab527ceb727d4ed60e296cb0d90edc15c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void define_final_right_animation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1_animation.html">engine::Animation</a> *&#160;</td>
+          <td class="paramname"><em>dying_right_animation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define Scorpion's final right animation. </p>
+<p>Sets the dying right animation as the final animation of the scorpion, that works when it's dying.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dying_left_animation</td><td>animation object which contains a dying animation.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a91ac803269539e26ff87a536fac599c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_duration_scorpion_attacking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1_audio.html">engine::Audio</a> *&#160;</td>
+          <td class="paramname"><em>scorpion_attacking</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the duration of the scorpion's attacking audio. </p>
+<p>Define a duration an sets on the Scorpion's audio object when it is attacking.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scorpion_attacking</td><td>audio object that contains the scorpion's sound when it is attacking.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa5e86e353da5e898adc47c55ce94c043"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_duration_scorpion_on_attack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1_audio.html">engine::Audio</a> *&#160;</td>
+          <td class="paramname"><em>scorpion_on_attack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the duration of the scorpion's under attack audio. </p>
+<p>Define a duration an sets on the Scorpion's audio object when it is 8 under attack.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scorpion_on_attack</td><td>audio object that contains the scorpion's sound when it is under attack.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

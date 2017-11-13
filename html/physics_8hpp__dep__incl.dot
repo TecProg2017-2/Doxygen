@@ -27,7 +27,6 @@ digraph "engine/include/physics.hpp"
   Node12 [label="src/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip="Purpose: Contains the main function. "];
   Node7 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node13 [label="src/select_arrow.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$select__arrow_8cpp.html",tooltip="Purpose: Contains the methods for SelectArrow class. "];
-  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
